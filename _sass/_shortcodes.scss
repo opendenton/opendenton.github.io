@@ -1,0 +1,169 @@
+/*
+	  ==============================================================
+		   BANNER WRAP SHORTCODE CSS START
+	  ==============================================================
+*/
+
+.link_1 {
+  background-color: #fff;
+  display: inline-block;
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  overflow: hidden;
+  padding: 12px 68px 10px 20px;
+  position: relative;
+  z-index: 9999;
+  text-transform: uppercase;
+  color: #233a38;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-family: 'Sintony', sans-serif;
+  i {
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    height: 100%;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+  }
+  &:before {
+    background-color: #1c1d22;
+    color: #fff;
+    content: "";
+    height: 100%;
+    padding: 33px 34px;
+    position: absolute;
+    right: -22px;
+    top: -15px;
+    transform: rotate(66deg);
+  }
+}
+
+/*
+	  ==============================================================
+		   BANNER WRAP SHORTCODE CSS END
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   PROGRAM LIST WRAP SHORTCODE CSS START
+	  ==============================================================
+*/
+
+.link_2 {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 14px 35px 15px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  line-height: normal;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 3px;
+    height: 100%;
+    background-color: #fff;
+    z-index: -9;
+  }
+  &:hover:before {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*
+	  ==============================================================
+		   PROGRAM LIST WRAP SHORTCODE CSS END
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   WELCOME TO Open Denton WRAP SHORTCODE CSS START
+	  ==============================================================
+*/
+
+.link_3 {
+  background-color: #27282d;
+  display: inline-block;
+  outline: 1px solid #27282d;
+  outline-offset: 3px;
+  overflow: hidden;
+  padding: 12px 68px 10px 20px;
+  position: relative;
+  z-index: 9999;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-family: 'Sintony', sans-serif;
+  i {
+    color: #27282d;
+    font-size: 19px;
+    font-weight: bold;
+    height: 100%;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+  }
+  &:before {
+    background-color: #fff;
+    content: "";
+    height: 100%;
+    padding: 33px 34px;
+    position: absolute;
+    right: -27px;
+    top: -18px;
+    transform: rotate(62deg);
+  }
+}
+
+/*
+	  ==============================================================
+		   WELCOME TO Open Denton WRAP SHORTCODE CSS END
+	  ==============================================================
+*/
+
+/*
+	  ==============================================================
+		   LEAVE A REPLY WRAP SHORTCODE CSS START
+	  ==============================================================
+*/
+
+.btn_1 {
+  position: relative;
+  border: 1px solid #dddddd;
+  text-transform: uppercase;
+  color: #474747;
+  position: relative;
+  padding: 15px 20px;
+  background-color: #fff;
+  z-index: 99999;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 4px;
+    height: 100%;
+    background-color: #d2d2d2;
+    z-index: -1;
+  }
+  &:hover:before {
+    width: 100%;
+  }
+}
+
+/*
+	  ==============================================================
+		   LEAVE A REPLY WRAP SHORTCODE CSS END
+	  ==============================================================
+*/

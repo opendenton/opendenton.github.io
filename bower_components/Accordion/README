@@ -1,0 +1,154 @@
+----------------No longer being Maintained--------------------
+
+Accordion, jQuery Plugin
+
+Overview:
+================================================================================
+This plugin enables an accordion with cookie persistance. This plugin is based 
+on my collapsible plugin.
+
+If you find any errors or have suggested changes, please post an issue on the
+github project: http://github.com/juven14/Accordion
+
+Very Basic demos can be found here: 
+http://www.snyderplace.com/demos/accordion.html
+
+To enable cookie support you'll need the Cookie plugin here:
+https://github.com/carhartl/jquery-cookie
+________________________________________________________________________________
+================================================================================
+
+
+Adding an accordion to your html:
+================================================================================
+
+You need to add two parts, a header and a container.  The header div is for the label and the open/close
+text/images.  The container will hold any html/text you want to slide up/down.
+
+---HTML code--------------------------------------------------------------------
+<div class="accordion" id="nav-section1">Navigation Section<span></span></div>
+<div>
+    <ul>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+  </ul>
+</div>
+<div class="accordion" id="nav-section2">Navigation Section 2<span></span></div>
+<div>
+    <ul>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+  </ul>
+</div>
+<div class="accordion" id="nav-section3">Navigation Section 3<span></span></div>
+<div>
+    <ul>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+    <li><a href="#">Navigation Item</a></li>
+  </ul>
+</div>
+---end HTML code----------------------------------------------------------------
+________________________________________________________________________________
+================================================================================
+
+
+Adding the Javascript to your file:
+================================================================================
+
+JavaScript which belongs in the html document, using the cookie
+plugin is optional.  Please note that our default open / config is only an 
+example.
+
+---JavaScript code--------------------------------------------------------------
+<script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+<script type="text/javascript" src="javascript/jquery.collapsible.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.accordion').accordion({
+        defaultOpen: 'section1',
+        cookieName: 'accordion_nav'
+    });
+  });
+</script>
+---end JavaScript code----------------------------------------------------------
+
+The plugin default options are as follows:
+---JavaScript code--------------------------------------------------------------
+{
+    cssClose: 'accordion-close', //class you want to assign to a closed accordion header
+    cssOpen: 'accordion-open', //class you want to assign an opened accordion header
+    cookieName: 'accordion', //name of the cookie you want to set for this accordion
+    cookieOptions: { //cookie options, see cookie plugin for details
+        path: '/',
+        expires: 7,
+        domain: '',
+        secure: ''
+    },
+    defaultOpen: '', //id that you want opened by default
+    speed: 'slow', //speed of the slide effect
+    bind: 'click', //event to bind to, supports click, dblclick, mouseover and mouseenter
+    animateOpen: function (elem, opts) { //replace the standard slideDown with custom function
+        elem.next().stop(true, true).slideDown(opts.speed);
+    },
+    animateClose: function (elem, opts) { //replace the standard slideUp with custom function
+        elem.next().stop(true, true).slideUp(opts.speed);
+    },
+    loadOpen: function (elem, opts) { //replace the default open state with custom function
+        elem.next().show();
+    },
+    loadClose: function (elem, opts) { //replace the default close state with custom function
+        elem.next().hide();
+    }
+}
+---end JavaScript code----------------------------------------------------------
+
+Option details:
+
+* cssClose - class assigned when closed
+* cssOpen - class assigned when opened
+* cookieName - cookie name for persisting panels
+* cookieOptions - see jquery.cookie plugin for more info
+* defaultOpen - id that you want opened by default
+* speed - animation speed
+* bind - event that triggers the collapsible, only 
+  4 are supported:<br /> click, dblclick, mouseenter, and mouseover
+* animateOpen - custom callback to animate opening
+* animateClose - custom callback to animate closing
+* loadOpen - custom callback to animate the default opening
+* loadClose - custom callback to animate the default closing
+
+________________________________________________________________________________
+================================================================================
+
+
+Styling 
+================================================================================
+
+In the above example HTML you will see an empty span, this is useful if you wish to
+assign an open/close image.
+
+This plugin will append a user defined (or default, see options above) class to 
+header of the accordion.  You can use this to swap out the images or style the 
+different states of your accordion.
+
+---CSS code---------------------------------------------------------------------
+.accordion h3.collapse-open {}
+.accordion h3.collapse-close {}
+.accordion h3.collapse-open span {}
+.accordion h3.collapse-close span {}
+---end CSS code-----------------------------------------------------------------
+
+________________________________________________________________________________
+================================================================================

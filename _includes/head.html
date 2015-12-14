@@ -1,0 +1,88 @@
+<head lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <!-- Jekyll Metadata -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- BASIC INFO -->
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+
+  <meta name="author" content="Bootstrap Denton">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ site.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/images/og.png">
+  <meta property="twitter:creator" content="{{ site.twitter_username }}">
+  <meta property="twitter:site" content="{{ site.twitter_username }}">
+
+  <!-- METADATA / OG / TWITTER -->
+  {% if page.desc %}
+  <meta name="description" content="{{ page.desc | strip_html | strip_newlines | truncate: 160 }}" >
+  <meta property="og:description" content="{{ page.desc | strip_html | strip_newlines | truncate: 160 }}">
+  <meta name="twitter:description" content="{{ page.desc | strip_html | strip_newlines | truncate: 160 }}">
+  {% else %}
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_newlines | truncate: 160 }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_newlines | truncate: 160 }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_newlines | truncate: 160 }}{% endif %}">
+  {% endif %}
+
+  <!-- KEYWORDS -->
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}" >
+  {% else %}
+  <meta name="keywords" content="{{ site.keywords }}">
+  {% endif %}
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="{{ site.twitter_username }}">
+  <meta name="twitter:image" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/images/og.png">
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ "assets/favicons/apple-touch-icon-57x57.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ "assets/favicons/apple-touch-icon-60x60.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ "assets/favicons/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ "assets/favicons/apple-touch-icon-76x76.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ "assets/favicons/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ "assets/favicons/apple-touch-icon-120x120.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ "assets/favicons/apple-touch-icon-144x144.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ "assets/favicons/apple-touch-icon-152x152.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "assets/favicons/apple-touch-icon-180x180.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" href="{{ "assets/favicons/favicon-32x32.png" | prepend: site.baseurl }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ "assets/favicons/android-chrome-192x192.png" | prepend: site.baseurl }}" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ "assets/favicons/favicon-96x96.png" | prepend: site.baseurl }}" sizes="96x96">
+  <link rel="icon" type="image/png" href="{{ "assets/favicons/favicon-16x16.png" | prepend: site.baseurl }}" sizes="16x16">
+  <link rel="manifest" href="{{ "assets/favicons/manifest.json" | prepend: site.baseurl }}">
+  <link rel="mask-icon" href="{{ "assets/favicons/safari-pinned-tab.svg" | prepend: site.baseurl }}" color="#5bbad5">
+  <link rel="shortcut icon" href="{{ "assets/favicons/favicon.ico" | prepend: site.baseurl }}">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="{{ "assets/favicons/mstile-144x144.png" | prepend: site.baseurl }}">
+  <meta name="msapplication-config" content="{{ "assets/favicons/browserconfig.xml" | prepend: site.baseurl }}">
+  <meta name="theme-color" content="#63bc68">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sintony:400,700&subset=latin,latin-ext">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic,greek,greek-ext">
+
+  <!-- Library Stylesheets -->
+  <link rel="stylesheet" href="{{ "/bower_components/bootstrap/dist/css/bootstrap.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/bower_components/fullcalendar/dist/fullcalendar.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/bower_components/bxslider-4/dist/jquery.bxslider.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/bower_components/OwlCarousel/owl-carousel/owl.carousel.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/bower_components/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/bower_components/prettyphoto/css/prettyPhoto.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/bower_components/timecircles/inc/TimeCircles.css" | prepend: site.baseurl }}">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="{{ "/css/svg-style.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/js/dl-menu/component.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/opendenton.css" | prepend: site.baseurl }}">
+
+</head>

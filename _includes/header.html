@@ -1,0 +1,154 @@
+<!--Header Wrap Start-->
+    <header>
+
+    	<!--Top Strip Wrap Start-->
+    	<div class="top_strip">
+        	<div class="container">
+                <div class="cnt_info">
+                    <ul>
+                        <li><i class="fa fa-phone"></i> + 987 654 321</li>
+                        <li><i class="fa fa-map-marker"></i> Lorum Ipsum st. 876, LA, US.</li>
+                    </ul>
+                </div>
+
+                <div class="scl_icon">
+                    <ul>
+                      {% if site.facebook_username %}
+                      <li><a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
+                        <span class="fa fa-facebook"></span>
+                      </a></li>
+                      {% endif %}
+                      {% if site.twitter_username %}
+                      <li><a href="https://twitter.com/{{ site.twitter_username }}">
+                        <span class="fa fa-twitter"></span>
+                      </a></li>
+                      {% endif %}
+                      {% if site.github_username %}
+                      <li><a href="https://github.com/{{ site.github_username }}" target="_blank">
+                        <span class="fa fa-github"></span>
+                      </a></li>
+                      {% endif %}
+                      <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                        <span class="fa fa-rss"></span>
+                      </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Top Strip Wrap End-->
+
+        <!--Navigation Wrap Start-->
+        <div class="navigation_outr_wrap">
+            <div class="container">
+                <!--Logo Wrap Start-->
+                <div class="logo">
+                    <a href="index.html"><img src="{{ "/assets/images/logo.png" | prepend: site.baseurl }}" data-at2x="{{ "/assets/images/logo@2x.png" | prepend: site.baseurl }}" alt="Logo Image Here"></a>
+                </div>
+                <!--Logo Wrap Start-->
+
+                <!--Navigation Wrap Start-->
+                <div class="ui_element">
+
+                    <!--Navigation Wrap Start-->
+                    <div class="menu">
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="#">Event</a>
+                                <ul>
+                                    <li><a href="event.html">Event Grid</a></li>
+                                    <li><a href="event-detail.html">Event Detail</a></li>
+                                </ul>
+                            </li>
+							<li><a href="press-release.html">Press Release</a></li>
+                            <li><a href="#">News</a>
+                                <ul>
+                                    <li><a href="news.html">News Grid</a></li>
+                                    <li><a href="news-list.html">News List</a></li>
+                                    <li><a href="news-detail.html">News Detail</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Team</a>
+								<ul>
+									<li><a href="team.html">team Grid</a></li>
+									<li><a href="team-detail.html">team Detail</a></li>
+								</ul>
+							</li>
+                            <li><a href="#">Pages</a>
+                            	<ul>
+                                	<li><a href="services.html">Services</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="comming-soon.html">Comming soon</a></li>
+									<li><a href="shortcode.html">ShortCode</a></li>
+                                </ul>
+                            </li>
+							<li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!--Navigation Wrap End-->
+
+					<!--DL Menu Start-->
+                    <div id="responsive-navigation" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+						<ul class="dl-menu">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li class="menu-item parent-menu"><a href="#">Event</a>
+								<ul class="dl-submenu">
+                                    <li><a href="event.html">Event Grid</a></li>
+                                    <li><a href="event-detail.html">Event Detail</a></li>
+                                </ul>
+                            </li>
+							<li><a href="press-release.html">Press Release</a></li>
+                            <li class="menu-item parent-menu"><a href="#">News</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="news.html">News Grid</a></li>
+                                    <li><a href="news-list.html">News List</a></li>
+                                    <li><a href="news-detail.html">News Detail</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item parent-menu"><a href="#">Team</a>
+								<ul class="dl-submenu">
+									<li><a href="team.html">team Grid</a></li>
+									<li><a href="team-detail.html">team Detail</a></li>
+								</ul>
+							</li>
+                            <li class="menu-item parent-menu"><a href="#">Pages</a>
+                            	<ul class="dl-submenu">
+                                	<li><a href="services.html">Services</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="comming-soon.html">Comming soon</a></li>
+									<li><a href="shortcode.html">ShortCode</a></li>
+                                </ul>
+                            </li>
+							<li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!--DL Menu END-->
+
+                    <!--Favorite Wrap Start-->
+                    <div class="favorite">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <!--Favorite Wrap Start-->
+					<!--Search Wrap Start-->
+                    <div class="search">
+                        <a class="search-fld" href="#"><i class="fa fa-search"></i></a>
+						<div class="search-wrapper-area">
+							<form class="search-area">
+								<input type="text" placeholder="search here"/>
+								<input type="submit" value="Go"/>
+							</form>
+						</div>
+                    </div>
+                    <!--Search Wrap Start-->
+
+                </div>
+                <!--Navigation Wrap End-->
+
+            </div>
+        </div>
+        <!--Navigation Wrap End-->
+
+    </header>
+    <!--Header Wrap Start-->

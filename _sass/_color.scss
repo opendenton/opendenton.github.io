@@ -1,0 +1,1291 @@
+/*
+	  ============================================================
+		   Font Color
+	  ============================================================
+*/
+/*----------------------------------------------------------------------Top Strip Wrap Style----------------------------------------------------------------------*/
+
+.cnt_info ul li {
+  i, &:hover {
+    color: $brand-primary;
+  }
+}
+
+.menu ul li {
+  &.active > a, &:hover > a, &:focus > a {
+    color: $brand-primary;
+  }
+}
+
+.caption a.link_1:hover i, .breaking_news2 .breaking_hdg h6 {
+  color: $brand-primary;
+}
+
+.brekg_news_des .bx-wrapper .bx-controls-direction a {
+  &.bx-prev:before, &.bx-next:before {
+    color: $brand-primary;
+  }
+}
+
+ul.tab_lnk li {
+  &.active a, &:hover a, &:focus a {
+    color: $brand-primary;
+  }
+}
+
+.wht_des ul li {
+  span, &:hover h6 a {
+    color: $brand-primary;
+  }
+}
+
+.press_news:hover .news_des {
+  h6 a {
+    color: $brand-primary;
+  }
+  a {
+    color: $brand-primary;
+    i {
+      color: $brand-primary;
+    }
+  }
+}
+
+.news_date ul li:hover a, .campgn_lst1:hover .lst1_des h6, .campgn_lst2:hover .lst1_des h6, .politician:hover .politician_des h6 a {
+  color: $brand-primary;
+}
+
+.politician_des ul li {
+  &:hover a, &:focus a {
+    color: $brand-primary;
+  }
+}
+
+.progress h6 {
+  color: $brand-primary;
+}
+
+.latest_blog_des {
+  ul li:hover a, h6 a:hover {
+    color: $brand-primary;
+  }
+}
+
+.testimonial_wrap.owl-theme .owl-controls .owl-buttons div {
+  &.owl-prev:hover:before, &.owl-next:hover:before {
+    color: $brand-primary;
+  }
+}
+
+.testi_wrap:hover a {
+  color: $brand-primary;
+}
+
+.widgt_touch ul li:hover {
+  color: $brand-primary;
+  a {
+    color: $brand-primary;
+  }
+}
+
+.foo_field {
+  input[type="submit"]:hover, button:hover {
+    color: $brand-primary;
+  }
+}
+
+.site_map ul li:hover a, .copyright span a:hover, .widgt_event ul li:hover a, .widgt_tweets ul li:hover a, .copyright_des a:hover {
+  color: $brand-primary;
+}
+
+.about_services:hover {
+  i, h5 a {
+    color: $brand-primary;
+  }
+}
+
+.achment_wrap:hover .achment_des h5 a, .where_we ul li:hover h5, .donate i, .volunteer_btn a i, .goal_des ul li::before, .pagination ul li:hover a b, .achevemnt_des_2 h5:hover a {
+  color: $brand-primary;
+}
+
+.news_wrap_des {
+  > b > a, a:hover {
+    color: $brand-primary;
+  }
+}
+
+.news_list_des > h6 > a:hover, .author:hover > a {
+  color: $brand-primary;
+}
+
+.news_list_des > ul > li > a {
+  > i, &:hover {
+    color: $brand-primary;
+  }
+}
+
+.aside_search {
+  &:focus form button, &:hover form button {
+    color: $brand-primary;
+  }
+}
+
+.news_list:hover h6 a, .aside_cat ul li:hover a, .aside_event_des span b, .aside_event ul figure figcaption a:hover {
+  color: $brand-primary;
+}
+
+.event_wrap:hover .event_des {
+  h6 > a, > a {
+    color: $brand-primary;
+  }
+}
+
+.event_des > ul > li:hover a, .work_des h6 a:hover {
+  color: $brand-primary;
+}
+
+.event_list {
+  &:hover > h6 > a, > ul > li:hover > a {
+    color: $brand-primary;
+  }
+}
+
+.aside_map_des span i, .orgnizer_social li:hover a, .summary ul li:before, .event_share ul li:hover a, ul.orgnizer_email li:hover, .comment_des a {
+  color: $brand-primary;
+}
+
+.aside_organizer ul {
+  &.aside_contnt li:hover, &.aside_org_scl li:hover a {
+    color: $brand-primary;
+  }
+}
+
+.news_detail > ul > li {
+  > a > {
+    span, i {
+      color: $brand-primary;
+    }
+  }
+  &:hover a {
+    color: $brand-primary;
+  }
+}
+
+.event_list a:hover, .kf_pagination ul li:hover a {
+  color: $brand-primary;
+}
+
+.contact_des span {
+  &:hover, a:hover {
+    color: $brand-primary;
+  }
+}
+
+.contact_field textarea {
+  color: $brand-primary;
+}
+
+.focus_wrap:hover {
+  h6, a {
+    color: $brand-primary;
+  }
+}
+
+.kf_location_info a:hover, .kf_loc_socil_icon li a:hover {
+  color: $brand-primary;
+}
+
+.kf_location_info:hover {
+  > i, h6 {
+    color: $brand-primary;
+  }
+}
+
+.kf_404_wrap {
+  h2 span, h4 {
+    color: $brand-primary;
+  }
+}
+
+.kf_page_list ul li:hover {
+  &:before, a {
+    color: $brand-primary;
+  }
+}
+
+.kf_comming_counter ul.countdown span, .kf_comming_social ul li:hover a {
+  color: $brand-primary;
+}
+
+.kf_comming_form {
+  button:hover, input[type="submit"]:hover {
+    color: $brand-primary;
+  }
+}
+
+/*
+	  ============================================================
+		   Background Color
+	  ============================================================
+*/
+/*----------------------------------------------------------------------Top Strip Wrap Style----------------------------------------------------------------------*/
+
+.scl_icon ul li {
+  &.active, &:hover {
+    background-color: $brand-primary;
+  }
+}
+
+.navigation_outr_wrap:before {
+  background-color: $brand-primary;
+}
+
+.menu ul {
+  li {
+    &.active:before, &:hover:before, &:focus:before {
+      background-color: $brand-primary;
+    }
+  }
+  ul li:after {
+    background-color: $brand-primary;
+  }
+}
+
+.favorite:hover, .search:hover, .caption a.link_1:hover, .breaking_hdg, .breaking_news2:after {
+  background-color: $brand-primary;
+}
+
+ul.tab_lnk li {
+  &:before, &:after {
+    background-color: $brand-primary;
+  }
+}
+
+.wel_demo_des a.link_3:hover, .about_welcome a.link_3:hover:before {
+  background-color: $brand-primary;
+}
+
+.wht_des .bx-wrapper .bx-pager.bx-default-pager a {
+  &:hover, &.active {
+    background-color: $brand-primary;
+  }
+}
+
+.press_news {
+  &:before, &:hover .news_des h6 a:before {
+    background-color: $brand-primary;
+  }
+  figure {
+    &.pres1_style:after, &.pres2_style:after {
+      background-color: $brand-primary;
+    }
+  }
+}
+
+.galry_item figure:before {
+  background-color: $brand-primary;
+}
+
+.campgn_lst1:hover .cam_date {
+  background-color: $brand-primary;
+  &:before, &:after {
+    background-color: $brand-primary;
+  }
+}
+
+.campgn_lst2:hover .cam_date {
+  background-color: $brand-primary;
+  &:before, &:after {
+    background-color: $brand-primary;
+  }
+}
+
+.progress .progress-bar, .purchase2_bg {
+  background-color: $brand-primary;
+}
+
+.newsletter_bg {
+  background-color: $brand-primary;
+  &:after {
+    background-color: $brand-primary;
+  }
+}
+
+.newsletter_form form button, .widgt_event ul li figure:after, .footer_logo ul li:hover a, .copyright > a:hover, .copyright_bg, .subcribe_bg, .about_services:hover h5 a:before, .socil_counter_bg, .achment_wrap:hover figcaption h6 {
+  background-color: $brand-primary;
+}
+
+.where_we ul {
+  &:before, li:hover .where_year {
+    background-color: $brand-primary;
+  }
+}
+
+.hdg_3 h4:before, .volunteer_btn a:before, .goal_wrap .accordion-open {
+  background-color: $brand-primary;
+}
+
+.planning_wrap {
+  .nav-tabs li.active a {
+    background-color: $brand-primary;
+    &:focus, &:hover {
+      background-color: $brand-primary;
+    }
+  }
+  ul li {
+    &.active a, &:hover a {
+      background-color: $brand-primary;
+    }
+  }
+}
+
+.pagination .pagination li:hover a, .about_welcome a.link_3, .news_list_des span, .calender .fc-toolbar, .aside h5, .aside_flicker ul li figure:before, .event_wrap figure:before, .event_des ul:before, .advance_service figure:before, .work_wrap figure, .event_timer_date, .timer:before, .event_list figure, .aside_org_des > a h6 {
+  background-color: $brand-primary;
+}
+
+.contact_field {
+  input[type="submit"], button {
+    background-color: $brand-primary;
+  }
+}
+
+.logo {
+  background-color: $brand-primary;
+  &:before, &:after {
+    background-color: $brand-primary;
+  }
+}
+
+.kf_office_name li {
+  &.active a, &:hover a, &:focus a {
+    background-color: $brand-primary;
+  }
+}
+
+.kf_404_wrap h4:before, .kf_404_form button {
+  background-color: $brand-primary;
+}
+
+.dl-menuwrapper button {
+  &:hover, &.dl-active {
+    background-color: $brand-primary;
+  }
+}
+
+/*
+	  ============================================================
+		   Border Color
+	  ============================================================
+*/
+/*----------------------------------------------------------------------Top Strip Wrap Style----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------Logo & Navigation Wrap Style----------------------------------------------------------------------*/
+
+.favorite:hover a i, .search:hover a i, .menu ul ul, .caption h6, .breaking_news, .breaking_hdg:before, .breaking_news2, .wht_des ul li:hover a span, .purchase_bg:after, .politician:hover figure, .politician_des:before, .testi_wrap:hover figure img, .testimonial_wrap.owl-theme .owl-controls .owl-buttons div:hover {
+  border-color: $brand-primary;
+}
+
+.foo_field {
+  input[type="text"]:focus, textarea:focus {
+    border-color: $brand-primary;
+  }
+}
+
+.about_bg {
+  border-color: $brand-primary;
+}
+
+.pagination {
+  .pagination li:hover a span, ul li:hover a b {
+    border-color: $brand-primary;
+  }
+}
+
+.news_wrap_des, .aside_search form input[type="text"]:focus, .event_wrap:hover a, .team_img figure {
+  border-color: $brand-primary;
+}
+
+.event_timer_date {
+  &:before, &:after {
+    border-color: $brand-primary;
+  }
+}
+
+.border_top {
+  &::before, &:after {
+    border-color: $brand-primary;
+  }
+}
+
+.orgnizer_wrap figure, .related_comment ul li figure {
+  border-color: $brand-primary;
+}
+
+.news_detail {
+  figure, blockquote {
+    border-color: $brand-primary;
+  }
+}
+
+.contact_field {
+  input[type="text"]:focus, textarea:focus {
+    border-color: $brand-primary;
+  }
+}
+
+.kf_office_name li, .kf_location_info:hover i {
+  border-color: $brand-primary;
+}
+
+.kf_comming_form {
+  form input[type="text"]:focus, button:hover, input[type="submit"]:hover {
+    border-color: $brand-primary;
+  }
+}
+
+/*
+	  ============================================================
+		   Transaction Effect
+	  ============================================================
+*/
+/*----------------------------------------------------------------------Top Strip Wrap Style----------------------------------------------------------------------*/
+
+.cnt_info ul li {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.scl_icon ul li {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.menu ul {
+  li:before {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+  ul li {
+    a, &:after {
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.favorite, .search, .favorite i, .search i, .menu ul ul {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.link_1 {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  i {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.breaking_news2, .program_list:before, .program_des, .program_hover, .program_list:after, .link_2:before, a.link_2 {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+ul.tab_lnk li {
+  &:before, &:after, a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.link_3 {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  i, &:before {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.wht_des ul li:hover {
+  h6 a, a span {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.press_news:before, .news_date ul li a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.news_des {
+  h6 {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    &:before {
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+    }
+  }
+  a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    i {
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.press_news figure {
+  &.pres1_style::before, &.pres2_style::before, &.pres1_style:after, figcaption, &.pres2_style:after {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.galry_item {
+  &:before {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+  figure {
+    figcaption, &:before, &:after {
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.galry_des {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  p, h6 {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.lst1_des h6 {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.cam_date {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  &:before, &:after {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.politician {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  figure {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    &:before {
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.poli_img_des {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.politician_des {
+  h6 a, p, ul li a, &:before {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.latest_blog_des {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  ul li a, h6 a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.latest_blog figure img {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.audio_wrap figure {
+  &:before {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+  figcaption {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    a {
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.testi_wrap figure img, .testimonial_wrap.owl-theme .owl-controls .owl-buttons div, .testi_wrap a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.widgt_touch ul li {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.foo_field {
+  input[type="submit"], button {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.footer_logo ul li a, .site_map ul li a, .copyright a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.widgt_event ul li {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.widgt_tweets ul li a, .foo_gallery ul li a img, .newsletter_form form button, .copyright_des a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.about_services {
+  i {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+  h5 a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    &:before {
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.achment_wrap figcaption h6, .achment_des h5 a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.where_year {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  h6 {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.where_des h5, .where_we figure a:before, .goal_wrap .accordion-open, .planning_wrap ul li a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.pagination {
+  .pagination li a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    span {
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+    }
+  }
+  ul li a b {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.news_wrap {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  figure:before {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.news_wrap_des a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.news_list_des > {
+  h6 > a, ul > li > a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.author > a, .news_list figure img, .aside_cat ul li a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.aside_event ul {
+  li figure {
+    &:before, figcaption {
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+    }
+  }
+  figure figcaption a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.aside_flicker ul li figure {
+  &:before, figcaption {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.event_wrap {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  figure {
+    &:before, figcaption {
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.event_des > {
+  h6 > a, a, ul > li > a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.advance_service figure {
+  &:before {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.service_caption {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.advance_hdg {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  i, h6 {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.work_des h6 a, .work_hover {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.event_list > {
+  h6 > a, ul > li > a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.aside_gallery ul li a img, ul.orgnizer_email li, .btn_1:before {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+ul {
+  &.aside_contnt li, &.aside_org_scl li a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.aside_org_des a h6, .news_detail > ul > li a, .kf_pagination ul li a, .event_list a, .news_detail figure img, .aside_video figure:before {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.contact_field {
+  input[type="submit"], button {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.contact_des span {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.contact_field {
+  input[type="text"], textarea {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.focus_wrap {
+  h6, a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.video_icon, .kf_office_name li a, .kf_loc_socil_icon li a, .kf_location_info a, .btn_1 {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.kf_location_info {
+  i, h6 {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.kf_page_list ul li {
+  a, &:before {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.kf_404_form {
+  button:hover, input[type="submit"]:hover {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.kf_comming_form {
+  button, input[type="submit"] {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+}
+
+.kf_comming_social ul li a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+/*
+	  ============================================================
+		   Transform Effect
+	  ============================================================
+*/
+
+.latest_blog:hover figure img, .news_detail figure:hover img, .news_list:hover figure img {
+  transform: scale(1.2) rotateZ(-6deg);
+  -webkit-transform: scale(1.2) rotateZ(-6deg);
+  -ms-transform: scale(1.2) rotateZ(-6deg);
+  -moz-transform: scale(1.2) rotateZ(-6deg);
+  -o-transform: scale(1.2) rotateZ(-6deg);
+}
+
+/*
+	  ============================================================
+		  Content Selection
+	  ============================================================
+*/
+
+::selection, ::-webkit-selection, ::-moz-selection {
+  background: $brand-primary;
+  color: #ffffff;
+}
+
+/*
+	  ============================================================
+		  Single Border Color
+	  ============================================================
+*/
+
+.politician_des:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid $brand-primary;
+}
+
+/*
+	  ============================================================
+		  Outline Color
+	  ============================================================
+*/
+
+.about_welcome a.link_3 {
+  outline: 1px solid $brand-primary;
+}
+
+/*
+	  ============================================================
+		  Gradiant Color
+	  ============================================================
+*/
+
+.countup_bg:before {
+  background: -moz-linear-gradient(left, rgba(65, 192, 220, 1) 0%, rgba(232, 79, 50, 1) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(65, 192, 220, 1)), color-stop(100%, rgba(232, 79, 50, 1)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(65, 192, 220, 1) 0%, rgba(232, 79, 50, 1) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(65, 192, 220, 1) 0%, rgba(232, 79, 50, 1) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(65, 192, 220, 1) 0%, rgba(232, 79, 50, 1) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(65, 192, 220, 1) 0%, rgba(232, 79, 50, 1) 100%);
+  /* W3C */
+}
+
+.purchase_bg:before {
+  background: -moz-linear-gradient(left, rgba(238, 75, 44, 1) 0%, rgba(65, 192, 220, 1) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(238, 75, 44, 1)), color-stop(100%, rgba(65, 192, 220, 1)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(238, 75, 44, 1) 0%, rgba(65, 192, 220, 1) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(238, 75, 44, 1) 0%, rgba(65, 192, 220, 1) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(238, 75, 44, 1) 0%, rgba(65, 192, 220, 1) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(238, 75, 44, 1) 0%, rgba(65, 192, 220, 1) 100%);
+  /* W3C */
+}
+
+/*
+=================================================
+			FROM 0PX TO 479PX
+=================================================
+*/
+@media (max-width: 991px) {
+  .galry_des {
+    background-color: $brand-primary;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .galry_des {
+    background-color: $brand-primary;
+  }
+}
+
+@media (max-width: 767px) {
+  .galry_des {
+    background-color: $brand-primary;
+  }
+}
+
+@media (max-width: 480px) {
+  .galry_des {
+    background-color: $brand-primary;
+  }
+}
