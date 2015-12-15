@@ -6,7 +6,13 @@
     <div class="container">
       <div class="cnt_info">
         <ul>
-          <li><i class="fa fa-twitter"></i> @opendenton</li>
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fa fa-twitter"></i> @opendenton
+            </a>
+          </li>
+          {% endif %}
           <li><i class="fa fa-map-marker"></i> Denton, Texas, US.</li>
         </ul>
       </div>
@@ -19,13 +25,15 @@
               <span class="fa fa-facebook"></span>
             </a>
           </li>
-          {% endif %} {% if site.twitter_username %}
+          {% endif %}
+          {% if site.twitter_username %}
           <li>
             <a href="https://twitter.com/{{ site.twitter_username }}">
               <span class="fa fa-twitter"></span>
             </a>
           </li>
-          {% endif %} {% if site.github_username %}
+          {% endif %}
+          {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}" target="_blank">
               <span class="fa fa-github"></span>

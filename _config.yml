@@ -28,3 +28,7 @@ add_this: "ra-531d26532ab0a8ba"
 
 # Commenting
 disqus_shortname: "opendenton"
+
+# Devleopment options
+sass:
+    # style: compressed

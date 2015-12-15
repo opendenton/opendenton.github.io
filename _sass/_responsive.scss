@@ -740,9 +740,6 @@
   }
   .logo {
     padding: 25px 10px 25px 0;
-    img {
-      width: 200px;
-    }
   }
   .caption,
   .breaking_news,
@@ -1231,6 +1228,7 @@
     padding: 25px 0;
     img {
       width: 80%;
+      height: auto;
     }
   }
   .favorite,

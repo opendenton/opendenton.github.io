@@ -92,40 +92,42 @@ Sidebar heading:	'Lato', sans-serif;
 		   wrapper
 	  ==============================================================
 */
-
-.wrapper, .content, section {
+.wrapper,
+.content,
+section {
   float: left;
   width: 100%;
   overflow: hidden;
 }
-
 header {
   float: left;
   width: 100%;
 }
-
 section {
-  padding: 70px 0px;
+  padding: 70px 0;
 }
-
 /*
 	  ==============================================================
 		   TOP STRIP WRAP CSS START
 	  ==============================================================
 */
-
 header {
   position: absolute;
   z-index: 99999;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   padding-bottom: 5px;
 }
-
 .top_strip {
   width: 100%;
+  background-color: $black;
+  a {
+    color: $white;
+    &:hover {
+      color: $brand-primary;
+    }
+  }
 }
-
 .cnt_info {
   float: left;
   ul {
@@ -133,12 +135,10 @@ header {
     width: 100%;
   }
 }
-
 .scl_icon ul {
   float: left;
   width: 100%;
 }
-
 .cnt_info ul li {
   display: inline-block;
   position: relative;
@@ -148,10 +148,9 @@ header {
     margin-right: 5px;
   }
   &:first-child {
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
-
 .scl_icon {
   float: right;
   ul li {
@@ -170,19 +169,16 @@ header {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   TOP STRIP WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   LOGO & NAVIGATION WRAP CSS START
 	  ==============================================================
 */
-
 .navigation_outr_wrap {
   float: left;
   width: 100%;
@@ -192,7 +188,7 @@ header {
     content: "";
     position: absolute;
     top: -4px;
-    left: 0px;
+    left: 0;
     height: 2px;
     width: 37.5%;
   }
@@ -200,7 +196,7 @@ header {
     content: "";
     position: absolute;
     bottom: -4px;
-    right: 0px;
+    right: 0;
     background-color: #fff;
     height: 2px;
     width: 65%;
@@ -210,7 +206,6 @@ header {
     z-index: 9999999;
   }
 }
-
 .logo {
   float: left;
   padding: 25px 20px;
@@ -219,7 +214,7 @@ header {
     content: "";
     position: absolute;
     right: 100%;
-    top: 0px;
+    top: 0;
     height: 100%;
     width: 2000%;
   }
@@ -240,14 +235,11 @@ header {
     display: block;
   }
 }
-
 /*UI Element Style*/
-
 .ui_element {
   float: right;
   padding-top: 18px;
 }
-
 .menu {
   float: left;
   ul {
@@ -260,8 +252,8 @@ header {
         content: "";
         position: absolute;
         bottom: -22px;
-        left: 0px;
-        right: 0px;
+        left: 0;
+        right: 0;
         margin: auto;
         width: 0;
         height: 2px;
@@ -275,7 +267,9 @@ header {
         font-weight: 600;
         line-height: 14px;
       }
-      &.active:before, &:hover:before, &:focus:before {
+      &.active:before,
+      &:hover:before,
+      &:focus:before {
         width: 70%;
       }
     }
@@ -299,17 +293,17 @@ header {
         &:after {
           content: "";
           position: absolute;
-          left: 0px;
-          top: 0px;
+          left: 0;
+          top: 0;
           height: 100%;
-          width: 0px;
+          width: 0;
           z-index: -1;
         }
         &:hover:after {
           width: 100%;
         }
         a {
-          padding: 15px 15px;
+          padding: 15px;
         }
         &:before {
           content: "";
@@ -321,12 +315,12 @@ header {
       }
       ul {
         position: absolute;
-        top: 0px;
+        top: 0;
         left: 100%;
       }
       > li:hover > ul {
         left: 100%;
-        top: 0px;
+        top: 0;
         opacity: 1;
         visibility: visible;
         transform: scale(1);
@@ -335,7 +329,7 @@ header {
       }
     }
     > li:hover > ul {
-      left: 0px;
+      left: 0;
       top: 100%;
       opacity: 1;
       visibility: visible;
@@ -345,21 +339,16 @@ header {
     }
   }
 }
-
 /*1st DropDown Menu*/
-
 /*2nd DropDown Menu*/
-
 /*Favorite and Search Wrap Start*/
-
 .search-wrapper-area {
   position: absolute;
-  right: 0px;
+  right: 0;
   background: #fff;
   padding: 20px;
   display: none;
 }
-
 .search-area {
   position: relative;
   input {
@@ -372,7 +361,7 @@ header {
     &[type="submit"] {
       float: left;
       position: absolute;
-      right: 0px;
+      right: 0;
       padding: 10px;
       border: none;
       background: #ccc;
@@ -380,24 +369,25 @@ header {
     }
   }
 }
-
-.favorite, .search {
+.favorite,
+.search {
   float: left;
   margin-left: 10px;
   margin-top: 14px;
   position: relative;
 }
-
-.dl-menuwrapper button, .favorite a i, .search a i {
+.dl-menuwrapper button,
+.favorite a i,
+.search a i {
   padding: 9px;
   color: #27282d;
   border: 2px solid #9e9ea0;
 }
-
-.dl-menuwrapper button:hover, .favorite:hover a i, .search:hover a i {
+.dl-menuwrapper button:hover,
+.favorite:hover a i,
+.search:hover a i {
   color: #fff;
 }
-
 .dl-menuwrapper {
   button {
     &:hover:after {
@@ -406,7 +396,7 @@ header {
     }
     background: #fff;
     color: #333;
-    padding: 0px;
+    padding: 0;
     height: 36px;
     width: 40px;
     &:after {
@@ -419,19 +409,16 @@ header {
   margin-top: 14px;
   display: none;
 }
-
 /*
 	  ==============================================================
 		   LOGO & NAVIGATION WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   BANNER WRAP CSS START
 	  ==============================================================
 */
-
 .banner {
   float: left;
   width: 100%;
@@ -443,8 +430,8 @@ header {
       &:before {
         content: "";
         position: absolute;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.6);
@@ -456,19 +443,18 @@ header {
     }
   }
 }
-
 .caption {
   position: absolute;
   width: 535px;
   top: 50%;
   left: 50%;
-  margin: -160px 0px 0px -558px;
+  margin: -160px 0 0 -558px;
   h6 {
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
     border-left: 4px solid;
-    margin: 0px 0px 16px;
+    margin: 0 0 16px;
     line-height: 15px;
     padding-left: 10px;
   }
@@ -476,7 +462,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
-    margin: 0px 0px 8px;
+    margin: 0 0 8px;
     line-height: normal;
     span {
       font-weight: normal;
@@ -487,7 +473,7 @@ header {
     line-height: 30px;
     color: #fff;
     word-break: break-all;
-    margin: 0px 0px 32px;
+    margin: 0 0 32px;
     font-size: 16px;
   }
   a.link_1:hover {
@@ -497,55 +483,58 @@ header {
     }
   }
 }
-
-.banner .bx-wrapper .bx-pager {
-  padding: 0px;
-  bottom: 150px;
-  left: 50%;
-  margin-left: -566px;
-  text-align: left;
-  width: 538px;
-}
-
-.bx-wrapper .bx-controls-auto {
-  bottom: 150px;
-  left: 50%;
-  margin-left: -566px;
-  text-align: left;
-  width: 538px;
-}
-
-.banner .bx-wrapper .bx-pager.bx-default-pager a {
-  background-color: #fff;
-  &:hover, &.active {
-    background-color: #8e8e91;
+.bx-wrapper {
+  .banner & {
+    .bx-pager {
+      padding: 0;
+      bottom: 50px;
+      left: 50%;
+      // margin-left: -566px;
+      text-align: left;
+      width: 538px;
+      &.bx-default-pager a {
+        background-color: #fff;
+        &:hover,
+        &.active {
+          background-color: #8e8e91;
+        }
+      }
+    }
+    .bx-viewport {
+      border: 0;
+      left: 0;
+      @include prefixer(box-shadow, none, webkit moz spec);
+    }
+  }
+  .bx-controls-auto {
+    bottom: 150px;
+    left: 50%;
+    margin-left: -566px;
+    text-align: left;
+    width: 538px;
   }
 }
-
 /*
 	  ==============================================================
 		   BANNER WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   BREAKING NEWS WRAP CSS START
 	  ==============================================================
 */
-
 .breaking_news {
   float: left;
   width: 1140px;
   position: absolute;
   left: 15px;
-  right: 0px;
+  right: 0;
   margin: auto;
   bottom: 40px;
   border: 2px solid;
   background-color: #fff;
 }
-
 .breaking_hdg {
   padding: 16px 20px 15px;
   float: left;
@@ -562,25 +551,25 @@ header {
     transform: rotate(45deg);
   }
 }
-
 .breaking_news h6 {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 18px;
 }
-
 .brekg_news_des {
   float: none;
   background-color: #fff;
-  padding: 13px 50px 15px 200px;
+  padding: 16px 50px 13px 200px;
+  background: none;
+  position: relative;
   ul {
     float: left;
     width: 100%;
     li {
       display: inline-block;
       color: #000000;
-      margin: 0px;
+      margin: 0;
       line-height: 22px;
       line-height: 18px;
     }
@@ -589,69 +578,69 @@ header {
     display: none;
   }
 }
-
 .breaking_news2 .brekg_news_des .bx-pager.bx-default-pager {
   display: none;
 }
-
 .brekg_news_des {
   .bx-controls-direction {
     position: absolute;
-    width: 60px;
-    top: 18px;
-    right: -30px;
-  }
-  .bx-wrapper .bx-controls-direction a {
-    &.bx-prev, &.bx-next {
+    width: 80px;
+    top: 16px;
+    right: -25px;
+    .bx-prev,
+    .bx-next {
       position: absolute;
-      right: 0px;
+      right: 0;
       top: -5px;
+      &:hover {
+        color: darken($brand-primary, 10%);
+      }
     }
   }
+  .bx-wrapper {
+    margin: 0;
+  }
 }
-
 .breaking_news2 .brekg_news_des .bx-wrapper .bx-controls-direction a {
-  &.bx-prev, &.bx-next {
+  &.bx-prev,
+  &.bx-next {
     position: absolute;
-    right: 0px;
+    right: 0;
     top: -5px;
   }
 }
-
 .brekg_news_des .bx-wrapper .bx-controls-direction a {
-  &.bx-prev:before, &.bx-next:before {
+  &.bx-prev:before,
+  &.bx-next:before {
     content: "\f104";
     font-family: fontawesome;
     font-size: 20px;
     text-indent: 0;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
   }
 }
-
 .breaking_news2 .brekg_news_des .bx-wrapper .bx-controls-direction a {
-  &.bx-prev:before, &.bx-next:before {
+  &.bx-prev:before,
+  &.bx-next:before {
     content: "\f104";
     font-family: fontawesome;
     font-size: 20px;
     text-indent: 0;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
   }
 }
-
-.brekg_news_des .bx-wrapper .bx-controls-direction a.bx-next:before, .breaking_news2 .brekg_news_des .bx-wrapper .bx-controls-direction a.bx-next:before {
+.brekg_news_des .bx-wrapper .bx-controls-direction a.bx-next:before,
+.breaking_news2 .brekg_news_des .bx-wrapper .bx-controls-direction a.bx-next:before {
   content: "\f105";
 }
-
 .breaking_news .bxslider div.item {
   float: left;
 }
-
 /*Breaking News 2*/
-
 .breaking_news2 {
   float: left;
   width: 100%;
@@ -660,8 +649,8 @@ header {
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 29%;
     height: 100%;
     background-color: #fff;
@@ -669,18 +658,14 @@ header {
   &:after {
     content: "";
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     width: 71%;
     height: 100%;
   }
   .container {
     position: relative;
     z-index: 99999;
-  }
-  .brekg_news_des {
-    background: none;
-    position: relative;
   }
   .breaking_hdg {
     background: none;
@@ -712,31 +697,28 @@ header {
       right: -30px;
     }
     .bx-wrapper .bx-controls-direction a {
-      &.bx-prev:before, &.bx-next:before {
+      &.bx-prev:before,
+      &.bx-next:before {
         color: #fff;
       }
     }
   }
 }
-
 /*
 	  ==============================================================
 		   BREAKING NEWS WRAP CSS START
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   PROGRAM LIST WRAP CSS START
 	  ==============================================================
 */
-
 .program_bg {
-  padding: 15px 0px 0px;
+  padding: 15px 0 0;
   float: left;
   width: 100%;
 }
-
 .program_list {
   float: left;
   width: 100%;
@@ -752,18 +734,18 @@ header {
     width: 160%;
     background-color: rgba(55, 45, 44, 0.65);
     z-index: 9;
-    box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.65);
+    box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.65);
   }
   &:after {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: auto;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     background-color: #15bfe9;
   }
   figure img {
@@ -771,11 +753,10 @@ header {
     height: auto;
   }
 }
-
 .program_des {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   padding: 30px 0 0 30px;
@@ -797,16 +778,15 @@ header {
     font-size: 100px;
   }
 }
-
 .program_hover {
   position: absolute;
   width: 100%;
-  top: 0%;
-  left: 0px;
+  top: 0;
+  left: 0;
   margin-top: -92px;
   text-align: center;
   z-index: 99999;
-  padding: 0px 40px;
+  padding: 0 40px;
   opacity: 0;
   h5 {
     color: #fff;
@@ -822,7 +802,6 @@ header {
     word-break: break-all;
   }
 }
-
 .program_list {
   &:hover {
     .program_des {
@@ -848,15 +827,14 @@ header {
     color: #000000;
   }
 }
-
 figure img {
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
-
 .program_list {
   figure {
-    &::before, &::after {
+    &::before,
+    &::after {
       position: absolute;
       top: 10px;
       right: 10px;
@@ -881,7 +859,8 @@ figure img {
     }
   }
   &:hover figure {
-    &::before, &::after {
+    &::before,
+    &::after {
       opacity: 1;
       z-index: 9999;
       -webkit-transform: scale(1);
@@ -889,57 +868,51 @@ figure img {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   PROGRAM LIST WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   WELCOME TO Open Denton WRAP CSS START
 	  ==============================================================
 */
-
 .welcome_bg {}
-
 ul.tab_lnk {
   float: left;
   width: 100%;
   text-align: center;
   margin-bottom: 104px;
 }
-
 .welcome_bg ul.tab_lnk {
   margin-bottom: 85px;
 }
-
 ul.tab_lnk li {
   position: relative;
   display: inline-block;
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 0px;
+    top: 0;
+    right: 0;
+    width: 0;
     height: 1px;
     opacity: 0;
   }
   &:after {
     content: "";
     position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 0px;
+    top: 0;
+    right: 0;
+    width: 0;
     height: 1px;
     opacity: 0;
-    left: 0px;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
     right: auto;
     top: auto;
-    width: 0px;
+    width: 0;
     opacity: 0;
   }
   a {
@@ -949,24 +922,23 @@ ul.tab_lnk li {
     font-weight: bold;
     text-transform: uppercase;
   }
-  &.active:before, &:hover:before {
+  &.active:before,
+  &:hover:before {
     opacity: 1;
     width: 50px;
   }
-  &.active:after, &:hover:after {
+  &.active:after,
+  &:hover:after {
     opacity: 1;
     width: 40px;
   }
 }
-
 /*Image Wrap Style*/
-
 .wel_outr_wrap {
   float: left;
   width: 100%;
   margin-bottom: 25px;
 }
-
 .welcome {
   float: left;
   width: 100%;
@@ -997,9 +969,7 @@ ul.tab_lnk li {
     height: auto;
   }
 }
-
 /*Image Description Wrap Start*/
-
 .wel_demo_des {
   float: left;
   width: 100%;
@@ -1023,8 +993,8 @@ ul.tab_lnk li {
     &:before {
       content: "";
       position: absolute;
-      bottom: 0px;
-      left: 0px;
+      bottom: 0;
+      left: 0;
       width: 70px;
       height: 3px;
       background-color: #000000;
@@ -1038,38 +1008,32 @@ ul.tab_lnk li {
     color: #666;
   }
 }
-
 ul.tab_lnk.nav > li > a {
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     background: none;
   }
 }
-
 .wel_demo_des a.link_3:hover {
   color: #fff;
 }
-
 /*About US Welcome*/
-
 .about_welcome {
-  padding: 95px 0px 85px;
+  padding: 95px 0 85px;
   a.link_3:hover i {
     color: #fff;
   }
 }
-
 /*
 	  ==============================================================
 		   WELCOME TO Open Denton WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   WHAT WE DO WRAP CSS START
 	  ==============================================================
 */
-
 .wht_otr_wrap {
   float: left;
   width: 100%;
@@ -1082,8 +1046,8 @@ ul.tab_lnk.nav > li > a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 50%;
     height: 100%;
     background-attachment: fixed;
@@ -1092,14 +1056,13 @@ ul.tab_lnk.nav > li > a {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 50%;
     height: 100%;
     z-index: 1;
   }
 }
-
 .wht_des {
   float: left;
   width: 100%;
@@ -1111,7 +1074,7 @@ ul.tab_lnk.nav > li > a {
       color: #fff;
       text-transform: uppercase;
       font-weight: bold;
-      margin: 0px 0px 12px;
+      margin: 0 0 12px;
       line-height: 16px;
       font-size: 14px;
       letter-spacing: 2px;
@@ -1130,8 +1093,8 @@ ul.tab_lnk.nav > li > a {
   h4:before {
     content: "";
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     height: 3px;
     width: 70px;
     background-color: #fff;
@@ -1145,7 +1108,7 @@ ul.tab_lnk.nav > li > a {
       position: relative;
       padding: 4px 0 28px 5px;
       z-index: 9999;
-      margin: 0px;
+      margin: 0;
       span {
         float: left;
         display: inline-block;
@@ -1163,10 +1126,9 @@ ul.tab_lnk.nav > li > a {
     }
   }
 }
-
 .wht_icon_des {
   float: none;
-  padding: 0px 0px 0px 90px;
+  padding: 0 0 0 90px;
   width: auto;
   h6 {
     color: #fff;
@@ -1176,48 +1138,46 @@ ul.tab_lnk.nav > li > a {
   }
   p {
     color: #fff;
-    padding: 0px 30px 0px 0px;
+    padding: 0 30px 0 0;
   }
   h6 a {
     color: #fff;
   }
 }
-
 .wht_des {
   .bx-wrapper .bx-pager {
-    padding: 0px;
+    padding: 0;
     text-align: right;
-    font-size: 0px;
+    font-size: 0;
     width: 20px;
   }
   .bx-controls.bx-has-pager.bx-has-controls-direction {
     position: relative;
-    right: 0px;
+    right: 0;
     z-index: 99999;
   }
   .bx-wrapper .bx-pager {
     bottom: 170px;
-    right: 0px;
+    right: 0;
     text-align: center;
   }
 }
-
 .bx-wrapper .bx-controls-auto {
   bottom: 170px;
-  right: 0px;
+  right: 0;
   text-align: center;
 }
-
-.wht_des .bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+.wht_des .bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   margin-bottom: 5px;
 }
-
 .wht_des {
   .bx-wrapper .bx-pager.bx-default-pager a {
     height: 40px;
-    border-radius: 0px;
+    border-radius: 0;
     width: 3px;
-    &:hover, &.active {
+    &:hover,
+    &.active {
       width: 5px;
     }
   }
@@ -1225,28 +1185,28 @@ ul.tab_lnk.nav > li > a {
     z-index: 9999;
   }
 }
-
 /*
 	  ==============================================================
 		   WHAT WE DO WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   HEADING WRAP CSS START
 	  ==============================================================
 */
-
-.hdg_1, .hdg_2, .hdg_3 {
+.hdg_1,
+.hdg_2,
+.hdg_3 {
   float: left;
   width: 100%;
   position: relative;
   text-align: center;
-  margin: -4px 0px 50px;
+  margin: -4px 0 50px;
 }
-
-.hdg_1 h6, .hdg_2 h6, .hdg_3 h6 {
+.hdg_1 h6,
+.hdg_2 h6,
+.hdg_3 h6 {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
@@ -1254,76 +1214,72 @@ ul.tab_lnk.nav > li > a {
   margin-bottom: 1px;
   letter-spacing: 2.4px;
 }
-
-.hdg_1 h4, .hdg_2 h4, .hdg_3 h4 {
+.hdg_1 h4,
+.hdg_2 h4,
+.hdg_3 h4 {
   text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 6px;
   position: relative;
 }
-
-.hdg_1 h4:before, .hdg_2 h4:before, .hdg_3 h4:before {
+.hdg_1 h4:before,
+.hdg_2 h4:before,
+.hdg_3 h4:before {
   content: "";
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
   width: 75px;
   height: 3px;
   background-color: #27282d;
 }
-
 /*Heading 2 Wrap*/
-
-.hdg_2 h6, .hdg_3 h6, .hdg_2 h4, .hdg_3 h4 {
+.hdg_2 h6,
+.hdg_3 h6,
+.hdg_2 h4,
+.hdg_3 h4 {
   color: #fff;
 }
-
 .hdg_2 h4:before {
   background-color: #fff;
 }
-
 /*
 	  ==============================================================
 		   HEADING WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   NEWS & PRESS RELEASE WRAP CSS START
 	  ==============================================================
 */
-
 .services_news_bg {
   background-color: #f7f7f7;
-  .press_new_lst, .margin_bottom {
-    margin: 0px;
+  .press_new_lst,
+  .margin_bottom {
+    margin: 0;
   }
 }
-
 .press_news {
   float: left;
   width: 100%;
   position: relative;
   box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.24);
 }
-
 .press_new_lst {
   float: left;
   width: 100%;
-  margin: 0px 0px 0px;
-  margin-bottom: 50px;
+  margin: 0 0 50px;
 }
-
 .press_news {
   &:before {
     content: "";
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 0px;
+    bottom: 0;
+    left: 0;
+    width: 0;
     height: 4px;
   }
   figure {
@@ -1348,16 +1304,16 @@ ul.tab_lnk.nav > li > a {
         bottom: 10px;
         content: "";
         height: 3px;
-        left: 0px;
+        left: 0;
         position: absolute;
         transform: rotate(-7deg);
-        width: 0%;
+        width: 0;
         z-index: 9;
       }
     }
     figcaption {
       position: absolute;
-      top: 0%;
+      top: 0;
       width: 100%;
       text-align: center;
       opacity: 0;
@@ -1365,14 +1321,13 @@ ul.tab_lnk.nav > li > a {
         display: block;
         font-weight: 300;
         font-size: 45px;
-        margin: -45px 0px 0px;
+        margin: -45px 0 0;
         color: #fff;
         font-family: 'Open Sans', sans-serif;
       }
     }
   }
 }
-
 .news_date {
   float: left;
   width: 100%;
@@ -1390,11 +1345,10 @@ ul.tab_lnk.nav > li > a {
     }
   }
 }
-
 .news_des {
   float: left;
   width: 100%;
-  padding: 0px 20px 30px 20px;
+  padding: 0 20px 30px;
   h6 {
     > a {
       display: block;
@@ -1411,7 +1365,7 @@ ul.tab_lnk.nav > li > a {
     a:before {
       content: "";
       position: absolute;
-      top: 0px;
+      top: 0;
       left: -22px;
       width: 3px;
       height: 100%;
@@ -1434,7 +1388,6 @@ ul.tab_lnk.nav > li > a {
     }
   }
 }
-
 .press_news {
   &:hover {
     &:before {
@@ -1473,10 +1426,10 @@ ul.tab_lnk.nav > li > a {
       bottom: 54px;
       content: "";
       height: 3px;
-      left: 0px;
+      left: 0;
       position: absolute;
       transform: rotate(7deg);
-      width: 0%;
+      width: 0;
       z-index: 9;
     }
   }
@@ -1490,11 +1443,8 @@ ul.tab_lnk.nav > li > a {
     }
   }
 }
-
 /*STYLE 2*/
-
 /*LINK STYLE*/
-
 .press_link {
   float: left;
   width: 100%;
@@ -1515,35 +1465,29 @@ ul.tab_lnk.nav > li > a {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   NEWS & PRESS RELEASE WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   LATEST WORK WRAP CSS START
 	  ==============================================================
 */
-
 .latest_wrk_bg {
   border-top: 1px solid #e9e9e9;
   padding-bottom: 61px;
 }
-
 .latest_galry {
   float: left;
   width: 100%;
   position: relative;
   ul.tab_lnk {
-    margin: 0px 0px 40px;
+    margin: 0 0 40px;
   }
 }
-
 /*Gallery List Wrap Start*/
-
 .filterable_container {
   margin-left: -1.5%;
   margin-right: -1.5%;
@@ -1551,13 +1495,12 @@ ul.tab_lnk.nav > li > a {
     width: 24.7%;
     float: left;
     padding-left: 1.5%;
-    padding-right: 0px;
+    padding-right: 0;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
   }
 }
-
 .galry_item {
   float: left;
   width: 100%;
@@ -1567,10 +1510,10 @@ ul.tab_lnk.nav > li > a {
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 0px;
+    height: 0;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
   }
@@ -1585,7 +1528,7 @@ ul.tab_lnk.nav > li > a {
       width: 110%;
       z-index: 9;
       opacity: 0;
-      box-shadow: 0px 0px 0px 5px #fff;
+      box-shadow: 0 0 0 5px #fff;
     }
     img {
       width: 100%;
@@ -1593,8 +1536,8 @@ ul.tab_lnk.nav > li > a {
     }
     figcaption {
       position: absolute;
-      bottom: 0px;
-      left: 0px;
+      bottom: 0;
+      left: 0;
       width: 100%;
       text-align: center;
       z-index: 9999;
@@ -1607,15 +1550,14 @@ ul.tab_lnk.nav > li > a {
     }
   }
 }
-
 .galry_des {
   position: absolute;
   bottom: -50px;
-  right: 0px;
+  right: 0;
   z-index: 99999;
   text-align: right;
   width: 100%;
-  padding: 0px 25px 20px 0px;
+  padding: 0 25px 20px 0;
   opacity: 0;
   p {
     color: #fff;
@@ -1629,7 +1571,6 @@ ul.tab_lnk.nav > li > a {
     text-transform: uppercase;
   }
 }
-
 .galry_item:hover {
   &:before {
     height: 100%;
@@ -1649,22 +1590,19 @@ ul.tab_lnk.nav > li > a {
   }
   .galry_des {
     opacity: 1;
-    bottom: 0px;
+    bottom: 0;
   }
 }
-
 /*
 	  ==============================================================
 		   LATEST WORK WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   PURCHASE NOW WRAP CSS START
 	  ==============================================================
 */
-
 .purchase_bg {
   position: relative;
   background-image: url(/assets/images/purchase-now-bg.jpg);
@@ -1675,8 +1613,8 @@ ul.tab_lnk.nav > li > a {
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0.7;
@@ -1697,7 +1635,6 @@ ul.tab_lnk.nav > li > a {
     position: relative;
   }
 }
-
 .purchase {
   float: left;
   width: 100%;
@@ -1709,14 +1646,14 @@ ul.tab_lnk.nav > li > a {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 0px 0px 21px;
+    margin: 0 0 21px;
     line-height: 18px;
   }
   h4 {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 0px 0px 22px;
+    margin: 0 0 22px;
     line-height: 24px;
   }
   a {
@@ -1727,23 +1664,19 @@ ul.tab_lnk.nav > li > a {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   PURCHASE NOW WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   OUR POLITICAL CAMPAIGN WRAP CSS START
 	  ==============================================================
 */
-
 .politician_bg {
   background: #f9f9f9;
 }
-
 .camp_outr_wrap {
   float: left;
   width: 100%;
@@ -1752,19 +1685,16 @@ ul.tab_lnk.nav > li > a {
     width: 100%;
   }
 }
-
 .campagin_lst {
   float: left;
   width: 100%;
   position: relative;
 }
-
 .campgn_lst1 {
   float: right;
   width: 50%;
   position: relative;
 }
-
 .cam_date {
   float: left;
   position: absolute;
@@ -1777,7 +1707,7 @@ ul.tab_lnk.nav > li > a {
   background-color: #fff;
   border-radius: 100%;
   border: 5px solid #757575;
-  box-shadow: 0px 0px 0px 5px rgba(131, 131, 131, 1), 0px 0px 0px 10px rgba(201, 201, 201, 1);
+  box-shadow: 0 0 0 5px rgba(131, 131, 131, 1), 0 0 0 10px rgba(201, 201, 201, 1);
   &:before {
     content: "";
     position: absolute;
@@ -1797,24 +1727,24 @@ ul.tab_lnk.nav > li > a {
     border-radius: 100%;
     background-color: #838383;
   }
-  h4, h6 {
+  h4,
+  h6 {
     font-weight: bold;
     color: #838383;
     text-transform: uppercase;
     line-height: 26px;
   }
 }
-
 .lst1_des {
   float: none;
-  padding: 0px 0px 0px 160px;
+  padding: 0 0 0 160px;
   width: auto;
   h6 {
     font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
     color: #343434;
-    margin: 0px 0px 4px;
+    margin: 0 0 4px;
     line-height: 31px;
   }
   p {
@@ -1830,7 +1760,7 @@ ul.tab_lnk.nav > li > a {
         margin-right: 5px;
       }
       &:first-child {
-        padding-left: 0px;
+        padding-left: 0;
       }
     }
   }
@@ -1838,13 +1768,11 @@ ul.tab_lnk.nav > li > a {
     color: #838383;
     position: relative;
     display: inline-block;
-    padding: 0px 10px;
+    padding: 0 10px;
     font-weight: bold;
   }
 }
-
 /*List 2 Style*/
-
 .campgn_lst2 {
   float: left;
   position: relative;
@@ -1859,7 +1787,6 @@ ul.tab_lnk.nav > li > a {
     background-color: #d8d8d8;
   }
 }
-
 .campgn_lst1:after {
   content: "";
   position: absolute;
@@ -1869,7 +1796,6 @@ ul.tab_lnk.nav > li > a {
   width: 2px;
   background-color: #d8d8d8;
 }
-
 .campgn_lst2 {
   .cam_date {
     right: -40px;
@@ -1885,49 +1811,42 @@ ul.tab_lnk.nav > li > a {
   }
   .lst1_des {
     float: none;
-    padding: 0px 160px 0px 0px;
+    padding: 0 160px 0 0;
     text-align: right;
   }
 }
-
 /*Hover Style*/
-
 .campgn_lst1:hover .cam_date {
-  h4, h6 {
+  h4,
+  h6 {
     color: #fff;
   }
 }
-
 .campgn_lst2:hover .cam_date {
-  h4, h6 {
+  h4,
+  h6 {
     color: #fff;
   }
 }
-
-.campgn_lst1:hover .cam_date, .campgn_lst2:hover .cam_date {
+.campgn_lst1:hover .cam_date,
+.campgn_lst2:hover .cam_date {
   border: 5px solid #fff;
 }
-
 /*
 	  ==============================================================
 		   OUR POLITICAL CAMPAIGN WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   OUR POLITICIAN WRAP CSS START
 	  ==============================================================
 */
-
 .about_meet_bg {}
-
 .meet_bg {
   padding-top: 58px;
 }
-
 .top_politician_bg {}
-
 .politician {
   float: left;
   padding: 0 0 30px;
@@ -1944,23 +1863,22 @@ ul.tab_lnk.nav > li > a {
     &:before {
       content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 0%;
+      height: 0;
       background-color: rgba(51, 51, 51, 0.8);
     }
   }
 }
-
 .poli_img_des {
   width: 100%;
   text-align: center;
   position: absolute;
-  top: 0%;
-  margin: -100px 0px 0px;
+  top: 0;
+  margin: -100px 0 0;
   z-index: 99999;
-  padding: 0px 25px;
+  padding: 0 25px;
   opacity: 0;
   h6 a {
     display: inline-block;
@@ -1980,7 +1898,6 @@ ul.tab_lnk.nav > li > a {
     word-break: break-all;
   }
 }
-
 .politician_des {
   float: left;
   width: 100%;
@@ -1992,8 +1909,8 @@ ul.tab_lnk.nav > li > a {
     width: 0;
     height: 0;
     top: -15px;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     margin: auto;
     opacity: 0;
     visibility: hidden;
@@ -2016,16 +1933,15 @@ ul.tab_lnk.nav > li > a {
       position: relative;
       a {
         display: block;
-        padding: 0px 15px;
+        padding: 0 15px;
         color: #777;
         font-size: 20px;
       }
     }
   }
 }
-
 .politician:hover {
-  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.18);
   figure:before {
     height: 100%;
   }
@@ -2041,23 +1957,19 @@ ul.tab_lnk.nav > li > a {
     visibility: visible;
   }
 }
-
 /*
 	  ==============================================================
 		   OUR POLITICIAN WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   PROGRESS BAR WRAP CSS START
 	  ==============================================================
 */
-
 .progress_bg {
   background: #f9f9f9;
 }
-
 .progress {
   float: left;
   width: 100%;
@@ -2070,25 +1982,22 @@ ul.tab_lnk.nav > li > a {
     margin-bottom: 20px;
   }
   .progress {
-    margin: 0px;
+    margin: 0;
     height: 4px;
-    border-radius: 0px;
+    border-radius: 0;
     background-color: #e3e5e8;
   }
 }
-
 /*
 	  ==============================================================
 		   PROGRESS BAR WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   COUNT UP WRAP CSS START
 	  ==============================================================
 */
-
 .countup_bg {
   position: relative;
   background-image: url(/assets/images/count-up-bg.jpg);
@@ -2099,8 +2008,8 @@ ul.tab_lnk.nav > li > a {
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0.9;
@@ -2109,7 +2018,6 @@ ul.tab_lnk.nav > li > a {
     position: relative;
   }
 }
-
 .countup {
   float: left;
   width: 100%;
@@ -2130,9 +2038,9 @@ ul.tab_lnk.nav > li > a {
     &:before {
       content: "";
       position: absolute;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
+      bottom: 0;
+      left: 0;
+      right: 0;
       margin: auto;
       width: 55px;
       height: 2px;
@@ -2140,26 +2048,23 @@ ul.tab_lnk.nav > li > a {
     }
   }
   p {
-    margin: 0px;
+    margin: 0;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 14px;
   }
 }
-
 /*
 	  ==============================================================
 		   COUNT UP WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   LATEST BLOG POST WRAP CSS START
 	  ==============================================================
 */
-
 .latest_outer_wrap .hdg_1 {
   h6 {
     margin-bottom: 1px;
@@ -2168,11 +2073,9 @@ ul.tab_lnk.nav > li > a {
     padding-bottom: 7px;
   }
 }
-
 .latst_post_lst .bx-wrapper {
   float: left;
 }
-
 .latest_blog {
   float: left;
   width: 100%;
@@ -2180,8 +2083,8 @@ ul.tab_lnk.nav > li > a {
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -2204,12 +2107,11 @@ ul.tab_lnk.nav > li > a {
     z-index: 99999;
   }
 }
-
 .latest_blog_des {
   position: absolute;
   bottom: 15px;
   z-index: 99999;
-  padding: 0px 80px 0px 25px;
+  padding: 0 80px 0 25px;
   h6 a {
     display: inline-block;
     color: #fff;
@@ -2228,7 +2130,7 @@ ul.tab_lnk.nav > li > a {
       border-left: 2px solid #fff;
       a {
         display: block;
-        padding: 0px 12px;
+        padding: 0 12px;
         color: #fff;
         line-height: 18px;
         i {
@@ -2236,13 +2138,12 @@ ul.tab_lnk.nav > li > a {
         }
       }
       &:first-child {
-        border-left: 0px;
-        padding-left: 0px;
+        border-left: 0;
+        padding-left: 0;
       }
     }
   }
 }
-
 .latst_post_lst .bx-wrapper {
   .bx-pager {
     display: none;
@@ -2281,32 +2182,26 @@ ul.tab_lnk.nav > li > a {
     }
   }
 }
-
 /*Blog Style 2*/
-
 .blog_style2 {
   margin-bottom: 20px;
 }
-
 /*
 	  ==============================================================
 		   LATEST BLOG POST WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   VIDEO & AUDIO WRAP CSS START
 	  ==============================================================
 */
-
 .video_bg {
   float: left;
   width: 100%;
   background-color: #262927;
-  padding: 70px 0px;
+  padding: 70px 0;
 }
-
 .audio_wrap {
   float: left;
   width: 100%;
@@ -2315,12 +2210,12 @@ ul.tab_lnk.nav > li > a {
     &:before {
       content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
-      width: 0px;
-      height: 0px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
       margin: auto;
       background-color: rgba(0, 0, 0, 0.6);
     }
@@ -2348,32 +2243,27 @@ ul.tab_lnk.nav > li > a {
     }
   }
 }
-
 .video_list .owl-controls {
-  .owl-pagination, .owl-buttons {
+  .owl-pagination,
+  .owl-buttons {
     display: none;
   }
 }
-
 /*Hover */
-
 .audio_wrap figure:hover:before {
   width: 100%;
   height: 100%;
 }
-
 /*
 	  ==============================================================
 		   VIDEO & AUDIO WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   PURCHASE NOW 2 WRAP CSS START
 	  ==============================================================
 */
-
 .purchase_now2 {
   float: left;
   width: 100%;
@@ -2396,17 +2286,14 @@ ul.tab_lnk.nav > li > a {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   COMMING UP ELECTION WRAP CSS START
 	  ==============================================================
 */
-
 .counter_bg {
   border-bottom: 4px solid #f9f9f9;
 }
-
 .coming_election {
   float: left;
   width: 100%;
@@ -2415,13 +2302,13 @@ ul.tab_lnk.nav > li > a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 90px 0px;
+  padding: 90px 0;
   background-attachment: fixed;
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -2441,9 +2328,7 @@ ul.tab_lnk.nav > li > a {
     z-index: 9999;
   }
 }
-
 /*Time Counter Style Start*/
-
 .counter_caption {
   width: 100%;
   text-align: center;
@@ -2453,10 +2338,9 @@ ul.tab_lnk.nav > li > a {
     color: #fff;
     text-transform: capitalize;
     font-weight: bold;
-    margin: 0px 0px 40px;
+    margin: 0 0 40px;
   }
 }
-
 ul.countdown {
   list-style: none;
   padding: 0;
@@ -2471,7 +2355,7 @@ ul.countdown {
     width: 29%;
     height: 69.9%;
     left: 12px;
-    top: 0px;
+    top: 0;
   }
   &:after {
     content: "";
@@ -2481,7 +2365,7 @@ ul.countdown {
     width: 29%;
     height: 69.9%;
     right: 12px;
-    top: 0px;
+    top: 0;
   }
   li {
     display: inline-block;
@@ -2489,25 +2373,23 @@ ul.countdown {
     margin-left: 30px;
   }
 }
-
 .banner_counter ul.countdown li:before {
   content: "";
   position: absolute;
   top: 18px;
-  left: 0px;
+  left: 0;
   width: 100%;
   height: 50px;
   border-right: 1px solid #fff;
 }
-
 ul.countdown li {
   span {
     display: inline-block;
     font-size: 36px;
     color: #fff;
     font-weight: bold;
-    padding: 0px;
-    margin: 0px 0px 10px;
+    padding: 0;
+    margin: 0 0 10px;
     line-height: normal;
     width: 100px;
     height: 100px;
@@ -2522,42 +2404,36 @@ ul.countdown li {
     font-weight: bold;
   }
 }
-
 .days {
   padding: 0 10px;
   color: #fff;
 }
-
 /*
 	  ==============================================================
 		   COMMING UP ELECTION WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   TESTIMONIAL WRAP CSS START
 	  ==============================================================
 */
-
 .testimonial_bg {
   background-image: url(/assets/images/testiminial-bg.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
 }
-
 .testimonial_wrap .item {
   margin-left: 30px;
 }
-
 .testi_wrap {
   float: left;
   width: 100%;
   position: relative;
   text-align: center;
   border-bottom: 2px solid #dbd9d9;
-  padding: 30px 0px;
+  padding: 30px 0;
   border-left: 1px solid #f2f2f2;
   border-right: 1px solid #f2f2f2;
   border-top: 1px solid #f2f2f2;
@@ -2573,14 +2449,13 @@ ul.countdown li {
     line-height: 26px;
     word-break: break-all;
     margin-bottom: 20px;
-    padding: 0px 30px;
+    padding: 0 30px;
   }
   a {
     color: #333333;
     display: block;
   }
 }
-
 .testimonial_wrap {
   .owl-pagination {
     display: none;
@@ -2593,17 +2468,17 @@ ul.countdown li {
     width: 30px;
     height: 30px;
     border: 2px solid #dcd9d9;
-    margin: 0px;
-    border-radius: 0px;
+    margin: 0;
+    border-radius: 0;
     background: none;
     margin-left: 10px;
     position: relative;
-    font-size: 0px;
+    font-size: 0;
     &.owl-prev:before {
       content: "\f104";
       font-family: fontawesome;
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 2px;
       color: #838383;
       font-size: 20px;
@@ -2615,7 +2490,7 @@ ul.countdown li {
       content: "\f104";
       font-family: fontawesome;
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 2px;
       color: #838383;
       font-size: 20px;
@@ -2626,19 +2501,16 @@ ul.countdown li {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   TESTIMONIAL WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   CONTACT WITH US WRAP CSS START
 	  ==============================================================
 */
-
 .contact_bg {
   position: relative;
   background-image: url(/assets/images/contact-us-bg.jpg);
@@ -2649,8 +2521,8 @@ ul.countdown li {
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -2660,14 +2532,12 @@ ul.countdown li {
     z-index: 99999;
   }
 }
-
 /*Contact Us Field Wrap Style*/
-
-.contact_wrap, .contact_field {
+.contact_wrap,
+.contact_field {
   float: left;
   width: 100%;
 }
-
 .contact_wrap h5 {
   color: #fff;
   text-transform: uppercase;
@@ -2676,15 +2546,14 @@ ul.countdown li {
   font-size: 26px;
   line-height: 20px;
 }
-
 .contact_field {
   margin-bottom: 50px;
   text-align: center;
   input[type="text"] {
     width: 100%;
     height: 50px;
-    padding: 8px 0px;
-    border: 0px;
+    padding: 8px 0;
+    border: 0;
     border-bottom: 1px solid #fff;
     background: none;
     color: #fff;
@@ -2692,15 +2561,16 @@ ul.countdown li {
   textarea {
     width: 100%;
     height: 120px;
-    border: 0px;
+    border: 0;
     border-bottom: 1px solid #fff;
     background: none;
-    padding: 20px 0px;
+    padding: 20px 0;
     resize: none;
     color: #fff;
   }
-  input[type="submit"], button {
-    border: 0px;
+  input[type="submit"],
+  button {
+    border: 0;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
@@ -2709,18 +2579,17 @@ ul.countdown li {
     padding: 20px 25px;
     line-height: 16px;
   }
-  input[type="submit"]:hover, button:hover {
+  input[type="submit"]:hover,
+  button:hover {
     background-color: #000000;
   }
 }
-
 /*Contact Info Wrap Start*/
-
 .contact_info {
   float: left;
   width: 100%;
   margin-bottom: 35px;
-  padding: 0px 10px 0px 50px;
+  padding: 0 10px 0 50px;
   h5 {
     margin-bottom: 40px;
   }
@@ -2732,10 +2601,9 @@ ul.countdown li {
     line-height: 22px;
   }
 }
-
 .contact_des {
   float: none;
-  padding: 0px 0px 0px 50px;
+  padding: 0 0 0 50px;
   span {
     display: block;
     font-size: 16px;
@@ -2745,19 +2613,16 @@ ul.countdown li {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   CONTACT WITH US WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   BREAD CRUMB WRAP CSS START
 	  ==============================================================
 */
-
 .about_bg {
   float: left;
   width: 100%;
@@ -2772,8 +2637,8 @@ ul.countdown li {
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -2782,7 +2647,6 @@ ul.countdown li {
     position: relative;
   }
 }
-
 .aboutus_wrap {
   float: left;
   width: 100%;
@@ -2795,7 +2659,6 @@ ul.countdown li {
     text-transform: uppercase;
   }
 }
-
 .bread_crumb {
   float: left;
   width: 100%;
@@ -2807,16 +2670,16 @@ ul.countdown li {
       font-family: fontawesome;
       color: #fff;
       position: absolute;
-      top: 0px;
+      top: 0;
       left: -4px;
       font-weight: bold;
     }
     &:first-child:before {
-      font-size: 0px;
+      font-size: 0;
     }
     a {
       display: block;
-      padding: 0px 10px;
+      padding: 0 10px;
       color: #fff;
       font-weight: bold;
       text-transform: uppercase;
@@ -2824,33 +2687,29 @@ ul.countdown li {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   BREAD CRUMB WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   ABOUT US SERVICES WRAP CSS START
 	  ==============================================================
 */
-
 .services_abt_bg {
   background: #f9f9f9;
 }
-
 .about_services {
   float: left;
   width: 100%;
   position: relative;
   text-align: center;
-  padding: 0px 20px 20px;
+  padding: 0 20px 20px;
   i {
     display: block;
     font-size: 60px;
-    margin: 0px 0px 16px;
+    margin: 0 0 16px;
     color: #3d3d3d;
   }
   h5 a {
@@ -2864,9 +2723,9 @@ ul.countdown li {
     &:before {
       content: "";
       position: absolute;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
+      bottom: 0;
+      left: 0;
+      right: 0;
       height: 1px;
       width: 50px;
       margin: auto;
@@ -2879,27 +2738,22 @@ ul.countdown li {
     font-weight: 600;
   }
 }
-
 /*
 	  ==============================================================
 		   ABOUT US SERVICES WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   SOCIAL COUNTER WRAP CSS START
 	  ==============================================================
 */
-
 .socil_counter_bg {}
-
 .social_item_list {
   float: left;
   width: 100%;
   position: relative;
 }
-
 .social_item {
   float: left;
   width: 100%;
@@ -2914,10 +2768,9 @@ ul.countdown li {
     padding-top: 15px;
   }
 }
-
 .social_des {
   float: none;
-  padding: 0px 0px 0px 60px;
+  padding: 0 0 0 60px;
   width: auto;
   text-align: left;
   h4 {
@@ -2936,29 +2789,24 @@ ul.countdown li {
   p {
     color: #fff;
     text-transform: capitalize;
-    margin: 0px;
+    margin: 0;
     font-size: 16px;
   }
 }
-
 .social_item_list .col-md-3:first-child .social_item {
-  border-left: 0px;
+  border-left: 0;
 }
-
 /*
 	  ==============================================================
 		   SOCIAL COUNTER WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   OUR ACHIEVEMENT WRAP CSS START
 	  ==============================================================
 */
-
 .achivemnt_bg {}
-
 .achment_wrap {
   float: left;
   width: 100%;
@@ -2967,8 +2815,8 @@ ul.countdown li {
     &:before {
       content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.4);
@@ -2993,56 +2841,47 @@ ul.countdown li {
     }
   }
 }
-
 .achment_des {
   float: left;
   width: 100%;
   padding: 32px 25px;
-  box-shadow: 0 2px 7px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.25);
 }
-
 .achevemnt_des_2 {
   float: left;
   width: 100%;
   padding: 20px 25px;
-  box-shadow: 0 2px 7px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.25);
 }
-
 .achment_des h5 {
   line-height: 20px;
 }
-
 .achevemnt_des_2 h5 {
   line-height: 20px;
   padding: 5px 0 10px;
 }
-
-.achment_des h5 a, .achevemnt_des_2 h5 a {
+.achment_des h5 a,
+.achevemnt_des_2 h5 a {
   font-size: 16px;
   text-transform: capitalize;
   font-weight: bold;
 }
-
 .margin_bottom {
   margin-bottom: 40px;
 }
-
 /*
 	  ==============================================================
 		   OUR ACHIEVEMENT WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   WHERE WE ARE WRAP CSS START
 	  ==============================================================
 */
-
 .where_bg {
   background: #f9f9f9;
 }
-
 .where_we {
   width: 100%;
   float: left;
@@ -3055,20 +2894,19 @@ ul.countdown li {
       display: inline-block;
       position: relative;
       width: 48%;
-      padding: 0px 90px 0px 0px;
+      padding: 0 90px 0 0;
       margin-bottom: 50px;
     }
     &:before {
       content: "";
       position: absolute;
-      top: 0px;
+      top: 0;
       bottom: 50px;
       left: 50%;
       width: 2px;
     }
   }
 }
-
 .year_list {
   display: inline-block;
   position: relative;
@@ -3098,7 +2936,6 @@ ul.countdown li {
     z-index: 10;
   }
 }
-
 .where_des {
   h5 {
     text-transform: uppercase;
@@ -3109,7 +2946,6 @@ ul.countdown li {
     word-break: break-all;
   }
 }
-
 .where_year {
   background-color: #fff;
   border: 5px solid #757575;
@@ -3129,12 +2965,10 @@ ul.countdown li {
     line-height: 80px;
   }
 }
-
 /*Second Li Style*/
-
 .where_we ul li {
   &:nth-child(even) {
-    padding: 0px 0px 0px 90px;
+    padding: 0 0 0 90px;
     width: 48%;
     float: right;
     .where_year {
@@ -3142,7 +2976,7 @@ ul.countdown li {
       right: auto;
     }
     .year_list figure {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
     .where_des {
       margin-bottom: 40px;
@@ -3165,21 +2999,17 @@ ul.countdown li {
     }
   }
 }
-
 /*Hover Style*/
-
 /*
 	  ==============================================================
 		   WHERE WE ARE WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   BECOME A VOLUNTEER WRAP CSS START
 	  ==============================================================
 */
-
 .volunteer_bg {
   position: relative;
   background-image: url(/assets/images/volunter-bg.jpg);
@@ -3190,29 +3020,26 @@ ul.countdown li {
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-
 .skill_bg:before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
 .volunteer_bg .container {
   position: relative;
   z-index: 99999;
 }
-
 .volunteer {
   width: 610px;
   margin: auto;
@@ -3226,7 +3053,6 @@ ul.countdown li {
     float: left;
   }
 }
-
 .volunteer_btn {
   margin: auto;
   position: relative;
@@ -3259,7 +3085,7 @@ ul.countdown li {
         background-color: #fff;
         font-size: 28px;
         border-radius: 100%;
-        box-shadow: 0px 0px 0px 5px rgba(247, 165, 149, 0.7);
+        box-shadow: 0 0 0 5px rgba(247, 165, 149, 0.7);
         text-align: center;
         line-height: 48px;
         vertical-align: middle;
@@ -3295,7 +3121,7 @@ ul.countdown li {
         font-size: 28px;
         border-radius: 100%;
         color: #2196f3;
-        box-shadow: 0px 0px 0px 5px rgba(144, 203, 249, 0.7);
+        box-shadow: 0 0 0 5px rgba(144, 203, 249, 0.7);
         text-align: center;
         line-height: 48px;
         vertical-align: middle;
@@ -3316,19 +3142,16 @@ ul.countdown li {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   BECOME A VOLUNTEER WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   OUR SKILLS WRAP CSS START
 	  ==============================================================
 */
-
 .skill_bg {
   position: relative;
   background-image: url(/assets/images/our-skill-bg.jpg);
@@ -3337,11 +3160,9 @@ ul.countdown li {
   background-size: cover;
   background-attachment: fixed;
 }
-
 .volunteer_bg .container {
   position: relative;
 }
-
 .skills {
   float: left;
   width: 100%;
@@ -3349,10 +3170,9 @@ ul.countdown li {
   ul {
     float: left;
     width: 100%;
-    margin: 0px 0px 30px 0px;
+    margin: 0 0 30px;
   }
 }
-
 .chart {
   display: inline-block;
   width: 185px;
@@ -3371,7 +3191,7 @@ ul.countdown li {
     width: 80px;
     line-height: 82px;
     text-align: center;
-    margin: 16% 0px;
+    margin: 16% 0;
     color: #000;
     font-size: 20px;
     font-weight: bold;
@@ -3391,32 +3211,29 @@ ul.countdown li {
     color: #fff;
   }
 }
-
 /*
 	  ==============================================================
 		   OUR SKILLS WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   WHY WE ARE WRAP CSS START
 	  ==============================================================
 */
-
 .people_bg {}
-
 .goal_wrap {
   margin-bottom: 15px;
   float: left;
   width: 100%;
   .accordion {
     padding: 15px 30px;
-    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.27);
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.27);
     cursor: pointer;
     background-color: #f5f5f5;
   }
-  .accordion-close h6, .accordion-open h6 {
+  .accordion-close h6,
+  .accordion-open h6 {
     font-size: 18px;
     color: #111111;
     text-transform: capitalize;
@@ -3428,7 +3245,6 @@ ul.countdown li {
     font-size: 20px;
   }
 }
-
 .goal_des {
   padding: 20px 30px;
   ul li {
@@ -3443,7 +3259,6 @@ ul.countdown li {
     }
   }
 }
-
 .goal_wrap .accordion-open h6 {
   color: #fff;
   &:after {
@@ -3453,17 +3268,15 @@ ul.countdown li {
     font-size: 20px;
   }
 }
-
 /*Planning Wrap Style*/
-
-.planning_wrap, .planning_detail {
+.planning_wrap,
+.planning_detail {
   float: left;
   width: 100%;
 }
-
 .planning_wrap {
   .nav-tabs {
-    border: 0px;
+    border: 0;
     li a {
       border-radius: 0;
       margin: 0;
@@ -3472,7 +3285,7 @@ ul.countdown li {
   ul li {
     float: left;
     width: 32.333%;
-    margin: 0px 0.4%;
+    margin: 0 0.4%;
     a {
       display: block;
       text-align: center;
@@ -3480,25 +3293,25 @@ ul.countdown li {
       line-height: 26px;
       background-color: #f5f5f5;
       color: #111111;
-      padding: 10px 0px;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.27);
+      padding: 10px 0;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.27);
     }
-    &.active a, &:hover a {
+    &.active a,
+    &:hover a {
       color: #fff;
     }
   }
   .nav-tabs li.active a {
     color: #fff;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       color: #fff;
     }
   }
 }
-
 .planning_detail {
   padding-top: 20px;
 }
-
 .planning_img {
   float: left;
   width: 30%;
@@ -3507,7 +3320,6 @@ ul.countdown li {
     height: auto;
   }
 }
-
 .planning_des {
   padding: 0 0 0 180px;
   float: none;
@@ -3517,24 +3329,20 @@ ul.countdown li {
     line-height: 22px;
   }
 }
-
 p.planning_1 {
   padding-bottom: 20px;
   padding-top: 10px;
 }
-
 /*
 	  ==============================================================
 		   WHY WE ARE WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   SUBCRIBE WRAP CSS START
 	  ==============================================================
 */
-
 .subcribe_des {
   float: left;
   width: 100%;
@@ -3565,60 +3373,59 @@ p.planning_1 {
   button {
     border: 3px solid #fff;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     height: 51px;
     background: none;
     line-height: none;
-    padding: 0px 40px;
+    padding: 0 40px;
     i {
       color: #fff;
       font-size: 16px;
     }
   }
 }
-
 /*
 	  ==============================================================
 		   SUBCRIBE WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   PAGINATION WRAP CSS Start
 	  ==============================================================
 */
-
 .pagination {
   float: left;
   width: 100%;
   text-align: center;
   margin-bottom: 12px;
   .pagination {
-    margin: 0px;
-    border: 0px;
-    border-radius: 0px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
     li {
       display: inline-block;
       margin-right: 3px;
       a {
         color: #666666;
-        border: 0px;
-        margin: 0px;
+        border: 0;
+        margin: 0;
         font-size: 16px;
         padding: 6px 14px;
         border: 1px solid #d9d9d9;
-        border-radius: 0px;
+        border-radius: 0;
         span {
           border: 1px solid #cfcfcf;
           padding: 4px 9px;
         }
-        &:focus, &:hover {
+        &:focus,
+        &:hover {
           background: none;
         }
       }
-      &:hover a, &:focus a {
+      &:hover a,
+      &:focus a {
         color: #fff;
       }
     }
@@ -3627,14 +3434,11 @@ p.planning_1 {
     display: none;
   }
 }
-
 /*Second Pagination*/
-
 .pagination2 {
   margin-top: 20px;
   margin-bottom: 38px;
 }
-
 .pagination {
   ul.pagination {
     float: left;
@@ -3646,19 +3450,16 @@ p.planning_1 {
     padding-top: 5px;
   }
 }
-
 /*
 	  ==============================================================
 		   PAGINATION WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   NEWS WRAP CSS START
 	  ==============================================================
 */
-
 .news_wrap {
   border: 1px solid #d9d9d9;
   margin-bottom: 30px;
@@ -3666,20 +3467,18 @@ p.planning_1 {
   width: 100%;
   position: relative;
 }
-
 .news_wrap_des {
   float: left;
   width: 100%;
   position: relative;
 }
-
 .news_wrap figure {
   margin-bottom: 20px;
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -3689,7 +3488,6 @@ p.planning_1 {
     height: auto;
   }
 }
-
 .news_wrap_des {
   padding: 5px 15px 23px;
   border-bottom: 5px solid;
@@ -3728,31 +3526,27 @@ p.planning_1 {
     }
   }
 }
-
 .news_wrap:hover {
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3);
   figure:before {
     height: 100%;
   }
 }
-
 /*
 	  ==============================================================
 		   NEWS WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   NEWS LIST WRAP CSS START
 	  ==============================================================
 */
-
 .news_list {
   float: left;
   width: 100%;
   position: relative;
-  padding: 0px 0px 40px;
+  padding: 0 0 40px;
   margin-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
   figure {
@@ -3763,10 +3557,9 @@ p.planning_1 {
     }
   }
 }
-
 .news_list_des {
   float: none;
-  padding: 10px 0px 0px 370px;
+  padding: 10px 0 0 370px;
   span {
     display: inline-block;
     color: #fff;
@@ -3783,7 +3576,6 @@ p.planning_1 {
     margin-bottom: 10px;
   }
 }
-
 .author {
   float: left;
   color: #a1a1a1;
@@ -3792,13 +3584,12 @@ p.planning_1 {
     color: #a1a1a1;
   }
 }
-
 .news_list_des {
   > ul > li {
     float: left;
     position: relative;
     > a {
-      padding: 0px 8px;
+      padding: 0 8px;
       color: #a1a1a1;
       > i {
         margin-right: 5px;
@@ -3812,33 +3603,28 @@ p.planning_1 {
     line-height: 25px;
   }
 }
-
 .news_colmn_list.col-md-8 .news_list {
   &:first-child {
-    padding-top: 0px;
+    padding-top: 0;
   }
   &:last-child {
-    border-bottom: 0px;
+    border-bottom: 0;
     padding-bottom: 20px;
   }
 }
-
 /*
 	  ==============================================================
 		   NEWS LIST WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   EVENT WRAP CSS START
 	  ==============================================================
 */
-
 .event_grid_bg {
   padding-bottom: 50px;
 }
-
 .event_wrap {
   float: left;
   width: 100%;
@@ -3850,13 +3636,13 @@ p.planning_1 {
     &:before {
       content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       margin: auto;
-      width: 0px;
-      height: 0px;
+      width: 0;
+      height: 0;
       opacity: 0.7;
     }
     img {
@@ -3866,7 +3652,7 @@ p.planning_1 {
     figcaption {
       position: absolute;
       width: 100%;
-      top: 0px;
+      top: 0;
       text-align: center;
       margin-top: -20px;
       opacity: 0;
@@ -3878,11 +3664,10 @@ p.planning_1 {
     }
   }
 }
-
 .event_des {
   float: left;
   width: 100%;
-  padding: 0px 15px 26px 15px;
+  padding: 0 15px 26px;
   > h6 > a {
     display: block;
     font-size: 20px;
@@ -3901,8 +3686,8 @@ p.planning_1 {
     &:before {
       content: "";
       position: absolute;
-      bottom: 0px;
-      left: 0px;
+      bottom: 0;
+      left: 0;
       width: 50px;
       height: 2px;
     }
@@ -3911,13 +3696,13 @@ p.planning_1 {
       position: relative;
     }
     li:first-child a {
-      padding-left: 0px;
+      padding-left: 0;
     }
   }
   > ul > li > a {
     color: #333;
     font-size: 12px;
-    padding: 0px 5px;
+    padding: 0 5px;
     > i {
       margin-right: 5px;
       font-size: 14px;
@@ -3927,7 +3712,7 @@ p.planning_1 {
     line-height: 27px;
     color: #888;
     word-break: break-all;
-    margin: 0px 0px 28px;
+    margin: 0 0 28px;
   }
   > a {
     font-weight: bold;
@@ -3940,11 +3725,9 @@ p.planning_1 {
     border-left: 4px solid;
   }
 }
-
 /*Hover Style*/
-
 .event_wrap:hover {
-  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
   figure {
     &:before {
       width: 100%;
@@ -3956,19 +3739,16 @@ p.planning_1 {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   EVENT WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   OUR FOCUS WRAP CSS START
 	  ==============================================================
 */
-
 .focus_wrap {
   float: left;
   width: 100%;
@@ -3980,7 +3760,7 @@ p.planning_1 {
     font-weight: bold;
     position: absolute;
     top: -25px;
-    right: 0px;
+    right: 0;
     color: #f7f7f7;
   }
   h6 {
@@ -4003,23 +3783,19 @@ p.planning_1 {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   OUR FOCUS WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   HOW IT WORK WRAP CSS START
 	  ==============================================================
 */
-
 .services_video_bg {
   background-color: #f7f7f7;
 }
-
 .service_video {
   width: 960px;
   margin: auto;
@@ -4029,7 +3805,6 @@ p.planning_1 {
     margin-bottom: 35px;
   }
 }
-
 .video {
   float: left;
   width: 100%;
@@ -4037,8 +3812,8 @@ p.planning_1 {
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -4048,7 +3823,6 @@ p.planning_1 {
     height: auto;
   }
 }
-
 .video_icon {
   position: absolute;
   top: 50%;
@@ -4064,23 +3838,19 @@ p.planning_1 {
     border: 1px solid #fff;
   }
 }
-
 .video:hover .video_icon {
   opacity: 1;
 }
-
 /*
 	  ==============================================================
 		   HOW IT WORK WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   ADVANCE SERVICES WRAP CSS START
 	  ==============================================================
 */
-
 .advance_service {
   float: left;
   width: 100%;
@@ -4095,22 +3865,21 @@ p.planning_1 {
     &:before {
       content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 0px;
+      height: 0;
       opacity: 0.7;
     }
   }
 }
-
 .service_caption {
   float: left;
   width: 100%;
   position: absolute;
   bottom: -50%;
   text-align: center;
-  padding: 0px 20px;
+  padding: 0 20px;
   opacity: 0;
   z-index: -99999;
   p {
@@ -4123,7 +3892,6 @@ p.planning_1 {
     z-index: -9;
   }
 }
-
 .advance_hdg {
   float: left;
   width: 100%;
@@ -4147,9 +3915,9 @@ p.planning_1 {
     &:before {
       content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
+      top: 0;
+      left: 0;
+      right: 0;
       margin: auto;
       height: 3px;
       width: 50px;
@@ -4157,9 +3925,7 @@ p.planning_1 {
     }
   }
 }
-
 /*Hover Style*/
-
 .advance_service {
   &:hover {
     .advance_hdg h6:before {
@@ -4173,8 +3939,9 @@ p.planning_1 {
     }
     .advance_hdg {
       top: 20px;
-      margin: 0px;
-      i, h6 {
+      margin: 0;
+      i,
+      h6 {
         color: #fff;
       }
     }
@@ -4188,13 +3955,11 @@ p.planning_1 {
     color: #000000;
   }
 }
-
 /*
 	  ==============================================================
 		   WHY CHOOSE US WRAP CSS START
 	  ==============================================================
 */
-
 .choose {
   float: left;
   width: 100%;
@@ -4209,17 +3974,16 @@ p.planning_1 {
     padding-left: 25px;
     position: absolute;
     top: 30px;
-    left: 0px;
+    left: 0;
   }
   span {
     display: inline-block;
     text-transform: uppercase;
     color: #333333;
     font-weight: bold;
-    padding: 30px 0px;
+    padding: 30px 0;
   }
 }
-
 .choose_des {
   float: left;
   width: 100%;
@@ -4233,10 +3997,9 @@ p.planning_1 {
     text-align: center;
   }
 }
-
 .kdoe_choose_content {
   float: none;
-  padding: 0px 0px 0px 50px;
+  padding: 0 0 0 50px;
   span {
     color: #fff;
     display: block;
@@ -4249,9 +4012,7 @@ p.planning_1 {
     word-break: break-all;
   }
 }
-
 /*Tab Wrap Style*/
-
 .choose_tab {
   float: left;
   width: 100%;
@@ -4268,21 +4029,22 @@ p.planning_1 {
         display: block;
         color: #a3a4a7;
         text-align: center;
-        padding: 18px 0px;
+        padding: 18px 0;
         border: 1px solid #ececec;
         font-weight: bold;
       }
       &:first-child {
-        margin-left: 0px;
+        margin-left: 0;
       }
-      &.active a, &:hover a, &:focus a {
+      &.active a,
+      &:hover a,
+      &:focus a {
         color: #333333;
         border: 1px solid transparent;
       }
     }
   }
 }
-
 .chose_tab_detail {
   float: left;
   width: 100%;
@@ -4300,45 +4062,39 @@ p.planning_1 {
     }
   }
 }
-
 .tab_img_des {
   float: none;
-  padding: 0px 0px 0px 125px;
+  padding: 0 0 0 125px;
   p {
     color: #a3a4a7;
     word-break: break-all;
   }
 }
-
 .chose_tab_detail p {
   float: left;
 }
-
 /*
 	  ==============================================================
 		   WHY CHOOSE US WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   TEAM WRAP CSS START
 	  ==============================================================
 */
-
 .team-intro {
-  padding: 70px 0px 50px;
+  padding: 70px 0 50px;
   float: left;
   width: 100%;
   position: relative;
 }
-
 .background {
   &:before {
     content: "";
     position: absolute;
     bottom: -56px;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: 1px;
     background-color: #e3e3e3;
@@ -4347,21 +4103,19 @@ p.planning_1 {
     content: "";
     position: absolute;
     bottom: -56px;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: 1px;
     background-color: #e3e3e3;
     bottom: -51px;
   }
 }
-
 .team-testi {
   float: left;
   width: 100%;
   background: #f7f7f7;
-  padding: 70px 0px 40px;
+  padding: 70px 0 40px;
 }
-
 .team_img {
   float: left;
   width: 100%;
@@ -4373,7 +4127,6 @@ p.planning_1 {
     border-bottom: 3px solid;
   }
 }
-
 .team_img_des {
   float: left;
   width: 100%;
@@ -4396,10 +4149,10 @@ p.planning_1 {
   blockquote {
     position: relative;
     background-color: #f4f4f4;
-    border: 0px;
+    border: 0;
     padding: 75px 100px;
     text-align: left;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     p {
       color: #666666;
       font-size: 16px;
@@ -4431,9 +4184,9 @@ p.planning_1 {
     &:before {
       content: "";
       position: absolute;
-      top: 0px;
-      bottom: 0px;
-      left: 0px;
+      top: 0;
+      bottom: 0;
+      left: 0;
       height: 80%;
       width: 3px;
       margin: auto;
@@ -4441,23 +4194,19 @@ p.planning_1 {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   TEAM WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   BACKGROUND WRAP CSS START
 	  ==============================================================
 */
-
 .background {
   position: relative;
 }
-
 .bground_des {
   float: left;
   width: 100%;
@@ -4470,11 +4219,9 @@ p.planning_1 {
     margin-bottom: 30px;
   }
 }
-
 .team-bio .bground_des h4 {
   margin-bottom: 10px;
 }
-
 .bground_des {
   p {
     color: #666666;
@@ -4483,8 +4230,8 @@ p.planning_1 {
   &:before {
     content: "";
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 1px;
     background-color: #e3e3e3;
@@ -4492,33 +4239,30 @@ p.planning_1 {
   &:after {
     content: "";
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 1px;
     background-color: #e3e3e3;
     bottom: -5px;
   }
 }
-
 /*
 	  ==============================================================
 		   BACKGROUND WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   EDUCATION WRAP CSS START
 	  ==============================================================
 */
-
 .education {
   float: left;
   width: 100%;
 }
-
-.edu_year, .edu_des {
+.edu_year,
+.edu_des {
   float: left;
   width: 100%;
   ul {
@@ -4526,22 +4270,20 @@ p.planning_1 {
     width: 100%;
   }
 }
-
 .education h4 {
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 37px;
 }
-
 .edu_year {
   position: relative;
   text-align: center;
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     height: 100%;
     width: 1px;
     background-color: #e3e3e3;
@@ -4549,8 +4291,8 @@ p.planning_1 {
   &:after {
     content: "";
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     height: 100%;
     width: 1px;
     background-color: #e3e3e3;
@@ -4575,13 +4317,12 @@ p.planning_1 {
     }
   }
 }
-
 .edu_des ul {
-  padding: 0px 20px;
+  padding: 0 20px;
   li {
     float: left;
     width: 100%;
-    padding: 30px 0px;
+    padding: 30px 0;
     border-top: 1px solid #e4e4e4;
     figure {
       width: 260px;
@@ -4594,10 +4335,9 @@ p.planning_1 {
     }
   }
 }
-
 .edu_img_des {
   float: none;
-  padding: 0px 0px 0px 280px;
+  padding: 0 0 0 280px;
   h6 {
     font-size: 20px;
     text-transform: uppercase;
@@ -4609,40 +4349,36 @@ p.planning_1 {
     word-break: break-all;
   }
 }
-
 .edu_des ul li {
   &:first-child {
-    border-top: 0px;
-    padding-top: 0px;
+    border-top: 0;
+    padding-top: 0;
   }
   &:nth-child(even) {
     figure {
       float: right;
     }
     .edu_img_des {
-      padding: 0px 280px 0px 0px;
+      padding: 0 280px 0 0;
     }
   }
 }
-
 /*Even LI*/
-
-.team-edu, .team-bio {
+.team-edu,
+.team-bio {
   float: left;
   width: 100%;
 }
-
 .team-edu {
   margin-bottom: 4px;
 }
-
 .education {
-  padding: 42px 0px 10px;
+  padding: 42px 0 10px;
   &:before {
     content: "";
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 1px;
     background-color: #e3e3e3;
@@ -4650,33 +4386,30 @@ p.planning_1 {
   &:after {
     content: "";
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 1px;
     background-color: #e3e3e3;
     bottom: -4px;
   }
 }
-
 /*
 	  ==============================================================
 		   EDUCATION WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   LATEST WORK WRAP CSS START
 	  ==============================================================
 */
-
-.work_wrap, .work_des {
+.work_wrap,
+.work_des {
   float: left;
   width: 100%;
   position: relative;
 }
-
 .work_wrap figure {
   &:before {
     position: absolute;
@@ -4701,7 +4434,6 @@ p.planning_1 {
     transform: scale3d(1.05, 1.05, 1);
   }
 }
-
 .work_hover {
   position: absolute;
   top: -50px;
@@ -4713,7 +4445,6 @@ p.planning_1 {
     color: #fff;
   }
 }
-
 .work_des {
   text-align: center;
   padding: 30px 20px 22px;
@@ -4730,7 +4461,6 @@ p.planning_1 {
     line-height: normal;
   }
 }
-
 .work_wrap:hover {
   img {
     opacity: 0.3;
@@ -4745,7 +4475,6 @@ p.planning_1 {
     top: 50%;
   }
 }
-
 .work_outr {
   &.owl-carousel .owl-wrapper-outer {
     padding-bottom: 30px;
@@ -4761,11 +4490,11 @@ p.planning_1 {
     height: 36px;
     background-color: #fff;
     text-align: center;
-    border-radius: 0px;
+    border-radius: 0;
     top: 50%;
-    font-size: 0px;
+    font-size: 0;
     line-height: 34px;
-    padding: 0px;
+    padding: 0;
     opacity: 1;
   }
   .owl-buttons {
@@ -4783,7 +4512,7 @@ p.planning_1 {
       font-size: 16px;
       color: #666666;
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 12px;
     }
     .owl-next:before {
@@ -4792,7 +4521,7 @@ p.planning_1 {
       font-size: 16px;
       color: #666666;
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 12px;
       content: "\f105";
       left: auto;
@@ -4819,34 +4548,30 @@ p.planning_1 {
       border-width: 8px 0 0 8px;
       border-color: transparent transparent transparent #8a8a8a;
       top: -9px;
-      left: 0px;
+      left: 0;
     }
   }
 }
-
 /*
 	  ==============================================================
 		   LATEST WORK WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   POLITICAL CAREER WRAP CSS START
 	  ==============================================================
 */
-
 .kf_political_career_bg {
   padding-bottom: 60px;
   background-color: #f3f3f3;
 }
-
-.kf_political_career, .kf_year {
+.kf_political_career,
+.kf_year {
   float: left;
   width: 100%;
   position: relative;
 }
-
 .kf_political_career:before {
   content: "";
   position: absolute;
@@ -4856,7 +4581,6 @@ p.planning_1 {
   background-color: #d8d8d8;
   left: 50%;
 }
-
 .kf_year {
   text-align: center;
   h5 {
@@ -4864,26 +4588,22 @@ p.planning_1 {
     font-weight: bold;
   }
 }
-
 .kf_empty {
   float: left;
   width: 100%;
-  padding: 110px 0px 0px;
+  padding: 110px 0 0;
 }
-
 /*Right Side Wrap Style*/
-
 .kf_monthly {
   float: left;
   width: 100%;
   position: relative;
 }
-
 .kf_month_right {
   width: 50%;
   float: right;
   position: relative;
-  padding: 0px 0px 17px 30px;
+  padding: 0 0 17px 30px;
   &:before {
     content: "";
     position: absolute;
@@ -4894,40 +4614,37 @@ p.planning_1 {
     border-radius: 100%;
     background-color: #9c9c9c;
     border: 5px solid #ececec;
-    box-shadow: 0px 0px 0px 10px #fff;
+    box-shadow: 0 0 0 10px #fff;
   }
   h6 {
     color: #ec6f75;
     font-size: 14px;
     text-transform: uppercase;
-    padding: 0px 0px 10px;
-    margin: 0px 0px 30px;
+    padding: 0 0 10px;
+    margin: 0 0 30px;
     border-bottom: 2px solid #d8d8d8;
     display: inline-block;
   }
 }
-
 .kf_month_left h6 {
   color: #ec6f75;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 0px 0px 10px;
-  margin: 0px 0px 30px;
+  padding: 0 0 10px;
+  margin: 0 0 30px;
   border-bottom: 2px solid #d8d8d8;
   display: inline-block;
 }
-
-.kf_month_right h5, .kf_month_left h5 {
+.kf_month_right h5,
+.kf_month_left h5 {
   color: #1a1b1d;
   text-transform: uppercase;
   margin: 0 0 26px;
 }
-
 .kf_month_right p {
   font-size: 16px;
   word-break: break-all;
 }
-
 .kf_month_left {
   p {
     font-size: 16px;
@@ -4948,29 +4665,24 @@ p.planning_1 {
     border-radius: 100%;
     background-color: #9c9c9c;
     border: 5px solid #ececec;
-    box-shadow: 0px 0px 0px 10px #fff;
+    box-shadow: 0 0 0 10px #fff;
   }
 }
-
 /*Left Side Wrap Style*/
-
 /*
 	  ==============================================================
 		   POLITICAL CAREER WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		  PERFORMANCE CHART WRAP CSS START
 	  ==============================================================
 */
-
 .kf_performance_bg {
   float: left;
   width: 100%;
 }
-
 .kf_chart {
   float: left;
   width: 100%;
@@ -4979,19 +4691,16 @@ p.planning_1 {
     height: 250px;
   }
 }
-
 /*
 	  ==============================================================
 		  PERFORMANCE CHART WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   YEARLY PERFORMANCE WRAP CSS START
 	  ==============================================================
 */
-
 .yearly_performance {
   float: left;
   width: 100%;
@@ -5012,7 +4721,7 @@ p.planning_1 {
     }
   }
   p {
-    margin: 0px;
+    margin: 0;
     color: #fff;
     font-size: 16px;
   }
@@ -5025,34 +4734,39 @@ p.planning_1 {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   YEARLY PERFORMANCE WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   EVENT DETAIL WRAP CSS START
 	  ==============================================================
 */
-
-.event_detail_timer, .event_orgnizer, .summary, .event_share, .related_event {
+.event_detail_timer,
+.event_orgnizer,
+.summary,
+.event_share,
+.related_event {
   border-bottom: 1px solid #d3d3d3;
 }
-
 .event_detail_timer {
   padding-bottom: 8px;
   float: left;
   width: 100%;
 }
-
-.event_timer_des, .event_orgnizer, .orgnizer_wrap, .summary, .event_share, .related_event, .related_comment, .leave_reply {
+.event_timer_des,
+.event_orgnizer,
+.orgnizer_wrap,
+.summary,
+.event_share,
+.related_event,
+.related_comment,
+.leave_reply {
   float: left;
   width: 100%;
 }
-
 .event_detail_timer figure {
   margin-bottom: 24px;
   img {
@@ -5060,16 +4774,15 @@ p.planning_1 {
     height: auto;
   }
 }
-
 .event_timer_date {
   width: 120px;
   height: 120px;
   position: absolute;
   text-align: center;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: auto;
   &:before {
     content: "";
@@ -5086,10 +4799,9 @@ p.planning_1 {
     right: 100%;
     height: 100%;
     width: 500%;
-    top: 0px;
+    top: 0;
   }
 }
-
 .border_top {
   position: relative;
   float: left;
@@ -5098,7 +4810,7 @@ p.planning_1 {
     content: "";
     border: solid 1px;
     position: absolute;
-    left: 0px;
+    left: 0;
     height: 500%;
     width: 100%;
   }
@@ -5106,13 +4818,12 @@ p.planning_1 {
     content: "";
     border: solid 1px;
     position: absolute;
-    left: 0px;
+    left: 0;
     height: 500%;
     width: 100%;
-    bottom: 0px;
+    bottom: 0;
   }
 }
-
 .event_timer_date {
   h2 {
     color: #fff;
@@ -5128,7 +4839,6 @@ p.planning_1 {
     text-transform: uppercase;
   }
 }
-
 .event_timer_des {
   p {
     word-break: break-all;
@@ -5141,35 +4851,33 @@ p.planning_1 {
     font-weight: bold;
   }
 }
-
 .timer {
   float: left;
   width: 100%;
   position: relative;
-  padding: 8px 0px 70px;
+  padding: 8px 0 70px;
   background-image: url(/assets/images/timer-bg-01.jpg);
   background-size: cover;
   background-position: center;
   .counter {
     width: 85%;
     margin: 0 auto;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
   }
   &:before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0.9;
   }
 }
-
 .counter {
   position: relative;
-  top: 0px;
+  top: 0;
   width: 100%;
   text-align: center;
   z-index: 9999;
@@ -5180,25 +4888,27 @@ p.planning_1 {
     margin-top: 34px;
   }
 }
-
 /*Event Orgnizer Style*/
-
-.event_orgnizer, .summary, .related_event, .related_comment, .leave_reply {
-  padding: 29px 0px 23px;
+.event_orgnizer,
+.summary,
+.related_event,
+.related_comment,
+.leave_reply {
+  padding: 29px 0 23px;
 }
-
 .event_share {
-  padding: 20px 0px 13px;
+  padding: 20px 0 13px;
 }
-
-.event_orgnizer h6, .summary h6, .related_event > h6, .related_comment > h6 {
+.event_orgnizer h6,
+.summary h6,
+.related_event > h6,
+.related_comment > h6 {
   font-size: 20px;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 20px;
 }
-
 .leave_reply {
   h6 {
     font-size: 20px;
@@ -5211,15 +4921,14 @@ p.planning_1 {
     margin-bottom: 20px;
   }
 }
-
-.related_comment > h6, .related_event > h6, .event_orgnizer > h6 {
+.related_comment > h6,
+.related_event > h6,
+.event_orgnizer > h6 {
   margin-bottom: 20px;
 }
-
 .related_event {
   padding: 29px 0 26px;
 }
-
 .orgnizer_wrap figure {
   width: 110px;
   border-bottom: 2px solid;
@@ -5228,10 +4937,9 @@ p.planning_1 {
     height: auto;
   }
 }
-
 .orgnizer_des {
   float: none;
-  padding: 0px 0px 0px 130px;
+  padding: 0 0 0 130px;
   h6 {
     text-transform: uppercase;
     margin-bottom: 8px;
@@ -5245,9 +4953,9 @@ p.planning_1 {
     }
   }
 }
-
 ul {
-  &.orgnizer_email, &.orgnizer_social {
+  &.orgnizer_email,
+  &.orgnizer_social {
     float: left;
     width: 100%;
     line-height: normal;
@@ -5256,7 +4964,6 @@ ul {
     margin-bottom: 2px;
   }
 }
-
 .orgnizer_email {
   li {
     width: 100%;
@@ -5269,36 +4976,32 @@ ul {
   }
   margin-bottom: 10px;
 }
-
 ul.orgnizer_social {
   margin-bottom: 10px;
 }
-
 .orgnizer_social li {
   float: left;
   position: relative;
   a {
     color: #999999;
-    padding: 0px 10px;
+    padding: 0 10px;
   }
   &:first-child a {
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
-
 /*Summary Wrap Style*/
-
 .summary ul li {
   float: left;
   width: 100%;
   position: relative;
-  padding: 8px 0px 8px 35px;
+  padding: 8px 0 8px 35px;
   &:before {
     content: "\f00c";
     font-family: fontawesome;
     position: absolute;
     top: 8px;
-    left: 0px;
+    left: 0;
     font-size: 16px;
   }
   a {
@@ -5306,9 +5009,7 @@ ul.orgnizer_social {
     line-height: normal;
   }
 }
-
 /*Event Share Style*/
-
 .event_share {
   padding-left: 20px;
   ul li {
@@ -5317,14 +5018,12 @@ ul.orgnizer_social {
     a {
       display: block;
       text-transform: capitalize;
-      padding: 0px 10px 4px;
+      padding: 0 10px 4px;
       color: #999999;
     }
   }
 }
-
 /*Related Event Style*/
-
 .event_list {
   float: left;
   width: 100%;
@@ -5349,7 +5048,7 @@ ul.orgnizer_social {
       float: left;
       position: relative;
       > a {
-        padding: 0px 10px 6px;
+        padding: 0 10px 6px;
         font-size: 12px;
         color: #999999;
         > i {
@@ -5358,7 +5057,7 @@ ul.orgnizer_social {
       }
     }
     li:first-child a {
-      padding-left: 0px;
+      padding-left: 0;
     }
   }
   a {
@@ -5369,22 +5068,20 @@ ul.orgnizer_social {
     margin-bottom: 5px;
   }
 }
-
 /*Pagination Wrap Style*/
-
 .kf_pagination {
   border-bottom: 1px solid #d3d3d3;
-  padding: 20px 0px 19px;
+  padding: 20px 0 19px;
   float: left;
   width: 100%;
-  margin: 0px;
+  margin: 0;
   ul {
     float: left;
     width: 100%;
-    margin: 0px;
+    margin: 0;
     li {
       a {
-        border: 0px;
+        border: 0;
         color: #222222;
         font-size: 16px;
       }
@@ -5394,9 +5091,7 @@ ul.orgnizer_social {
     }
   }
 }
-
 /*Related Comment Style*/
-
 .related_comment {
   padding-bottom: 18px;
   ul {
@@ -5405,7 +5100,7 @@ ul.orgnizer_social {
     li {
       position: relative;
       border-bottom: 1px solid #d3d3d3;
-      padding: 35px 0px 0px;
+      padding: 35px 0 0;
       width: 100%;
       float: left;
       ul {
@@ -5425,15 +5120,13 @@ ul.orgnizer_social {
     }
   }
   > ul > li:first-child {
-    padding-top: 0px;
+    padding-top: 0;
   }
 }
-
 .comment_des {
   float: none;
-  padding: 0px 0px 0px 90px;
+  padding: 0 0 0 90px;
 }
-
 .comment_author {
   float: left;
   margin-bottom: 10px;
@@ -5450,7 +5143,6 @@ ul.orgnizer_social {
     color: #909090;
   }
 }
-
 .comment_des {
   a {
     display: inline-block;
@@ -5469,26 +5161,22 @@ ul.orgnizer_social {
     margin-bottom: 10px;
   }
 }
-
 .related_comment ul {
   ul {
     padding-left: 70px;
     li {
-      padding-bottom: 0px;
+      padding-bottom: 0;
     }
   }
   li:last-child {
-    border-bottom: 0px;
-    padding-bottom: 0px;
+    border-bottom: 0;
+    padding-bottom: 0;
   }
 }
-
 /*Leave A Reply Style*/
-
 .leave_reply {
   padding-bottom: 8px;
 }
-
 .reply_field {
   float: left;
   width: 100%;
@@ -5504,7 +5192,7 @@ ul.orgnizer_social {
     width: 100%;
     height: 235px;
     border: 1px solid #dddddd;
-    padding: 15px 15px;
+    padding: 15px;
     resize: none;
     color: #939393;
   }
@@ -5512,19 +5200,16 @@ ul.orgnizer_social {
     margin-bottom: 13px;
   }
 }
-
 /*
 	  ==============================================================
 		   EVENT DETAIL WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   NEWS DETAIL WRAP CSS START
 	  ==============================================================
 */
-
 .news_detail {
   float: left;
   width: 100%;
@@ -5549,7 +5234,7 @@ ul.orgnizer_social {
     margin-bottom: 15px;
     > li {
       float: left;
-      padding: 0px 10px;
+      padding: 0 10px;
       > a {
         color: #a1a1a1;
       }
@@ -5560,7 +5245,7 @@ ul.orgnizer_social {
       margin-right: 10px;
     }
     &:first-child {
-      padding-left: 0px;
+      padding-left: 0;
     }
   }
   p {
@@ -5595,47 +5280,41 @@ ul.orgnizer_social {
         left: -20px;
         content: "\f10e";
         left: auto;
-        right: 0px;
+        right: 0;
         bottom: -30px;
         top: auto;
       }
     }
   }
 }
-
 /*
 	  ==============================================================
 		   NEWS DETAIL WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   CONTACT US WRAP CSS START
 	  ==============================================================
 */
-
 .kf_contactus {
   float: left;
   width: 100%;
   position: relative;
 }
-
 .kf_contact_map {
   float: left;
   width: 100%;
   .map-canvas {
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 100%;
   }
 }
-
 /*Office Location Wrap Style*/
-
 .kf_location_wrap {
   margin: auto;
   padding: 70px 50px 55px;
@@ -5643,14 +5322,12 @@ ul.orgnizer_social {
   position: relative;
   background: #fff;
 }
-
 ul.kf_office_name {
   float: left;
   width: 100%;
   text-align: center;
-  margin: 0px 0px 50px;
+  margin: 0 0 50px;
 }
-
 .kf_office_name li {
   display: inline-block;
   position: relative;
@@ -5660,18 +5337,18 @@ ul.kf_office_name {
   a {
     display: block;
     color: #333236;
-    padding: 18px 0px;
+    padding: 18px 0;
     font-size: 16px;
     font-weight: bold;
     line-height: normal;
   }
-  &.active a, &:hover a, &:focus a {
+  &.active a,
+  &:hover a,
+  &:focus a {
     color: #fff;
   }
 }
-
 /*Office Location Info Wrap Style*/
-
 .kf_location_info {
   float: left;
   width: 100%;
@@ -5691,18 +5368,19 @@ ul.kf_office_name {
     color: #333236;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0px 0px 14px;
+    margin: 0 0 14px;
     font-size: 20px;
   }
-  p, span {
+  p,
+  span {
     color: #333236;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 0;
   }
   a {
     color: #333236;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 0;
     display: inline-block;
     margin-bottom: 10px;
   }
@@ -5710,12 +5388,10 @@ ul.kf_office_name {
     display: block;
   }
 }
-
 ul.kf_loc_socil_icon {
   float: left;
   width: 100%;
 }
-
 .kf_loc_socil_icon li {
   display: inline-block;
   position: relative;
@@ -5723,28 +5399,23 @@ ul.kf_loc_socil_icon {
     display: block;
     color: #1f1e22;
     font-size: 16px;
-    padding: 0px 8px;
+    padding: 0 8px;
   }
 }
-
 /*Hover Style*/
-
 .kf_location_info:hover i {
   background-color: #fff;
 }
-
 /*
 	  ==============================================================
 		   CONTACT US WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   GET IN TOUCH WRAP CSS START
 	  ==============================================================
 */
-
 .kf_touch_field {
   float: left;
   width: 100%;
@@ -5786,9 +5457,7 @@ ul.kf_loc_socil_icon {
     }
   }
 }
-
 /*Get Touch Wrap Image*/
-
 .kf_touch_img {
   float: left;
   width: 100%;
@@ -5798,23 +5467,19 @@ ul.kf_loc_socil_icon {
     height: auto;
   }
 }
-
 /*
 	  ==============================================================
 		   GET IN TOUCH WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   404 PAGE WRAP CSS START
 	  ==============================================================
 */
-
 .kf_404_bg {
   padding-bottom: 60px;
 }
-
 .kf_404_wrap {
   width: 685px;
   margin: auto;
@@ -5829,21 +5494,21 @@ ul.kf_loc_socil_icon {
       font-size: 80px;
       display: inline-block;
       font-weight: bold;
-      padding: 0px 5px;
+      padding: 0 5px;
     }
   }
   h4 {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    margin: 0px 0px 40px;
+    margin: 0 0 40px;
     &:before {
       content: "";
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       width: 50px;
-      left: 0px;
-      right: 0px;
+      left: 0;
+      right: 0;
       margin: auto;
       height: 2px;
     }
@@ -5862,7 +5527,6 @@ ul.kf_loc_socil_icon {
     margin-bottom: 43px;
   }
 }
-
 .kf_404_form {
   position: relative;
   width: 535px;
@@ -5871,22 +5535,24 @@ ul.kf_loc_socil_icon {
   border: 1px solid #c8c8c8;
   input[type="text"] {
     width: 100%;
-    border: 0px;
+    border: 0;
     padding: 17px 60px 16px 40px;
     color: #888888;
   }
-  button, input[type="submit"] {
+  button,
+  input[type="submit"] {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     color: #fff;
     height: 53px;
-    padding: 0px 25px;
+    padding: 0 25px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
   }
-  button:hover, input[type="submit"]:hover {
+  button:hover,
+  input[type="submit"]:hover {
     background-color: #020202;
   }
   i {
@@ -5897,7 +5563,6 @@ ul.kf_loc_socil_icon {
     top: 19px;
   }
 }
-
 .kf_page_list {
   float: left;
   width: 100%;
@@ -5921,7 +5586,7 @@ ul.kf_loc_socil_icon {
         position: absolute;
         font-family: fontawesome;
         top: 6px;
-        left: 0px;
+        left: 0;
         color: #666666;
         font-size: 16px;
       }
@@ -5935,19 +5600,16 @@ ul.kf_loc_socil_icon {
     }
   }
 }
-
 /*
 	  ==============================================================
 		   404 PAGE WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   COMMING SOON PAGE WRAP CSS START
 	  ==============================================================
 */
-
 .kf_comming_bg {
   background-image: url(/assets/images/comeing-soon.jpg);
   background-repeat: no-repeat;
@@ -5957,25 +5619,21 @@ ul.kf_loc_socil_icon {
   background-attachment: fixed;
   padding-bottom: 66px;
 }
-
 .kf_comming_wrap {
   float: left;
   width: 100%;
   text-align: center;
 }
-
 .kf_comming_counter {
   float: left;
   width: 100%;
   text-align: center;
   margin-bottom: 50px;
 }
-
 .kf_comming_wrap a {
   display: inline-block;
   margin-bottom: 25px;
 }
-
 .kf_comming_counter {
   h2 {
     color: #fff;
@@ -5990,7 +5648,8 @@ ul.kf_loc_socil_icon {
     margin-bottom: 42px;
   }
   ul.countdown {
-    &:before, &:after {
+    &:before,
+    &:after {
       display: none;
     }
     li {
@@ -6000,27 +5659,26 @@ ul.kf_loc_socil_icon {
       background-color: rgba(255, 255, 255, 0.5);
       height: 150px;
       width: 150px;
-      border: 0px;
+      border: 0;
       text-align: center;
       position: relative;
       margin-left: 15px;
       span {
         background: none;
-        border: 0px;
+        border: 0;
         padding-top: 10px;
       }
       p {
         position: absolute;
         bottom: 44px;
-        left: 0px;
-        right: 0px;
+        left: 0;
+        right: 0;
         margin: auto;
         color: #020202;
       }
     }
   }
 }
-
 .kf_comming_form {
   width: 560px;
   margin: auto auto 50px;
@@ -6034,20 +5692,21 @@ ul.kf_loc_socil_icon {
     padding: 8px 15px;
     color: #fff;
   }
-  button, input[type="submit"] {
+  button,
+  input[type="submit"] {
     text-transform: uppercase;
     border: 1px solid #fff;
     height: 50px;
-    padding: 0px 25px;
+    padding: 0 25px;
     float: right;
     background: none;
     color: #fff;
   }
-  button:hover, input[type="submit"]:hover {
+  button:hover,
+  input[type="submit"]:hover {
     color: #fff;
   }
 }
-
 .kf_comming_social {
   margin-top: 50px;
   float: left;
@@ -6063,69 +5722,61 @@ ul.kf_loc_socil_icon {
       a {
         display: block;
         font-size: 18px;
-        padding: 0px 15px;
+        padding: 0 15px;
         color: #fff;
       }
     }
   }
 }
-
 /*
 	  ==============================================================
 		   COMMING SOON PAGE WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   TEAM LISTING WRAP CSS END
 	  ==============================================================
 */
-
 .kf_team_listing_bg {
   padding-bottom: 50px;
 }
-
 .politician {
   margin-bottom: 30px;
-  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.18);
   &:hover {
-    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.18);
   }
 }
-
 /*
 	  ==============================================================
 		   TEAM LISTING WRAP CSS END
 	  ==============================================================
 */
-
 /*
 	  ==============================================================
 		   SHORTCODE PAGE WRAP CSS START
 	  ==============================================================
 */
-
 .kf_shortcode_bg {
   padding-top: 57px;
 }
-
-.shortcode_wrap, .shortcode_inner_wrap {
+.shortcode_wrap,
+.shortcode_inner_wrap {
   width: 100%;
   float: left;
   padding-bottom: 50px;
   position: relative;
 }
-
-.shortcode_wrap:before, .shortcode_inner_wrap:before {
+.shortcode_wrap:before,
+.shortcode_inner_wrap:before {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 16px;
   right: 16px;
   border-bottom: 1px solid #e1e1e1;
 }
-
 .shortcode_heading {
   float: left;
   background: none;
@@ -6137,44 +5788,36 @@ ul.kf_loc_socil_icon {
     padding-bottom: 20px;
   }
 }
-
 .kf_hdg_style {
   float: left;
   width: 100%;
 }
-
 /*Heading Wrap Style*/
-
 .shortcode_inner_wrap {
   padding-top: 50px;
 }
-
-.shortcode_para, .shortcode_social, .shortcode_btn {
+.shortcode_para,
+.shortcode_social,
+.shortcode_btn {
   width: 100%;
   float: left;
 }
-
 .shortcode_inner_wrap {
-  .hdg_2, .hdg_3 {
+  .hdg_2,
+  .hdg_3 {
     background-color: #000000;
-    padding: 20px 0px;
+    padding: 20px 0;
   }
 }
-
 /*Heading Wrap Style ends*/
-
 /*Blockquotes Style*/
-
 .shortcode_para p {
   color: #666;
 }
-
 .shortcode_inner_wrap .news_detail {
-  border-bottom: 0px;
+  border-bottom: 0;
 }
-
 /*Socail Icon 1*/
-
 .shortcode_social > ul {
   padding-bottom: 25px;
   > li {
@@ -6182,16 +5825,14 @@ ul.kf_loc_socil_icon {
     > a {
       font-size: 24px;
       color: #666666;
-      padding: 0px 20px;
+      padding: 0 20px;
     }
     &:first-child a {
-      padding: 0px;
+      padding: 0;
     }
   }
 }
-
 /*Icon Style 2*/
-
 .shortcode_inner_wrap .scl_icon {
   float: left;
   width: 100%;
@@ -6199,16 +5840,14 @@ ul.kf_loc_socil_icon {
     a {
       color: #000000;
     }
-    &.active a, &:hover a {
+    &.active a,
+    &:hover a {
       color: #fff;
     }
   }
 }
-
 /*Socail Icon 1 ends*/
-
 /*Link Style*/
-
 .kf_btn_list {
   float: left;
   width: 100%;
@@ -6218,26 +5857,20 @@ ul.kf_loc_socil_icon {
     margin: 20px;
   }
 }
-
 /*Link Style ends*/
-
 /*Skill Style*/
-
 .shortcode_inner_wrap .skills {
   background-color: #000000;
 }
-
 /*
 	  ==============================================================
 		   SHORTCODE PAGE WRAP CSS START
 	  ==============================================================
 */
-
 .dl-menuwrapper button.dl-active:after {
   background: #fff none repeat scroll 0 0;
   box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
 }
-
 .event_des ul li a {
   font-size: 14px;
   line-height: 25px;
