@@ -420,8 +420,6 @@ header {
 	  ==============================================================
 */
 .banner {
-  float: left;
-  width: 100%;
   position: relative;
   ul {
     &.bxslider > li {
@@ -878,59 +876,66 @@ figure img {
 		   WELCOME TO Open Denton WRAP CSS START
 	  ==============================================================
 */
-.welcome_bg {}
+
 ul.tab_lnk {
   float: left;
   width: 100%;
   text-align: center;
   margin-bottom: 104px;
-}
-.welcome_bg ul.tab_lnk {
-  margin-bottom: 85px;
-}
-ul.tab_lnk li {
-  position: relative;
-  display: inline-block;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 1px;
-    opacity: 0;
+
+  .welcome_bg & {
+    margin-bottom: 85px;
+    border: 0;
   }
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 1px;
-    opacity: 0;
-    left: 0;
-    bottom: 0;
-    right: auto;
-    top: auto;
-    width: 0;
-    opacity: 0;
-  }
-  a {
-    display: block;
-    color: #999999;
-    padding: 10px 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  &.active:before,
-  &:hover:before {
-    opacity: 1;
-    width: 50px;
-  }
-  &.active:after,
-  &:hover:after {
-    opacity: 1;
-    width: 40px;
+  li {
+    position: relative;
+    display: inline-block;
+    &.active, &:hover, &:active, &:focus {
+      a {
+        border-color: transparent;
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 1px;
+      opacity: 0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 1px;
+      opacity: 0;
+      left: 0;
+      bottom: 0;
+      right: auto;
+      top: auto;
+      width: 0;
+      opacity: 0;
+    }
+    a {
+      display: block;
+      color: #999999;
+      padding: 10px 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    &.active:before,
+    &:hover:before {
+      opacity: 1;
+      width: 50px;
+    }
+    &.active:after,
+    &:hover:after {
+      opacity: 1;
+      width: 40px;
+    }
   }
 }
 /*Image Wrap Style*/
