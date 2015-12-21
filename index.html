@@ -12,7 +12,7 @@ layout: default
         <div class="col-md-4">
           <div class="program_list">
             <figure>
-              <img src="{{ "/assets/images/program-02.jpg" | prepend: site.baseurl }}" alt="Image Here">
+              {% include image.html img_path="/assets/images/program-02.jpg" alt="Denton Texas" retina=1 %}
             </figure>
             <div class="program_des">
               <h5>PROGRESSIVE PROGRAMS</h5>
@@ -34,7 +34,7 @@ layout: default
         <div class="col-md-4">
           <div class="program_list">
             <figure>
-              <img src="{{ "/assets/images/program-01.jpg" | prepend: site.baseurl }}" alt="Image Here">
+              {% include image.html img_path="/assets/images/program-01.jpg" alt="" retina=0 %}
             </figure>
             <div class="program_des">
               <h5>election campaign</h5>
@@ -56,7 +56,7 @@ layout: default
         <div class="col-md-4">
           <div class="program_list">
             <figure>
-              <img src="{{ "/assets/images/program-03.jpg" | prepend: site.baseurl }}" alt="Image Here">
+              {% include image.html img_path="/assets/images/program-03.jpg" alt="" retina=0 %}
             </figure>
             <div class="program_des">
               <h5>DONATION & Contributuion</h5>
@@ -94,15 +94,17 @@ layout: default
               <div class="col-md-5">
                 <div class="welcome">
                   <figure>
-                    <img src="{{ "/assets/images/welcome-demo-01.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                    {% include image.html img_path="/assets/images/welcome-demo-01.jpg" alt="" retina=0 %}
                   </figure>
                 </div>
               </div>
 
               <div class="col-md-7">
                 <div class="wel_demo_des">
-                  <h6>About our Party</h6>
-                  <h4>Welcome to Democracy</h4>
+                  <h6>About our Group</h6>
+                  <h4>Welcome to Open Denton</h4>
+                  <p>
+                  </p>
                   <p>Democracy means the rule of the people. Hence the rule of the people is not established until they get equal political, social and economic rights. In the west, what is publicized as democracy is not more than a limited social and political
                     democracy with different phases from country to country. In these countries more money can buy more “democracy”. Anyone who can pay for the expensive election’s propaganda costs, can candidate herself or himself for different levels
                     of the governing bodies. Once they have succeeded, they will enjoy the benefits of these “democracies”. that will be provided to the nationalises of that country.</p>
@@ -116,7 +118,7 @@ layout: default
               <div class="col-md-5">
                 <div class="welcome">
                   <figure>
-                    <img src="{{ "/assets/images/welcome-demo-02.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                    {% include image.html img_path="/assets/images/welcome-demo-02.jpg" alt="" retina=0 %}
                   </figure>
                 </div>
               </div>
@@ -138,7 +140,7 @@ layout: default
               <div class="col-md-5">
                 <div class="welcome">
                   <figure>
-                    <img src="{{ "/assets/images/welcome-demo-03.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                    {% include image.html img_path="/assets/images/welcome-demo-03.jpg" alt="" retina=0 %}
                   </figure>
                 </div>
               </div>
@@ -160,7 +162,7 @@ layout: default
               <div class="col-md-5">
                 <div class="welcome">
                   <figure>
-                    <img src="{{ "/assets/images/welcome-demo-04.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                    {% include image.html img_path="/assets/images/welcome-demo-04.jpg" alt="" retina=0 %}
                   </figure>
                 </div>
               </div>
@@ -256,7 +258,7 @@ layout: default
               <div class="col-md-4 col-sm-6">
                 <div class="press_news">
                   <figure class="pres1_style">
-                    <img src="{{ "/assets/images/press-news-01.jpg" | prepend: site.baseurl }}" alt="Image here">
+                    {% include image.html img_path="/assets/images/press-news-01.jpg" alt="" retina=0 %}
                     <figcaption><a data-rel="prettyPhoto[]" href="{{ "/assets/images/banner-01.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a></figcaption>
                   </figure>
                   <div class="news_date">
@@ -276,7 +278,7 @@ layout: default
               <div class="col-md-4 col-sm-6">
                 <div class="press_news">
                   <figure class="pres2_style">
-                    <img src="{{ "/assets/images/press-news-02.jpg" | prepend: site.baseurl }}" alt="Image here">
+                    {% include image.html img_path="/assets/images/press-news-02.jpg" alt="" retina=0 %}
                     <figcaption><a data-rel="prettyPhoto[]" href="{{ "/assets/images/banner-01.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a></figcaption>
                   </figure>
                   <div class="news_date">
@@ -296,7 +298,7 @@ layout: default
               <div class="col-md-4 col-sm-12">
                 <div class="press_news">
                   <figure class="pres2_style">
-                    <img src="{{ "/assets/images/press-news-03.jpg" | prepend: site.baseurl }}" alt="Image here">
+                    {% include image.html img_path="/assets/images/press-news-03.jpg" alt="" retina=0 %}
                     <figcaption><a data-rel="prettyPhoto[]" href="{{ "/assets/images/banner-01.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a></figcaption>
                   </figure>
                   <div class="news_date">
@@ -306,7 +308,7 @@ layout: default
                     </ul>
                   </div>
                   <div class="news_des">
-                    <h6><a href="#">New Plan & Instructions</a></h6>
+                    <h6><a href="#">New Plan &amp; Instructions</a></h6>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore..</p>
                     <a href="#">Read More <i class="fa fa-long-arrow-right"></i> </a>
                   </div>
@@ -350,7 +352,7 @@ layout: default
           <div class="home_gallery filterable-item all 2">
             <div class="galry_item">
               <figure>
-                <img src="{{ "/assets/images/latest-wrk-01.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                {% include image.html img_path="/assets/images/latest-wrk-01.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/latest-wrk-01.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a>
                 </figcaption>
@@ -365,7 +367,7 @@ layout: default
           <div class="home_gallery filterable-item all 2 4">
             <div class="galry_item">
               <figure>
-                <img src="{{ "/assets/images/latest-wrk-02.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                {% include image.html img_path="/assets/images/latest-wrk-02.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/latest-wrk-02.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a>
                 </figcaption>
@@ -380,7 +382,7 @@ layout: default
           <div class="home_gallery filterable-item all 2 3 4">
             <div class="galry_item">
               <figure>
-                <img src="{{ "/assets/images/latest-wrk-05.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                {% include image.html img_path="/assets/images/latest-wrk-05.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/latest-wrk-05.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a>
                 </figcaption>
@@ -395,7 +397,7 @@ layout: default
           <div class="home_gallery filterable-item all 2 3 4">
             <div class="galry_item">
               <figure>
-                <img src="{{ "/assets/images/latest-wrk-04.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                {% include image.html img_path="/assets/images/latest-wrk-04.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/latest-wrk-04.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a>
                 </figcaption>
@@ -410,7 +412,7 @@ layout: default
           <div class="home_gallery filterable-item all 2 1 4 5">
             <div class="galry_item">
               <figure>
-                <img src="{{ "/assets/images/latest-wrk-05.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                {% include image.html img_path="/assets/images/latest-wrk-05.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/latest-wrk-05.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a>
                 </figcaption>
@@ -425,7 +427,7 @@ layout: default
           <div class="home_gallery filterable-item all 2 1 5">
             <div class="galry_item">
               <figure>
-                <img src="{{ "/assets/images/latest-wrk-06.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                {% include image.html img_path="/assets/images/latest-wrk-06.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/latest-wrk-06.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a>
                 </figcaption>
@@ -440,7 +442,7 @@ layout: default
           <div class="home_gallery filterable-item all 2 1 3 5">
             <div class="galry_item">
               <figure>
-                <img src="{{ "/assets/images/latest-wrk-07.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                {% include image.html img_path="/assets/images/latest-wrk-07.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/latest-wrk-07.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a>
                 </figcaption>
@@ -455,7 +457,7 @@ layout: default
           <div class="home_gallery filterable-item all 2 1 3 5">
             <div class="galry_item">
               <figure>
-                <img src="{{ "/assets/images/latest-wrk-08.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                {% include image.html img_path="/assets/images/latest-wrk-08.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/latest-wrk-08.jpg" | prepend: site.baseurl }}"><i class="icon-add52"></i></a>
                 </figcaption>
@@ -572,7 +574,7 @@ layout: default
             <div class="col-md-4 col-sm-6">
               <div class="politician">
                 <figure>
-                  <img src="{{ "/assets/images/politician-01.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                  {% include image.html img_path="/assets/images/politician-01.jpg" alt="" retina=0 %}
                   <figcaption class="poli_img_des">
                     <h6><a href="team-detail.html">ARMY Terry</a></h6>
                     <span>Vice President of Party</span>
@@ -596,7 +598,7 @@ layout: default
             <div class="col-md-4 col-sm-6">
               <div class="politician">
                 <figure>
-                  <img src="{{ "/assets/images/politician-02.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                  {% include image.html img_path="/assets/images/politician-02.jpg" alt="" retina=0 %}
                   <figcaption class="poli_img_des">
                     <h6><a href="team-detail.html">Sara Edward</a></h6>
                     <span>Legal State Advisor</span>
@@ -620,7 +622,7 @@ layout: default
             <div class="col-md-4 col-sm-12">
               <div class="politician">
                 <figure>
-                  <img src="{{ "/assets/images/politician-03.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                  {% include image.html img_path="/assets/images/politician-03.jpg" alt="" retina=0 %}
                   <figcaption class="poli_img_des">
                     <h6><a href="team-detail.html">Mark Henry</a></h6>
                     <span>Health & State Minister</span>
@@ -749,7 +751,7 @@ layout: default
               <ul class="post_bxslider">
                 <li class="latest_blog">
                   <figure>
-                    <img src="{{ "/assets/images/blog-01.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                    {% include image.html img_path="/assets/images/blog-01.jpg" alt="" retina=0 %}
                   </figure>
                   <h6>Protest</h6>
                   <div class="latest_blog_des">
@@ -764,7 +766,7 @@ layout: default
 
                 <li class="latest_blog">
                   <figure>
-                    <img src="{{ "/assets/images/blog-01-2.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                    {% include image.html img_path="/assets/images/blog-01-2.jpg" alt="" retina=0 %}
                   </figure>
                   <h6>Protest</h6>
                   <div class="latest_blog_des">
@@ -779,7 +781,7 @@ layout: default
 
                 <li class="latest_blog">
                   <figure>
-                    <img src="{{ "/assets/images/blog-01-3.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                    {% include image.html img_path="/assets/images/blog-01-3.jpg" alt="" retina=0 %}
                   </figure>
                   <h6>Protest</h6>
                   <div class="latest_blog_des">
@@ -798,7 +800,7 @@ layout: default
             <div class="col-md-6">
               <div class="latest_blog blog_style2">
                 <figure>
-                  <img src="{{ "/assets/images/blog-02.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                  {% include image.html img_path="/assets/images/blog-02.jpg" alt="" retina=0 %}
                 </figure>
                 <h6>CULTURE</h6>
                 <div class="latest_blog_des">
@@ -813,7 +815,7 @@ layout: default
 
               <div class="latest_blog">
                 <figure>
-                  <img src="{{ "/assets/images/blog-03.jpg" | prepend: site.baseurl }}" alt="Image Here">
+                  {% include image.html img_path="/assets/images/blog-03.jpg" alt="" retina=0 %}
                 </figure>
                 <h6>CULTURE</h6>
                 <div class="latest_blog_des">
@@ -839,7 +841,7 @@ layout: default
           <div class="item">
             <div class="audio_wrap">
               <figure>
-                <img src="{{ "/assets/images/video-01.jpg" | prepend: site.baseurl }}" alt="Image here">
+                {% include image.html img_path="/assets/images/video-01.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/video-01.jpg" | prepend: site.baseurl }}"><i class="fa fa-play"></i></a>
                 </figcaption>
@@ -850,7 +852,7 @@ layout: default
           <div class="item">
             <div class="audio_wrap">
               <figure>
-                <img src="{{ "/assets/images/video-03.jpg" | prepend: site.baseurl }}" alt="Image here">
+                {% include image.html img_path="/assets/images/video-03.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/video-03.jpg" | prepend: site.baseurl }}"><i class="fa fa-play"></i></a>
                 </figcaption>
@@ -861,7 +863,7 @@ layout: default
           <div class="item">
             <div class="audio_wrap">
               <figure>
-                <img src="{{ "/assets/images/video-04.jpg" | prepend: site.baseurl }}" alt="Image here">
+                {% include image.html img_path="/assets/images/video-04.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/video-04.jpg" | prepend: site.baseurl }}"><i class="fa fa-play"></i></a>
                 </figcaption>
@@ -872,7 +874,7 @@ layout: default
           <div class="item">
             <div class="audio_wrap">
               <figure>
-                <img src="{{ "/assets/images/video-05.jpg" | prepend: site.baseurl }}" alt="Image here">
+                {% include image.html img_path="/assets/images/video-05.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/video-05.jpg" | prepend: site.baseurl }}"><i class="fa fa-play"></i></a>
                 </figcaption>
@@ -883,7 +885,7 @@ layout: default
           <div class="item">
             <div class="audio_wrap">
               <figure>
-                <img src="{{ "/assets/images/video-06.jpg" | prepend: site.baseurl }}" alt="Image here">
+                {% include image.html img_path="/assets/images/video-06.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/video-06.jpg" | prepend: site.baseurl }}"><i class="fa fa-play"></i></a>
                 </figcaption>
@@ -894,7 +896,7 @@ layout: default
           <div class="item">
             <div class="audio_wrap">
               <figure>
-                <img src="{{ "/assets/images/video-07.jpg" | prepend: site.baseurl }}" alt="Image here">
+                {% include image.html img_path="/assets/images/video-07.jpg" alt="" retina=0 %}
                 <figcaption>
                   <a data-rel="prettyPhoto[]" href="{{ "/assets/images/video-07.jpg" | prepend: site.baseurl }}"><i class="fa fa-play"></i></a>
                 </figcaption>
@@ -970,7 +972,7 @@ layout: default
             <div class="item">
               <div class="testi_wrap">
                 <figure>
-                  <img src="{{ "/assets/images/testimonial-01.png" | prepend: site.baseurl }}" alt="Image Here">
+                  {% include image.html img_path="/assets/images/testimonial-01.png" alt="" retina=0 %}
                 </figure>
                 <p>Thank you for all your help and assistance over the years. I would have no hesitation in voting for you guys. Thank you</p>
                 <a href="#">David Andersion</a>
@@ -980,7 +982,7 @@ layout: default
             <div class="item">
               <div class="testi_wrap">
                 <figure>
-                  <img src="{{ "/assets/images/testimonial-02.png" | prepend: site.baseurl }}" alt="Image Here">
+                  {% include image.html img_path="/assets/images/testimonial-02.png" alt="" retina=0 %}
                 </figure>
                 <p>Your assistance was one of the highlights in my campaign! Amazed by your ability to transform my thoughts into a focused message</p>
                 <a href="#">Joanna Doe</a>
@@ -990,7 +992,7 @@ layout: default
             <div class="item">
               <div class="testi_wrap">
                 <figure>
-                  <img src="{{ "/assets/images/testimonial-01.png" | prepend: site.baseurl }}" alt="Image Here">
+                  {% include image.html img_path="/assets/images/testimonial-01.png" alt="" retina=0 %}
                 </figure>
                 <p>They were involved in nearly every aspect of the campaign strategy and execution. The results exceeded my highest expectations. </p>
                 <a href="#">Matt Jefferson</a>
@@ -1000,7 +1002,7 @@ layout: default
             <div class="item">
               <div class="testi_wrap">
                 <figure>
-                  <img src="{{ "/assets/images/testimonial-02.png" | prepend: site.baseurl }}" alt="Image Here">
+                  {% include image.html img_path="/assets/images/testimonial-02.png" alt="" retina=0 %}
                 </figure>
                 <p>Thank you for your support and regular updates. This really is inspiring, good job! I totally love the theme. It makes my job so much easier</p>
                 <a href="#">Ricky Martinez</a>
