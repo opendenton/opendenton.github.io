@@ -17,9 +17,13 @@
   <meta name="author" content="Open Denton">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="{{ site.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/images/og.png">
   <meta property="twitter:creator" content="{{ site.twitter_username }}">
   <meta property="twitter:site" content="{{ site.twitter_username }}">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="{{ site.twitter_username }}">
 
   <!-- METADATA / OG / TWITTER -->
   {% if page.desc %}
@@ -39,11 +43,14 @@
   <meta name="keywords" content="{{ site.keywords }}">
   {% endif %}
 
-  <!-- TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="{{ site.twitter_username }}">
-  <meta name="twitter:creator" content="{{ site.twitter_username }}">
-  <meta name="twitter:image" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/images/og.png">
+  {% if page.image %}
+    {% capture meta_img %}/assets/images/posts/{{ page.image }} {% endcapture %}
+    <meta property="og:image" content="{{ site.url }}{{ meta_img }}">
+    <meta name="twitter:image" content="{{ site.url}}{{ meta_img }}">
+  {% else %}
+    <meta property="og:image" content="{{ site.url }}/images/og.png">
+    <meta name="twitter:image" content="{{ site.url }}/images/og.png">
+  {% endif %}
 
   <!-- FAVICONS -->
   <link rel="apple-touch-icon" sizes="57x57" href="{{ "/assets/favicons/apple-touch-icon-57x57.png" | prepend: site.baseurl }}">
