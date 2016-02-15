@@ -20,17 +20,17 @@ layout: default
 				<!--News Deatail Wrap Start-->
 				<div class="col-md-8">
 					<article class="post news_detail" itemscope itemtype="http://schema.org/BlogPosting">
-						<figure>
-							<img src="extra-images/news-detail-01.jpg" alt="Image Here">
-						</figure>
+						{% if page.image %}
+							<figure>
+								{% capture img_src %}/assets/images/posts/{{ page.image }} {% endcapture %}
+								{% include image.html src=img_src alt=page.title retina=0 %}
+							</figure>
+						{% endif %}
 						<h4>{{ page.title }}</h4>
 						<ul>
 							{% if page.author %}
-							{% for authors in site.data.authors %}
-							{% if authors.username == page.author %}
+							{% assign authors = site.data.authors[page.author] %}
 							<li>by <a href="{{ authors.twitter }}"> {% if page.author %}<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} </a>- <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></li>
-							{% endif %}
-							{% endfor %}
 							{% endif %}
 							{% comment %}<li> <a href="#"> <i class="fa fa-heart-o"></i>144 </a> </li>{% endcomment %}
 							{% if site.disqus_shortname %}
@@ -69,8 +69,7 @@ layout: default
 				<!--Aside Wrap Start-->
 				<div class="col-md-4">
 					{% if page.author %}
-					{% for authors in site.data.authors %}
-					{% if authors.username == page.author %}
+					{% assign authors = site.data.authors[page.author] %}
 
 					<div class="aside_user">
 						<div class="politician">
@@ -94,8 +93,6 @@ layout: default
 							</div>
 						</div>
 					</div>
-					{% endif %}
-					{% endfor %}
 					{% endif %}
 
 					<div class="aside_cat aside">

@@ -1180,20 +1180,6 @@ ul {
 
 /*
 	  ============================================================
-		   Transform Effect
-	  ============================================================
-*/
-
-.latest_blog:hover figure img, .news_detail figure:hover img, .news_list:hover figure img {
-  transform: scale(1.2) rotateZ(-6deg);
-  -webkit-transform: scale(1.2) rotateZ(-6deg);
-  -ms-transform: scale(1.2) rotateZ(-6deg);
-  -moz-transform: scale(1.2) rotateZ(-6deg);
-  -o-transform: scale(1.2) rotateZ(-6deg);
-}
-
-/*
-	  ============================================================
 		  Content Selection
 	  ============================================================
 */

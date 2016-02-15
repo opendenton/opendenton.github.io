@@ -4,6 +4,7 @@ title: "Introducing Open Denton"
 date: 2015-12-14T10:31:05-06:00
 author: danminshew
 category: community
+image: welcome-open-denton.png
 ---
 
 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
