@@ -1,17 +1,131 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!--Bread Crumb Wrap Start-->
+<div class="about_bg">
+	<div class="container">
+		<div class="aboutus_wrap">
+			<h4>Blog Post</h4>
+		</div>
+	</div>
+</div>
+<!--Bread Crumb Wrap Start-->
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+<!--Content Wrap Start-->
+<div class="content">
+	<section>
+		<div class="container">
+			<div class="row">
+				<!--News Deatail Wrap Start-->
+				<div class="col-md-8">
+					<article class="post news_detail" itemscope itemtype="http://schema.org/BlogPosting">
+						<figure>
+							<img src="extra-images/news-detail-01.jpg" alt="Image Here">
+						</figure>
+						<h4>{{ page.title }}</h4>
+						<ul>
+							{% if page.author %}
+							{% for authors in site.data.authors %}
+							{% if authors.username == page.author %}
+							<li>by <a href="{{ authors.twitter }}"> {% if page.author %}<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} </a>- <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></li>
+							{% endif %}
+							{% endfor %}
+							{% endif %}
+							{% comment %}<li> <a href="#"> <i class="fa fa-heart-o"></i>144 </a> </li>{% endcomment %}
+							{% if site.disqus_shortname %}
+							<li> <a href="{{ page.url}}#disqus_thread"> <i class="fa fa-comment-o"></i>0</a> </li>
+							{% endif %}
+							{% comment %}<li> <a href="#"> <i class="fa fa-eye"></i>12,998 </a> </li>{% endcomment %}
+						</ul>
+						<div class="content-inner">
+							{{ content }}
+						</div>
+					</article>
 
-</article>
+					<!--Next and Previous Wrap Start-->
+					<div class="kf_pagination">
+						<ul class="pagination">
+							{% if page.previous.url %}
+							<li class="pull-left"> <a aria-label="Previous" href="{{ page.previous.url }}"><b>« Prev Post</b></a></li>
+							{% endif %}
+							{% if page.next.url %}
+							<li class="pull-right"> <a aria-label="Next" href="{{ page.next.url }}"><b> Next Post »</b></a></li>
+							{% endif %}
+						</ul>
+					</div>
+					<!--Next and Previous Wrap End-->
 
-{% include comments.html %}
+					<!--Comment Wrap Start-->
+					<div class="related_comment">
+						<h6>Comments</h6>
+						{% include comments.html %}
+					</div>
+					<!--Comment Wrap End-->
+
+				</div>
+				<!--News Deatail Wrap End-->
+
+				<!--Aside Wrap Start-->
+				<div class="col-md-4">
+					{% if page.author %}
+					{% for authors in site.data.authors %}
+					{% if authors.username == page.author %}
+
+					<div class="aside_user">
+						<div class="politician">
+							<figure>
+								<img src="http://www.gravatar.com/avatar/{{ authors.gravatar }}?s=300" title="{{ authors.name }}" class="img-responsive img-thumbnail img-circle">
+								<figcaption class="poli_img_des">
+									{% if authors.name %}<h6>{{ authors.name }}</h6>{% endif %}
+									{% if authors.title %}<span>{{ authors.title}}</span>{% endif %}
+									{% if authors.bio %}<p>{{ authors.bio }}</p>{% endif %}
+								</figcaption>
+							</figure>
+							<div class="politician_des">
+								{% if authors.name %}<h6>{{ authors.name }}</h6>{% endif %}
+								{% if authors.title %}<span>{{ authors.title}}</span>{% endif %}
+								<ul>
+									{% if authors.facebook %}<li><a href="{{ authors.facebook }}"><i class="fa fa-facebook"></i></a></li>{% endif %}
+									{% if authors.twitter %}<li><a href="{{ authors.twitter }}"><i class="fa fa-twitter"></i></a></li>{% endif %}
+									{% if authors.github %}<li><a href="{{ authors.github }}"><i class="fa fa-github"></i></a></li>{% endif %}
+									{% if authors.email %}<li><a href="mailto:{{ authors.github }}"><i class="fa fa-paper-plane"></i></a></li>{% endif %}
+								</ul>
+							</div>
+						</div>
+					</div>
+					{% endif %}
+					{% endfor %}
+					{% endif %}
+
+					<div class="aside_cat aside">
+						<h5>Categories</h5>
+						<ul>
+							{% for category in site.categories %}
+							<li><a href="/{{ category | first | slugize }}/">
+								{{ category | first }}
+							</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+
+					<div class="aside_video aside fitvid">
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/cB0h0eeWsmk" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+					<!--Aside Calender Wrap Start-->
+					<div class="calender aside">
+						<div id='calendar'></div>
+					</div>
+					<iframe width="225" height="570" src="http://meetu.ps/2VCYWF" frameborder="0"></iframe>
+					<!--Aside Calender Wrap End-->
+
+				</div>
+				<!--Aside Wrap End-->
+
+			</div>
+		</div>
+	</section>
+
+</div>
+<!--Content Wrap End-->

@@ -1,11 +1,12 @@
 {% comment %}
   We're splitting off the file extension in order to add "@2x"
   if the image is retina ready, else use a regular image with "data-no-retina".
+  Image extension is assumed 3 characters. PNG, JPG, GIF (no JPEG).
 {% endcomment %}
 
-{% capture img_length %}{{ include.img_path | size | minus:4 }}{% endcapture%}
-{% assign img_ext =  include.img_path | slice: -4,4 %}
-{% assign img_name =  include.img_path  | slice: 0,img_length %}
+{% capture img_length %}{{ include.src | size | minus:4 }}{% endcapture%}
+{% assign img_ext =  include.src | slice: -4,4 %}
+{% assign img_name =  include.src  | slice: 0,img_length %}
 
 {% capture img_url %}{{ img_name }}{{ img_ext }}{% endcapture %}
 {% capture img_url_hd %}{{ img_name }}@2x{{ img_ext }}{% endcapture %}

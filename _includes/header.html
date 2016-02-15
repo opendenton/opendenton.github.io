@@ -56,8 +56,8 @@
     <div class="container">
       <!--Logo Wrap Start-->
       <div class="logo">
-        <a href="index.html">
-          {% include image.html img_path="/assets/images/logo.png" alt="Open Denton" retina=1 %}
+        <a href="/">
+          {% include image.html src="/assets/images/logo.png" alt="Open Denton" retina=1 %}
         </a>
       </div>
       <!--Logo Wrap Start-->
@@ -142,22 +142,19 @@
         </div>
         <!--DL Menu END-->
 
-        <!--Favorite Wrap Start-->
-        <div class="favorite">
-          <a href="#"><i class="fa fa-heart"></i></a>
-        </div>
-        <!--Favorite Wrap Start-->
+        {% if site.search %}
         <!--Search Wrap Start-->
         <div class="search">
           <a class="search-fld" href="#"><i class="fa fa-search"></i></a>
           <div class="search-wrapper-area">
             <form class="search-area">
-              <input type="text" placeholder="search here" />
-              <input type="submit" value="Go" />
+              <input type="text" id="search-input" placeholder="search...">
+              <ul id="results-container"></ul>
             </form>
           </div>
         </div>
         <!--Search Wrap Start-->
+        {% endif %}
 
       </div>
       <!--Navigation Wrap End-->

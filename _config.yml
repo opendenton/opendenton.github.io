@@ -14,7 +14,7 @@ description: > # this means to ignore newlines until "baseurl:"
   and government transparency.
 keywords: "open data, denton, open gov, tech, civic tech"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.opendenton.com" # the base hostname & protocol for your site
+url: "https://www.opendenton.com" # the base hostname & protocol for your site
 twitter_username: opendenton
 github_username:  opendenton
 facebook_username: opendenton
@@ -28,6 +28,9 @@ add_this: "ra-531d26532ab0a8ba"
 
 # Commenting
 disqus_shortname: "opendenton"
+
+# Enable site search
+search: true
 
 # Devleopment options
 sass:

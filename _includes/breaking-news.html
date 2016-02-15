@@ -1,0 +1,19 @@
+<!-- Breaking News -->
+<div class="breaking_news">
+	<div class="breaking_hdg">
+		<h6>Community Updates</h6>
+	</div>
+	<div class="brekg_news_des">
+		<div class="bxslider">
+			{% for update in site.data.community_updates %}
+			<div class="item">
+				{% if update.link %}
+					<a href="{{ update.link }}">{{ update.title }}</a>
+				{% else %}
+					{{ update.title }}
+				{% endif %}
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
