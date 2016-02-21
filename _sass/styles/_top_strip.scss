@@ -1,0 +1,59 @@
+/*
+==============================================================
+   TOP STRIP WRAP CSS START
+==============================================================
+*/
+header#header {
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  padding-bottom: 5px;
+}
+.top_strip {
+  width: 100%;
+  background-color: $black;
+  a {
+    color: $white;
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+}
+.cnt_info {
+  float: left;
+  ul {
+    float: left;
+    width: 100%;
+  }
+}
+.scl_icon ul {
+  float: left;
+  width: 100%;
+}
+.cnt_info ul li {
+  display: inline-block;
+  position: relative;
+  color: $white;
+  padding: 10px 16px;
+  i {
+    margin-right: 5px;
+  }
+  &:first-child {
+    padding-left: 0;
+  }
+}
+.scl_icon {
+  float: right;
+  ul li {
+    display: inline-block;
+    position: relative;
+    @include transform(skewX(-30deg));
+    a {
+      display: block;
+      padding: 12px 12px 13px;
+      color: $white;
+      @include transform(skewX(30deg));
+    }
+  }
+}

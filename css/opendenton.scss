@@ -1,29 +1,16 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
-// Brand colors
-// $brand-primary: #ef4a2b; // red
-// $brand-secondary: #3fb3e5; // blue
-
-$brand-primary: #64BC69; // green
-$brand-secondary: #569B56; // dark green
-
-// Various color standards
-$black: #27282D;
-$white: #FFF;
-
-// Legacy
-$brand-color: $brand-primary;
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+	"variables",
   "bourbon/bourbon",
+  "mixins",
   "widget",
   "typography",
   "shortcodes",
-  "style",
   "color",
   "responsive",
-  "overrides"
-;
+  "overrides",
+  "styles/style"
+  ;

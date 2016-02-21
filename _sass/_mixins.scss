@@ -1,0 +1,63 @@
+@mixin media($breakpoint) {
+  @if $breakpoint == "mobile" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "tablet" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "desktop" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin above($breakpoint) {
+  @if round($breakpoint) == $breakpoint {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } else {
+    @if $breakpoint == 'mobile' {
+      @media (min-width: 375px) {
+        @content;
+      }
+    } else if $breakpoint == 'tablet' {
+      @media (min-width: 767px) {
+        @content;
+      }
+    } else if $breakpoint == 'desktop' {
+      @media (min-width: 1200px) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin below($breakpoint) {
+  @if round($breakpoint) == $breakpoint {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  } else {
+    @if $breakpoint == 'mobile' {
+      @media (max-width: 375px) {
+        @content;
+      }
+    } else if $breakpoint == 'tablet' {
+      @media (max-width: 767px) {
+        @content;
+      }
+    } else if $breakpoint == 'desktop' {
+      @media (max-width: 1200px) {
+        @content;
+      }
+    }
+  }
+}

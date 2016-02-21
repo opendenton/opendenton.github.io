@@ -1,0 +1,230 @@
+/*
+	  ==============================================================
+		   LOGO & NAVIGATION WRAP CSS START
+	  ==============================================================
+*/
+.navigation_outr_wrap {
+	float: left;
+	width: 100%;
+	position: relative;
+	background-color: $white;
+	&:before {
+		content: "";
+		position: absolute;
+		top: -4px;
+		left: 0;
+		height: 2px;
+		width: 37.5%;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -4px;
+		right: 0;
+		background-color: $white;
+		height: 2px;
+		width: 65%;
+	}
+	.container {
+		position: relative;
+		z-index: 9999999;
+	}
+}
+.logo {
+	float: left;
+	padding: 25px 20px;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		right: 100%;
+		top: 0;
+		height: 100%;
+		width: 2000%;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: -26px;
+		height: 100%;
+		width: 100px;
+		transform: skew(-25deg);
+		top: 0;
+	}
+	img {
+		position: relative;
+		z-index: 10;
+	}
+	a {
+		display: block;
+	}
+}
+/*UI Element Style*/
+.ui_element {
+	float: right;
+	padding-top: 18px;
+}
+.menu {
+	float: left;
+	ul {
+		float: left;
+		width: 100%;
+		li {
+			float: left;
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				bottom: -22px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 0;
+				height: 2px;
+			}
+			a {
+				display: block;
+				text-transform: uppercase;
+				color: $black;
+				font-size: 14px;
+				padding: 25px 15px;
+				font-weight: 600;
+				line-height: 14px;
+			}
+			&.active:before,
+			&:hover:before,
+			&:focus:before {
+				width: 70%;
+			}
+		}
+		ul {
+			width: 250px;
+			position: absolute;
+			top: 50%;
+			left: -50px;
+			background-color: $white;
+			opacity: 0;
+			visibility: hidden;
+			@include transform(scale(0));
+			padding-top: 20px;
+			border-bottom: 4px solid;
+			li {
+				float: left;
+				width: 100%;
+				position: relative;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 0;
+					height: 100%;
+					width: 0;
+					z-index: -1;
+				}
+				&:hover:after {
+					width: 100%;
+				}
+				a {
+					padding: 15px;
+				}
+				&:before {
+					content: "";
+					display: none;
+				}
+			}
+			> li:hover > a {
+				color: $white;
+			}
+			ul {
+				position: absolute;
+				top: 0;
+				left: 100%;
+			}
+			> li:hover > ul {
+				left: 100%;
+				top: 0;
+				opacity: 1;
+				visibility: visible;
+				@include transform(scale(1));
+			}
+		}
+		> li:hover > ul {
+			left: 0;
+			top: 100%;
+			opacity: 1;
+			visibility: visible;
+			@include transform(scale(1));
+		}
+	}
+}
+/*1st DropDown Menu*/
+/*2nd DropDown Menu*/
+/*Favorite and Search Wrap Start*/
+.search-wrapper-area {
+	position: absolute;
+	right: 0;
+	background: $white;
+	padding: 20px;
+	display: none;
+}
+.search-area {
+	position: relative;
+	input {
+		&[type="text"] {
+			float: left;
+			border: 1px solid #ccc;
+			height: 40px;
+			padding: 5px 15px;
+		}
+		&[type="submit"] {
+			float: left;
+			position: absolute;
+			right: 0;
+			padding: 10px;
+			border: none;
+			background: #ccc;
+			color: #333;
+		}
+	}
+}
+.favorite,
+.search {
+	float: left;
+	margin-left: 10px;
+	margin-top: 14px;
+	position: relative;
+}
+.dl-menuwrapper,
+.favorite,
+.search {
+	button, a, i {
+		padding: 9px;
+		color: $black;
+		border: 2px solid #9e9ea0;
+	}
+	&:hover {
+		color: $white;
+	}
+}
+
+.dl-menuwrapper {
+	button {
+		&:hover:after {
+			background: $white;
+			box-shadow: 0 7px 0 $white, 0 14px 0 $white;
+		}
+		background: $white;
+		color: #333;
+		padding: 0;
+		height: 36px;
+		width: 40px;
+		&:after {
+			background: #333;
+			box-shadow: 0 7px 0 #333, 0 14px 0 #333;
+			top: 8px;
+		}
+	}
+	float: left;
+	margin-top: 14px;
+	display: none;
+}
