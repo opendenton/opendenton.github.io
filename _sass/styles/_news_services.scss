@@ -1,0 +1,193 @@
+/*
+	  ==============================================================
+		   NEWS & PRESS RELEASE WRAP CSS START
+	  ==============================================================
+*/
+.services_news_bg {
+  background-color: #f7f7f7;
+  .press_new_lst,
+  .margin_bottom {
+    margin: 0;
+  }
+}
+.press_news {
+  float: left;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.24);
+}
+.press_new_lst {
+  float: left;
+  width: 100%;
+  margin: 0 0 50px;
+}
+.press_news {
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+  }
+  figure {
+    background-color: rgba(0, 0, 0, 1);
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &.pres1_style {
+      &:before {
+        background-color: #fff;
+        bottom: -110px;
+        content: "";
+        height: 50%;
+        left: -10px;
+        position: absolute;
+        transform: rotate(0deg);
+        width: 110%;
+        z-index: 9;
+      }
+      &:after {
+        bottom: 10px;
+        content: "";
+        height: 3px;
+        left: 0;
+        position: absolute;
+        transform: rotate(-7deg);
+        width: 0;
+        z-index: 9;
+      }
+    }
+    figcaption {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      a {
+        display: block;
+        font-weight: 300;
+        font-size: 45px;
+        margin: -45px 0 0;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  }
+}
+.news_date {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  ul li {
+    float: left;
+    position: relative;
+    a {
+      font-size: 12px;
+      color: #474747;
+      text-transform: uppercase;
+      padding: 10px 10px 5px;
+    }
+  }
+}
+.news_des {
+  float: left;
+  width: 100%;
+  padding: 0 20px 30px;
+  h6 {
+    > a {
+      display: block;
+      font-size: 20px;
+      color: #474747;
+      margin-bottom: 9px;
+      text-transform: uppercase;
+      font-weight: bold;
+      position: relative;
+      line-height: 18px;
+      float: left;
+      width: 100%;
+    }
+    a:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -22px;
+      width: 3px;
+      height: 100%;
+      background-color: #474747;
+    }
+  }
+  p {
+    color: #999999;
+    word-break: break-all;
+    margin-bottom: 10px;
+  }
+  a {
+    display: inline-block;
+    float: right;
+    color: #27282d;
+    i {
+      margin-left: 5px;
+      font-weight: normal;
+      color: #27282d;
+    }
+  }
+}
+.press_news {
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+    figure {
+      &.pres1_style:after {
+        width: 100%;
+        bottom: 32px;
+      }
+      figcaption {
+        top: 50%;
+        opacity: 1;
+      }
+      img {
+        opacity: 0.4;
+      }
+      &.pres1_style:before {
+        transform: rotate(-7deg);
+      }
+    }
+  }
+  figure.pres2_style {
+    &:before {
+      background-color: #fff;
+      bottom: -112px;
+      content: "";
+      height: 50%;
+      left: -10px;
+      position: absolute;
+      transform: rotate(0deg);
+      width: 110%;
+      z-index: 9;
+    }
+    &:after {
+      bottom: 54px;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      transform: rotate(7deg);
+      width: 0;
+      z-index: 9;
+    }
+  }
+  &:hover figure.pres2_style {
+    &:after {
+      width: 100%;
+      bottom: 32px;
+    }
+    &:before {
+      transform: rotate(7deg);
+    }
+  }
+}

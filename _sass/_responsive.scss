@@ -3,7 +3,7 @@
 				UP FROM 1200PX
 =================================================
 */
-@media (max-width: 1366px) {
+@include media(desktop) {
   .program_hover span {
     display: none;
   }
@@ -61,7 +61,7 @@
     }
   }
 }
-@media (min-width: 1260px) and (max-width: 1300px) {
+@include media(tablet) {
   .galry_item figure:before {
     width: 165%;
   }

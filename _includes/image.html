@@ -11,8 +11,14 @@
 {% capture img_url %}{{ img_name }}{{ img_ext }}{% endcapture %}
 {% capture img_url_hd %}{{ img_name }}@2x{{ img_ext }}{% endcapture %}
 
-{% if include.retina == 1 %}
-<img src="{{ img_url | prepend: site.baseurl }}" at2x="{{ img_url_hd | prepend: site.baseurl }}" alt="{{ include.alt }}">
+{% if include.class %}
+	{% capture img_class %}{{ include.class }}{% endcapture %}
 {% else %}
-<img src="{{ img_url | prepend: site.baseurl }}" alt="{{ include.alt }}" data-no-retina>
+	{% capture img_class %} {% endcapture %}
+{% endif %}
+
+{% if include.retina == 1 %}
+<img src="{{ img_url | prepend: site.baseurl }}" at2x="{{ img_url_hd | prepend: site.baseurl }}" alt="{{ include.alt }}" class="{{ img_class }}">
+{% else %}
+<img src="{{ img_url | prepend: site.baseurl }}" alt="{{ include.alt }}" class="{{ img_class }}" data-no-retina>
 {% endif %}
