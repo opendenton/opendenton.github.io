@@ -1,43 +1,29 @@
 <!--Banner Wrap Start-->
 <div class="banner">
   <ul class="bxslider">
-    <li>
-      <img src="{{ "/assets/images/banner/banner-01.jpg" | prepend: site.baseurl }}" data-at2x="{{ "/assets/images/banner/banner-01@2x.jpg" | prepend: site.baseurl }}" alt="Startup Weekend Denton">
-      <div class="caption">
-        <h6>Politics</h6>
-        <h2>The Power Of
-          <span> Your Voice </span>
-        </h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-          <span>totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</span>
-        </p>
-        <a class="link_1" href="#">See More <i class="fa fa-angle-right"></i></a>
-      </div>
-    </li>
 
-    <li>
-      <img src="{{ "/assets/images/banner/banner-02.jpg" | prepend: site.baseurl }}" data-at2x="{{ "/assets/images/banner/banner-02@2x.jpg" | prepend: site.baseurl }}" alt="Bootstrap Denton">
-      <div class="caption">
-        <h6>Politics</h6>
-        <h2>The Power Of<span> Your Voice </span></h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-          <span>totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</span>
-        </p>
-        <a class="link_1" href="#">See More <i class="fa fa-angle-right"></i></a>
-      </div>
-    </li>
+    {% for slide in site.data.slides %}
 
-    <li>
-      <img src="{{ "/assets/images/banner/banner-03.jpg" | prepend: site.baseurl }}" data-at2x="{{ "/assets/images/banner/banner-03@2x.jpg" | prepend: site.baseurl }}" alt="Open Hack">
+    <li class="banner-{{ forloop.index }}">
+      {% if slide.img %}
+        {% include image.html src=slide.img alt=slide.title retina=slide.img_retina %}
+      {% endif %}
+
       <div class="caption">
-        <h6>Politics</h6>
-        <h2>The Power Of<span> Your Voice </span></h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-          <span>totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</span>
+        {% if slide.title %}
+        <h2>{{ slide.title }} {% if slide.subtitle %}<span>{{ slide.subtitle }}</span>{% endif %}</h2>
+        {% endif %}
+        {% if slide.description %}
+        <p>
+          {{ slide.description }}
         </p>
-        <a class="link_1" href="#">See More <i class="fa fa-angle-right"></i></a>
+        {% endif %}
+        {% if slide.link %}
+        <a class="link_1" href="{{ slide.link }}">See More <i class="fa fa-angle-right"></i></a>
+        {% endif %}
       </div>
     </li>
+    {% endfor %}
   </ul>
 
   {% include breaking-news.html something="this is definitely something" %}

@@ -1,8 +1,23 @@
-- name: Tom Preston-Werner
-  github: mojombo
-
-- name: Parker Moore
-  github: parkr
-
-- name: Liu Fengyun
-  github: liufengyun
+# ---
+# title: "Short title"
+# subtitle: "Expanded subtitle text"
+# category: "Data"
+# description: "description and words"
+# img: "/path/to/image" # Best image size is 1920x952 @ 72 dpi (double for 144 dpi)
+# img_retina: 1 # 1 or 0, image must be in the same directory as the original.
+# link: /relative/or/absolute/link/to/target
+# ---
+- title: Open Data Day
+  subtitle: "March 5th, 2016"
+  category: Open Data
+  description: "In the spirit of <a href='http://opendataday.org'>International Open Data Day</a>, UNT is gathering of Denton citizens to write applications, liberate data, create visualizations and publish analyses using Denton open public data to show support for and encourage the adoption of Denton open data policies."
+  img: /assets/images/banner/banner-03.jpg
+  img_retina: 1
+  link: http://opendataday.org
+- title: Startup Weekend Denton
+  subtitle: Maker Edition
+  category: Maker
+  description: "Last November, we had our best vertical Startup Weekend yet - a maker edition. Hosted at The Factory, check out the results from the event!"
+  img: /assets/images/banner/banner-01.jpg
+  img_retina: 1
+  link: http://www.up.co/communities/usa/denton/startup-weekend/7325
