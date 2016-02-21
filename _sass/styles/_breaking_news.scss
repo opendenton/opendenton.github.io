@@ -4,70 +4,70 @@
 	  ==============================================================
 */
 
-.breaking_news {
-  float: left;
-  width: 1140px;
+.breaking_news_container {
   position: absolute;
-  left: 15px;
-  right: 0;
   margin: auto;
   bottom: 40px;
+  left: 0;
+  right: 0;
+}
+.breaking_news {
   border: 2px solid;
   background-color: $white;
-  
-}
-.breaking_hdg {
-  padding: 16px 20px 15px;
-  float: left;
-  position: relative;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 19px;
-    right: -8px;
-    width: 0;
-    height: 0;
-    border-left: 15px solid;
-    border-top: 15px solid;
-    transform: rotate(45deg);
+  padding: 0;
+  overflow: auto;
+  h6 {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 18px;
   }
-}
-.breaking_news h6 {
-  color: $white;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 18px;
-}
-.brekg_news_des {
-  float: none;
-  background-color: $white;
-  padding: 16px 50px 13px 200px;
-  background: none;
-  position: relative;
-  ul {
+  .breaking_hdg {
+    padding: 16px 20px 15px;
     float: left;
-    width: 100%;
-    li {
-      display: inline-block;
-      color: #000000;
-      margin: 0;
-      line-height: 22px;
-      line-height: 18px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    width: 25%;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 19px;
+      right: -7px;
+      width: 0;
+      height: 0;
+      border-color: $brand-primary !important;
+      border-left: 15px solid;
+      border-top: 15px solid;
+      transform: rotate(45deg);
+    }
+  }
+  .brekg_news_des {
+    box-sizing: border-box;
+    float: left;
+    background-color: $white;
+    padding: 16px 100px 13px 50px;
+    background: none;
+    position: relative;
+    width: 75%;
+    ul {
+      float: left;
+      width: 100%;
+      li {
+        display: inline-block;
+        color: #000000;
+        margin: 0;
+      }
     }
   }
   .bx-pager.bx-default-pager {
     display: none;
   }
-}
-.breaking_news2 .brekg_news_des .bx-pager.bx-default-pager {
-  display: none;
-}
-.brekg_news_des {
   .bx-controls-direction {
     position: absolute;
     width: 80px;
     top: 16px;
-    right: -25px;
+    right: -75px;
     .bx-prev,
     .bx-next {
       position: absolute;
@@ -82,6 +82,7 @@
     margin: 0;
   }
 }
+
 .breaking_news2 .brekg_news_des .bx-wrapper .bx-controls-direction a {
   &.bx-prev,
   &.bx-next {

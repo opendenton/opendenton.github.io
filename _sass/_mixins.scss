@@ -1,3 +1,4 @@
+//  Responsive mixins.
 @mixin media($breakpoint) {
   @if $breakpoint == "mobile" {
     @media (max-width: 767px) {

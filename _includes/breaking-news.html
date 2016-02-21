@@ -1,21 +1,23 @@
 <!-- Breaking News -->
-<div class="breaking_news">
-	<div class="breaking_hdg">
-		<h6>Community Updates</h6>
-	</div>
-	<div class="brekg_news_des">
-		<div class="bxslider">
-			{% for update in site.data.community_updates %}
-			<div class="item">
-				{% if update.title %}
+<div class="breaking_news_container container">
+	<div class="breaking_news">
+		<div class="breaking_hdg">
+			<h6>Community Updates</h6>
+		</div>
+		<div class="brekg_news_des">
+			<div class="bxslider">
+				{% for update in site.data.community_updates %}
+				<div class="item">
+					{% if update.title %}
 					{% if update.link %}
-						<a href="{{ update.link }}">{{ update.title }}</a>
+					<a href="{{ update.link }}">{{ update.title }}</a>
 					{% else %}
-						{{ update.title }}
+					{{ update.title }}
 					{% endif %}
-				{% endif %}
+					{% endif %}
+				</div>
+				{% endfor %}
 			</div>
-			{% endfor %}
 		</div>
 	</div>
 </div>
