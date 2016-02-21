@@ -7,10 +7,12 @@
 		<div class="bxslider">
 			{% for update in site.data.community_updates %}
 			<div class="item">
-				{% if update.link %}
-					<a href="{{ update.link }}">{{ update.title }}</a>
-				{% else %}
-					{{ update.title }}
+				{% if update.title %}
+					{% if update.link %}
+						<a href="{{ update.link }}">{{ update.title }}</a>
+					{% else %}
+						{{ update.title }}
+					{% endif %}
 				{% endif %}
 			</div>
 			{% endfor %}
