@@ -23,6 +23,20 @@ $(document).ready(function(){
   if($('.bxslider').length){
     $('.bxslider').bxSlider();
   }
+
+  /*
+    ==============================================================
+       Instafeed.js
+    ============================================================== */
+  var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'opendata',
+        // userId: 'opendenton',
+        clientId: '2d3bd18548014b11b75fa8c2367551a3',
+        target: 'instagram-gallery',
+        template: '<li class="col-xs-4"><a href="{{link}}"><img src="{{image}}" /></a></li>'
+    });
+  feed.run();
     
   /*
   ==============================================================
