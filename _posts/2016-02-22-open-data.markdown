@@ -1,0 +1,32 @@
+---
+layout: post
+date: 2016-02-22T08:35:01-06:00
+title: "Open Data Day"
+permalink: /open-data-day
+image: open-data-day.png
+author: kyletaylored
+---
+Denton Open Data Day on March 5th 2016 @ UNT Willis Library in collaboration with [International Open Data Day](http://opendataday.org/)
+
+##### Schedule
+ Make it as an event can be added to calendar 
+
+##### What?
+Denton Open Data Day is a gathering of Denton citizens to write applications, liberate data, create visualizations and publish analyses using Denton open public data to show support for and encourage the adoption of Denton open data policies. It is a good chance for UNT students and local developers to use Denton Open Data to produce something useful to the community. 
+
+##### Who is invited?
+If you have an idea for using open data or you want to find an interesting project to contribute towards, then definitely come participate! 
+
+- **Developers** 
+- We need developers in Python, GIS, Database, and Data Analytics. 
+- **Designers**
+- We need people like you to make everything look amazing, feel intuitive, and have a smooth user experience..
+- **Writers**
+- We need creative writers who like to polish the final data in formal articles for Denton citizens and City council.
+
+
+##### How it works?
+This is a hands on event. Bring your laptops, mobile phones, all your wacky geektronics that you can participate in all the fun. Don't worry if you don’t bring anything since there will still be tons of stuff to do.
+
+#### Address
+University of North Texas, 1516 W Highland St, Denton, TX 76201 

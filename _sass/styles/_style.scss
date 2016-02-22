@@ -1,8 +1,9 @@
 @import "banner";
 @import "breaking_news";
-@import "top_strip";
+@import "header";
 @import "navigation";
 @import "news_services";
+@import "page";
 @import "program_list";
 @import "welcome_tabs";
 @import "what_we_do";
@@ -1241,16 +1242,15 @@ ul.countdown li {
 	  ==============================================================
 */
 .about_bg {
-  float: left;
-  width: 100%;
   border-bottom: 3px solid;
   position: relative;
   background-image: url(/assets/images/about-us-01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 350px;
   background-attachment: fixed;
+  box-sizing: border-box;
+  padding: 20px;
   &:before {
     content: "";
     position: absolute;
@@ -1265,11 +1265,8 @@ ul.countdown li {
   }
 }
 .aboutus_wrap {
-  float: left;
-  width: 100%;
   text-align: center;
   position: relative;
-  padding: 209px 0 0;
   h4 {
     color: #fff;
     font-weight: bold;
