@@ -34,4 +34,4 @@ search: true
 
 # Devleopment options
 sass:
-    # style: compressed
+  style: compressed
