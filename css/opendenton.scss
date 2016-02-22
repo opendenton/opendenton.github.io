@@ -2,16 +2,14 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-	"variables",
-  "bourbon/bourbon",
-  "mixins",
-  "widget",
-  "typography",
-  "shortcodes",
-  "color",
-  "responsive",
-  "overrides",
-  "styles/style",
-  "utilities_spacing"
-  ;
+@import "variables";
+@import "bourbon/bourbon";
+@import "mixins";
+@import "widget";
+@import "typography";
+@import "shortcodes";
+@import "color";
+@import "responsive";
+@import "overrides";
+@import "styles/style";
+@import "utilities_spacing";
