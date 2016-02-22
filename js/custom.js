@@ -527,73 +527,12 @@ $(document).ready(function(){
   */
   if($('#contactform').length) {
 
-    var $form = $('#contactform'),
-    $loader = '<img src="images/ajax_loading.gif" alt="Loading..." />';
-    $form.append('<div class="hidden-me" id="contact_form_responce">');
-
-    var $response = $('#contact_form_responce');
-    $response.append('<p></p>');
-
-    $form.submit(function(e){
-
-      $response.find('p').html($loader);
-
-      var data = {
-        action: "contact_form_request",
-        values: $("#contactform").serialize()
-      };
-
-      //send data to server
-      $.post("inc/contact-send.php", data, function(response) {
-
-        response = $.parseJSON(response);
-
-        $(".incorrect-data").removeClass("incorrect-data");
-        $response.find('img').remove();
-
-        if(response.is_errors){
-
-          $response.find('p').removeClass().addClass("error type-2");
-          $.each(response.info,function(input_name, input_label) {
-
-            $("[name="+input_name+"]").addClass("incorrect-data");
-            $response.find('p').append('Please enter correct "'+input_label+'"!'+ '</br>');
-          });
-
-        } else {
-
-          $response.find('p').removeClass().addClass('success type-2');
-
-          if(response.info === 'success'){
-
-            $response.find('p').append('Your email has been sent!');
-            $form.find('input:not(input[type="submit"], button), textarea, select').val('').attr( 'checked', false );
-            $response.delay(1500).hide(400);
-          }
-
-          if(response.info === 'server_fail'){
-            $response.find('p').append('Server failed. Send later!');
-          }
-        }
-
-        // Scroll to bottom of the form to show respond message
-        var bottomPosition = $form.offset().top + $form.outerHeight() - $(window).height();
-
-        if($(document).scrollTop() < bottomPosition) {
-          $('html, body').animate({
-            scrollTop : bottomPosition
-          });
-        }
-
-        if($('#contact_form_responce').css('display') !== 'block') {
-          $response.show(450);
-        }
-
-      });
-
-      e.preventDefault();
-
-    });
+    $('#contactform').ajax({
+      url: "//formspree.io/opendenton@gmail.com", 
+      method: "POST",
+      data: {message: "hello!"},
+      dataType: "json"
+  });
 
   }
 });
