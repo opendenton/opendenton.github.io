@@ -22,6 +22,10 @@ facebook_username: opendenton
 # Build settings
 markdown: kramdown
 
+# Gems
+gems:
+- jekyll-paginate
+
 # Analytics
 google_analytics: "UA-48749943-1"
 add_this: "ra-531d26532ab0a8ba"
@@ -35,3 +39,7 @@ search: true
 # Devleopment options
 sass:
   style: compressed
+
+# Blog
+paginate: 6
+paginate_path: "/blog/page:num/"
