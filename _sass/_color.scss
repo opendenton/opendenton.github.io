@@ -39,18 +39,6 @@ ul.tab_lnk li {
   }
 }
 
-.press_news:hover .news_des {
-  h6 a {
-    color: $brand-primary;
-  }
-  a {
-    color: $brand-primary;
-    i {
-      color: $brand-primary;
-    }
-  }
-}
-
 .news_date ul li:hover a, .campgn_lst1:hover .lst1_des h6, .campgn_lst2:hover .lst1_des h6, .politician:hover .politician_des h6 a {
   color: $brand-primary;
 }
