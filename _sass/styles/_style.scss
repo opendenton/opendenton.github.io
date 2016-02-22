@@ -5,6 +5,7 @@
 @import "news_services";
 @import "page";
 @import "program_list";
+@import "team";
 @import "welcome_tabs";
 @import "what_we_do";
 
@@ -455,131 +456,7 @@ section {
 		   OUR POLITICAL CAMPAIGN WRAP CSS END
 	  ==============================================================
 */
-/*
-	  ==============================================================
-		   OUR POLITICIAN WRAP CSS START
-	  ==============================================================
-*/
-.about_meet_bg {}
-.meet_bg {
-  padding-top: 58px;
-}
-.top_politician_bg {}
-.politician {
-  float: left;
-  padding: 0 0 30px;
-  position: relative;
-  width: 100%;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.18);
-  figure {
-    border-bottom: 4px solid #434343;
-    margin-bottom: 15px;
-    img {
-      width: 100%;
-      height: auto;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 0;
-      background-color: rgba(51, 51, 51, 0.8);
-    }
-  }
-}
-.poli_img_des {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  margin: -100px 0 0;
-  z-index: 99999;
-  padding: 0 25px;
-  opacity: 0;
-  h6 a {
-    display: inline-block;
-    color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  span {
-    display: block;
-    color: #cccccc;
-    margin-bottom: 20px;
-  }
-  p {
-    color: #cccccc;
-    word-break: break-all;
-  }
-}
-.politician_des {
-  float: left;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  &:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: -15px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    opacity: 0;
-    visibility: hidden;
-  }
-  h6 {
-    font-size: 20px;
-    color: #27282d;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  p {
-    color: #999999;
-    text-transform: capitalize;
-  }
-  ul {
-    float: left;
-    width: 100%;
-    li {
-      display: inline-block;
-      position: relative;
-      a {
-        display: block;
-        padding: 0 15px;
-        color: #777;
-        font-size: 20px;
-      }
-    }
-  }
-}
-.politician:hover {
-  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.18);
-  figure:before {
-    height: 100%;
-  }
-  .poli_img_des {
-    top: 50%;
-    opacity: 1;
-  }
-  figure {
-    border-bottom: 4px solid;
-  }
-  .politician_des:before {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-/*
-	  ==============================================================
-		   OUR POLITICIAN WRAP CSS END
-	  ==============================================================
-*/
+
 /*
 	  ==============================================================
 		   PROGRESS BAR WRAP CSS START
