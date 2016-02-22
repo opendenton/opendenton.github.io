@@ -3,7 +3,7 @@
   <div class="newsletter_bg">
     <div class="container">
       <div class="newsletter_des">
-        <h5>Subcribe Our</h5>
+        <h5>Subcribe To Our</h5>
         <h3>Newsletter</h3>
       </div>
       <div class="newsletter_form">
@@ -17,12 +17,12 @@
         <div id="mc_embed_signup"> <!-- Begin MailChimp Signup Form -->
           <form action="//opendenton.us11.list-manage.com/subscribe/post?u=61cd7acaf9197fccca3429a68&amp;id=0ae2e41371" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
-              <input type="email" value="" name="EMAIL" class="email placeholder2" id="mce-EMAIL" placeholder="email address" required>
+              <input type="email" value="" name="EMAIL" class="email placeholder2" id="mce-EMAIL" placeholder="Enter your email address" required>
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true">
                  <input type="text" name="b_55d95b1c19463ef19cb204ca1_d1a136ed9d" tabindex="-1" value="">
               </div>
-                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" placeholder="Subscribe">
+                 <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" placeholder="Subscribe"><i class="fa fa-send"></i></button>
             </div>
           </form>
         </div> <!--End mc_embed_signup-->
@@ -168,14 +168,9 @@
       <!--Footer Site map Wrap Start-->
       <div class="site_map">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-us.html">About</a></li>
-          <li><a href="event.html">Event</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="press-release.html">Press</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
+          {% for nav in site.data.navigation %}
+            <li class=""><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+          {% endfor %}
         </ul>
       </div>
       <!--Footer Site map Wrap End-->
