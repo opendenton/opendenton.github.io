@@ -1,0 +1,53 @@
+<aside class="col-md-4">
+	{% if page.author %}
+
+	{% for author in site.data.authors %}
+		{% if author.username == page.author %}
+			{% assign authors = author %}
+		{% endif %}
+	{% endfor %}
+
+	<div class="aside_user">
+		<div class="politician">
+			<figure>
+				<img src="https://www.gravatar.com/avatar/{{ authors.gravatar }}?s=300" title="{{ authors.name }}" class="img-responsive img-thumbnail img-circle">
+				<figcaption class="poli_img_des">
+					{% if authors.name %}<h6>{{ authors.name }}</h6>{% endif %}
+					{% if authors.title %}<span>{{ authors.title}}</span>{% endif %}
+					{% if authors.bio %}<p>{{ authors.bio }}</p>{% endif %}
+				</figcaption>
+			</figure>
+			<div class="politician_des">
+				{% if authors.name %}<h6>{{ authors.name }}</h6>{% endif %}
+				{% if authors.title %}<span>{{ authors.title}}</span>{% endif %}
+				<ul>
+					{% if authors.facebook %}<li><a href="{{ authors.facebook }}"><i class="fa fa-facebook"></i></a></li>{% endif %}
+					{% if authors.twitter %}<li><a href="{{ authors.twitter }}"><i class="fa fa-twitter"></i></a></li>{% endif %}
+					{% if authors.github %}<li><a href="{{ authors.github }}"><i class="fa fa-github"></i></a></li>{% endif %}
+					{% if authors.email %}<li><a href="mailto:{{ authors.email }}"><i class="fa fa-paper-plane"></i></a></li>{% endif %}
+				</ul>
+			</div>
+		</div>
+	</div>
+	{% endif %}
+
+	<div class="aside_cat aside">
+		<h5>Categories</h5>
+		<ul>
+			{% for category in site.categories %}
+			<li><a href="/{{ category | first | slugize }}/">
+				{{ category | first }}
+			</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div class="aside_video aside fitvid">
+		<iframe width="1280" height="720" src="https://www.youtube.com/embed/cB0h0eeWsmk" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<div class="calender aside">
+		<div id='calendar'></div>
+	</div>
+
+</aside>

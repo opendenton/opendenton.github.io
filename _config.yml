@@ -34,7 +34,7 @@ add_this: "ra-531d26532ab0a8ba"
 disqus_shortname: "opendenton"
 
 # Enable site search
-search: true
+search: false
 
 # Devleopment options
 sass:

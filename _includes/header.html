@@ -68,37 +68,9 @@
         <!--Navigation Wrap Start-->
         <div class="menu">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About</a></li>
-            <li><a href="#">Event</a>
-              <ul>
-                <li><a href="event.html">Event Grid</a></li>
-                <li><a href="event-detail.html">Event Detail</a></li>
-              </ul>
-            </li>
-            <li><a href="press-release.html">Press Release</a></li>
-            <li><a href="#">News</a>
-              <ul>
-                <li><a href="news.html">News Grid</a></li>
-                <li><a href="news-list.html">News List</a></li>
-                <li><a href="news-detail.html">News Detail</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Team</a>
-              <ul>
-                <li><a href="team.html">team Grid</a></li>
-                <li><a href="team-detail.html">team Detail</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Pages</a>
-              <ul>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="404.html">404</a></li>
-                <li><a href="comming-soon.html">Comming soon</a></li>
-                <li><a href="shortcode.html">ShortCode</a></li>
-              </ul>
-            </li>
-            <li><a href="contact-us.html">Contact Us</a></li>
+            {% for nav in site.data.navigation %}
+              <li class=""><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+            {% endfor %}
           </ul>
         </div>
         <!--Navigation Wrap End-->
@@ -107,42 +79,14 @@
         <div id="responsive-navigation" class="dl-menuwrapper">
           <button class="dl-trigger">Open Menu</button>
           <ul class="dl-menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About</a></li>
-            <li class="menu-item parent-menu"><a href="#">Event</a>
-              <ul class="dl-submenu">
-                <li><a href="event.html">Event Grid</a></li>
-                <li><a href="event-detail.html">Event Detail</a></li>
-              </ul>
-            </li>
-            <li><a href="press-release.html">Press Release</a></li>
-            <li class="menu-item parent-menu"><a href="#">News</a>
-              <ul class="dl-submenu">
-                <li><a href="news.html">News Grid</a></li>
-                <li><a href="news-list.html">News List</a></li>
-                <li><a href="news-detail.html">News Detail</a></li>
-              </ul>
-            </li>
-            <li class="menu-item parent-menu"><a href="#">Team</a>
-              <ul class="dl-submenu">
-                <li><a href="team.html">team Grid</a></li>
-                <li><a href="team-detail.html">team Detail</a></li>
-              </ul>
-            </li>
-            <li class="menu-item parent-menu"><a href="#">Pages</a>
-              <ul class="dl-submenu">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="404.html">404</a></li>
-                <li><a href="comming-soon.html">Comming soon</a></li>
-                <li><a href="shortcode.html">ShortCode</a></li>
-              </ul>
-            </li>
-            <li><a href="contact-us.html">Contact Us</a></li>
+            {% for nav in site.data.navigation %}
+              <li class=""><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+            {% endfor %}
           </ul>
         </div>
         <!--DL Menu END-->
 
-        {% if site.search %}
+        {% if site.search == "true" %}
         <!--Search Wrap Start-->
         <div class="search">
           <a class="search-fld" href="#"><i class="fa fa-search"></i></a>
