@@ -1,0 +1,31 @@
+<div class="press_new_lst">
+  <div class="row">
+
+    {% for post in site.posts limit:3 %}
+
+    <div class="col-md-4 col-sm-6">
+      <div class="press_news">
+        <figure class="pres2_style">
+          {% capture img_src %}/assets/images/posts/{{ post.image }} {% endcapture %}
+          {% include image.html src=img_src alt=post.title retina=0 %}
+        </figure>
+        <div class="news_date">
+          <ul>
+            <li> <a href="{{ post.url }}">{{ post.date | date_to_string }}</a></li>
+            {% if site.disqus_shortname %}
+              <li><i class="fa fa-comment-o"></i> <a class="disqus-comment-count" href="{{ page.url}}#disqus_thread" data-disqus-identifier="{{ page.id | remove_first:"/" | replace: "/","_" | replace: "-","_" }}">0</a></li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="news_des">
+          <h6><a href="{{ post.url }}">{{ post.title }}</a></h6>
+          <p>{{ post.excerpt | strip_html | truncate: 300 }}</p>
+          <a href="{{ post.url }}">Read More <i class="fa fa-long-arrow-right"></i> </a>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+
+  </div>
+</div>
