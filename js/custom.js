@@ -17,17 +17,13 @@ $(document).ready(function(){
     type:"GET",
     url:"https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=techmilldenton&limited_events=true&page=2",
     success: function(data) {
-      console.log(data);
       $('#event-name-1').html(data.results[0].name);
       $("#event-name-1").attr("href", data.results[0].event_url);
-			$('#event-date-1').text(data.results[0].venue.name);
+      $('#event-date-1').text(data.results[0].venue.name);
 
-			$('#event-name-2').html(data.results[1].name);
+      $('#event-name-2').html(data.results[1].name);
       $("#event-name-2").attr("href", data.results[1].event_url);
-			$('#event-date-2').text(data.results[1].venue.name);
-
-      console.log(data.results[1].time.toString());
-      console.log("testing");
+      $('#event-date-2').text(data.results[1].venue.name);
     },
     dataType: 'jsonp',
   });
@@ -533,7 +529,7 @@ $(document).ready(function(){
   if($('#contactform').length) {
 
     $('#contactform').ajax({
-      url: "//formspree.io/opendenton@gmail.com", 
+      url: "//formspree.io/opendenton@gmail.com",
       method: "POST",
       data: {message: "hello!"},
       dataType: "json"
