@@ -13,20 +13,25 @@ $(document).ready(function(){
   //        a. Problem: have to set unique tags for the entries, (ie. #event_date1)
   //           in order to avoid duplication.
 
-  // $.ajax({
-  //   type:"GET",
-  //   url:"https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=techmilldenton&limited_events=true&page=2",
-  //   success: function(data) {
-  //     $('.text').html('');
-  //     for (var i = 0; i < data.results.length; i++) {
-  //       var place = data.results[i].date + ", " + data.results[i].description;
-  //       $('.text').append('<p>' + place + '</p>');
-  //     }
-  //
-  //   },
-  //   dataType: 'jsonp',
-  // });
-  //
+  $.ajax({
+    type:"GET",
+    url:"https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=techmilldenton&limited_events=true&page=2",
+    success: function(data) {
+      console.log(data);
+      $('#event-name-1').html(data.results[0].name);
+      $("#event-name-1").attr("href", data.results[0].event_url);
+			$('#event-date-1').text(data.results[0].venue.name);
+
+			$('#event-name-2').html(data.results[1].name);
+      $("#event-name-2").attr("href", data.results[1].event_url);
+			$('#event-date-2').text(data.results[1].venue.name);
+
+      console.log(data.results[1].time.toString());
+      console.log("testing");
+    },
+    dataType: 'jsonp',
+  });
+
 
 
   /* ---------------------------------------------------------------------- */
