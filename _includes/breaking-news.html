@@ -7,10 +7,11 @@
 		<div class="brekg_news_des">
 			<div class="bxslider">
 				{% for update in site.data.community_updates %}
+				{% capture target %}{% if update.target %}{{ update.target }}{% else %}_self{% endif %}{% endcapture %}
 				<div class="item">
 					{% if update.title %}
 					{% if update.link %}
-					<a href="{{ update.link }}">{{ update.title }}</a>
+					<a href="{{ update.link }}" target="{{ target }}">{{ update.title }}</a>
 					{% else %}
 					{{ update.title }}
 					{% endif %}
