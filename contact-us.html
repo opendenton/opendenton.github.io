@@ -1,21 +1,26 @@
-<!--Contact With Us Wrap Start-->
+---
+layout: page
+title: "Contact Us"
+permalink: /contact-us
+---
+
 <section class="contact_bg">
   <div class="container">
     <div class="hdg_2">
-      <h6>Tesitmoinals</h6>
-      <h4>Contact With Us</h4>
+      <h4>Connect With Us</h4>
     </div>
 
     <div class="row">
       <!--Contact Us Field Wrap Start-->
       <div class="col-md-8">
         <div class="contact_wrap">
-          <h5>contact us fields</h5>
           <div class="row">
-            <form method="post" class="comments-form" id="contactform">
+            <form method="post" class="comments-form" id="contactform" action="//formspree.io/opendenton@gmail.com">
               <div class="col-md-6">
                 <div class="contact_field">
-                  <input type="text" name="name" placeholder="Your Name">
+                  <input type="text" name="_name" placeholder="Your Name">
+                  <input type="text" name="_gotcha" style="display:none;" />
+                  <input type="hidden" name="_next" value="{{ site.baseurl }}/index.html" style="display:none;" />
                 </div>
               </div>
 
@@ -27,25 +32,25 @@
 
               <div class="col-md-6">
                 <div class="contact_field">
-                  <input type="text" placeholder="Your Phone">
+                  <input type="text" placeholder="Your Phone" name="_phone">
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="contact_field">
-                  <input type="text" placeholder="Your Subject">
+                  <input type="text" placeholder="Your Subject" name="_subject">
                 </div>
               </div>
 
               <div class="col-md-12">
                 <div class="contact_field">
-                  <textarea name="message" placeholder="Your Message"></textarea>
+                  <textarea name="_message" placeholder="Your Message"></textarea>
                 </div>
               </div>
 
               <div class="col-md-12">
                 <div class="contact_field">
-                  <button>Sent Now</button>
+                  <button>Send Now</button>
                 </div>
               </div>
             </form>
@@ -64,23 +69,23 @@
           </div>
         </div>
 
-        <div class="contact_info contact_wrap">
+        <!-- <div class="contact_info contact_wrap">
           <h5>Phone</h5>
           <i class="fa fa-phone"></i>
           <div class="contact_des">
             <span>(770) 123 566 7899</span>
             <span>(770) 123 566 7899</span>
           </div>
-        </div>
+        </div> -->
 
-        <div class="contact_info contact_wrap">
-          <h5>Email Address</h5>
+        <!-- <div class="contact_info contact_wrap">
+          <h5>Address</h5>
           <i class="fa fa-map-marker"></i>
           <div class="contact_des">
-            <span>414, new tow, 121 street</span>
-            <span>United Kingdom</span>
+            <span>All the Coffee Shops</span>
+            <span>Denton, Texas</span>
           </div>
-        </div>
+        </div> -->
 
       </div>
       <!--Contact Info Wrap End-->
@@ -89,4 +94,3 @@
 
   </div>
 </section>
-<!--Contact With Us Wrap End-->

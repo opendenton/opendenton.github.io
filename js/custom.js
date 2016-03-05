@@ -2,7 +2,34 @@ var google = google || {};
 
 $(document).ready(function(){
   "use strict";
-  
+
+  /* ---------------------------------------------------------------------- */
+  /*  Get Upcoming Meet-Ups
+  /* ---------------------------------------------------------------------- */
+
+  // There are two obvious ways that this can be performed (naively)
+  //    1. Append all content along w/ html in a long multi-line string
+  //    2. Iterate through appropriate tags (#event_date, #event_desc, etc.)
+  //        a. Problem: have to set unique tags for the entries, (ie. #event_date1)
+  //           in order to avoid duplication.
+
+  $.ajax({
+    type:"GET",
+    url:"https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=techmilldenton&limited_events=true&page=2",
+    success: function(data) {
+      $('#event-name-1').html(data.results[0].name);
+      $("#event-name-1").attr("href", data.results[0].event_url);
+      $('#event-date-1').text(data.results[0].venue.name);
+
+      $('#event-name-2').html(data.results[1].name);
+      $("#event-name-2").attr("href", data.results[1].event_url);
+      $('#event-date-2').text(data.results[1].venue.name);
+    },
+    dataType: 'jsonp',
+  });
+
+
+
   /* ---------------------------------------------------------------------- */
   /*  Search Script
   /* ---------------------------------------------------------------------- */
@@ -15,7 +42,7 @@ $(document).ready(function(){
       $(this).toggleClass("minus plus");
     }
   });
-  
+
   /*
     ==============================================================
        Banner Bx-Slider Script Start
@@ -37,7 +64,7 @@ $(document).ready(function(){
         template: '<li class="col-xs-4"><a href="{{link}}"><img src="{{image}}" /></a></li>'
     });
   feed.run();
-    
+
   /*
   ==============================================================
      Widget Event Galley Bx-Slider Script
@@ -58,7 +85,7 @@ $(document).ready(function(){
         }
     });
   }
-  
+
   /* ---------------------------------------------------------------------- */
   /*  DL Responsive Menu
   /* ---------------------------------------------------------------------- */
@@ -68,14 +95,14 @@ $(document).ready(function(){
         if( $(this).siblings('a').attr('href') && $(this).siblings('a').attr('href') !== '#' ){
           var parent_nav = $('<li class="menu-item parent-menu"></li>');
           parent_nav.append($(this).siblings('a').clone());
-          
+
           $(this).prepend(parent_nav);
         }
       });
       $(this).dlmenu();
     });
   }
-  
+
   /*
     ==============================================================
       Calendar Script
@@ -83,7 +110,7 @@ $(document).ready(function(){
   if($('[data-toggle="tooltip"]').length){
       $('[data-toggle="tooltip"]').tooltip();
   }
-  
+
   /*
     ==============================================================
       Fitvids
@@ -98,7 +125,7 @@ $(document).ready(function(){
   if($('#tabs').length){
     $('#tabs').tab();
   }
-    
+
   /*
     ==============================================================
        What We Do Bx-Slider Script Start
@@ -119,7 +146,7 @@ $(document).ready(function(){
     =======================================================================
   */
   function drawChart() {
-    
+
     var data = google.visualization.arrayToDataTable([
       ['Year', 'Sales'],
       ['2004',  1000],
@@ -143,7 +170,7 @@ $(document).ready(function(){
 
     chart.draw(data, options);
   }
-  
+
   /*
     ==============================================================
        Google Chart Script Start
@@ -165,15 +192,15 @@ $(document).ready(function(){
         $('.back-top').attr('id','hide_me');
       }
     });
-    
+
     //Click event to scroll to top
     $('.back-top').on('click',function(){
       $('html, body').animate({scrollTop : 0},800);
       return false;
     });
 
-    
-    
+
+
   /*
     ==============================================================
        Our Political Campagin Bx-Slider Script Start
@@ -186,7 +213,7 @@ $(document).ready(function(){
       slideMargin: 10
     });
   }
-    
+
   /*
     ==============================================================
        Progress Bar Script Start
@@ -198,7 +225,7 @@ $(document).ready(function(){
       },2000);
     });
   }
-  
+
   if($('.conviction').length){
     jQuery('.conviction').each(function(){
       jQuery(this).find('.progress-bar').animate({
@@ -206,7 +233,7 @@ $(document).ready(function(){
       },2000);
     });
   }
-  
+
   if($('.courage').length){
     jQuery('.courage').each(function(){
       jQuery(this).find('.progress-bar').animate({
@@ -214,7 +241,7 @@ $(document).ready(function(){
       },2000);
     });
   }
-  
+
   if($('.sincerity').length){
     jQuery('.sincerity').each(function(){
       jQuery(this).find('.progress-bar').animate({
@@ -222,8 +249,8 @@ $(document).ready(function(){
       },2000);
     });
   }
-    
-    
+
+
   /* ==================================================================
           Number Count Up(WayPoints) Script
     ================================================================= */
@@ -233,12 +260,12 @@ $(document).ready(function(){
       time: 1000
     });
   }
-    
+
   if($(".DateCountdown").length){
     $(".DateCountdown").TimeCircles();
   }
-    
-    
+
+
   /*
     ==============================================================
        Post Bx-Slider Script Start
@@ -246,7 +273,7 @@ $(document).ready(function(){
   if($('.post_bxslider').length){
     $('.post_bxslider').bxSlider();
   }
-    
+
   /*
     ==============================================================
        Post Bx-Slider Script Start
@@ -254,8 +281,8 @@ $(document).ready(function(){
   if($('.countdown').length){
     $('.countdown').downCount({ date: '08/08/2016 12:00:00', offset: +1 });
   }
-    
-    
+
+
   /*
     ==============================================================
        Testimonial Owl Carousel Script Start
@@ -278,7 +305,7 @@ $(document).ready(function(){
 
     });
   }
-      
+
   /*
     ==============================================================
        Owl Carousel Script Start
@@ -300,12 +327,12 @@ $(document).ready(function(){
       navigation : true
     });
   }
-      
+
   /*
     ==============================================================
        Accordian Script Start
     ============================================================== */
-    
+
     if($('.accordion').length){
     //custom animation for open/close
     $.fn.slideFadeToggle = function(speed, easing, callback) {
@@ -324,8 +351,8 @@ $(document).ready(function(){
       }
     });
   }
-    
-    
+
+
   /*
     ==============================================================
        Choose US Script Start
@@ -335,7 +362,7 @@ $(document).ready(function(){
       $.fn.slideFadeToggle = function(speed, easing, callback) {
         return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
       };
-  
+
       $('.accordion1').accordion({
         defaultOpen: 'item1',
         cookieName: 'nav',
@@ -348,13 +375,13 @@ $(document).ready(function(){
         }
       });
     }
-    
-    
+
+
   /*
     ==============================================================
        Latest Work Owl Carousel Script Start
     ============================================================== */
-    
+
     var owl3 = $("#owl-demo3");
       owl3.owlCarousel({
        autoPlay: 3000, //Set AutoPlay to 3 seconds
@@ -369,10 +396,10 @@ $(document).ready(function(){
         [1600, 3]
         ],
         navigation : true
-     
+
       });
-      
-      
+
+
   /*
     =======================================================================
             Pretty Photo Script
@@ -381,13 +408,13 @@ $(document).ready(function(){
   if($("a[data-rel^='prettyPhoto']").length){
     $("a[data-rel^='prettyPhoto']").prettyPhoto();
   }
-  
+
   /*
     =======================================================================
             Filterable Gallery Script
     =======================================================================
   */
-  
+
   jQuery(window).load(function() {
     var filter_container = jQuery('#filterable-item-holder-1');
 
@@ -413,9 +440,9 @@ $(document).ready(function(){
       jQuery(this).addClass("active");
       jQuery(this).parents("li").siblings().children("a").removeClass("active");
       e.preventDefault();
-      
+
       var select_filter = jQuery(this).attr('data-value');
-      
+
       if( select_filter === "All" || jQuery(this).parent().index() === 0 ){
         filter_container.children().each(function(){
           if( jQuery(this).hasClass('hide') ){
@@ -437,19 +464,19 @@ $(document).ready(function(){
           }
         });
       }
-      
+
       filter_container.masonry();
-      
+
     });
   });
-  
+
   /*
     =======================================================================
           Map Script
     =======================================================================
   */
   function initialize() {
-    
+
     var MY_MAPTYPE_ID = 'custom_style';
     var map;
     var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
@@ -483,7 +510,7 @@ $(document).ready(function(){
 
     map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
   }
-  
+
   /*
     =======================================================================
             Map Script
@@ -492,8 +519,8 @@ $(document).ready(function(){
   if($('#map-canvas').length){
     google.maps.event.addDomListener(window, 'load', initialize);
   }
-  
-  
+
+
   /*
     =======================================================================
             Contact Form Validation Script
@@ -501,73 +528,12 @@ $(document).ready(function(){
   */
   if($('#contactform').length) {
 
-    var $form = $('#contactform'),
-    $loader = '<img src="images/ajax_loading.gif" alt="Loading..." />';
-    $form.append('<div class="hidden-me" id="contact_form_responce">');
-
-    var $response = $('#contact_form_responce');
-    $response.append('<p></p>');
-
-    $form.submit(function(e){
-
-      $response.find('p').html($loader);
-
-      var data = {
-        action: "contact_form_request",
-        values: $("#contactform").serialize()
-      };
-
-      //send data to server
-      $.post("inc/contact-send.php", data, function(response) {
-
-        response = $.parseJSON(response);
-        
-        $(".incorrect-data").removeClass("incorrect-data");
-        $response.find('img').remove();
-
-        if(response.is_errors){
-
-          $response.find('p').removeClass().addClass("error type-2");
-          $.each(response.info,function(input_name, input_label) {
-
-            $("[name="+input_name+"]").addClass("incorrect-data");
-            $response.find('p').append('Please enter correct "'+input_label+'"!'+ '</br>');
-          });
-
-        } else {
-
-          $response.find('p').removeClass().addClass('success type-2');
-
-          if(response.info === 'success'){
-
-            $response.find('p').append('Your email has been sent!');
-            $form.find('input:not(input[type="submit"], button), textarea, select').val('').attr( 'checked', false );
-            $response.delay(1500).hide(400);
-          }
-
-          if(response.info === 'server_fail'){
-            $response.find('p').append('Server failed. Send later!');
-          }
-        }
-
-        // Scroll to bottom of the form to show respond message
-        var bottomPosition = $form.offset().top + $form.outerHeight() - $(window).height();
-
-        if($(document).scrollTop() < bottomPosition) {
-          $('html, body').animate({
-            scrollTop : bottomPosition
-          });
-        }
-
-        if($('#contact_form_responce').css('display') !== 'block') {
-          $response.show(450);
-        }
-
-      });
-
-      e.preventDefault();
-
-    });
+    $('#contactform').ajax({
+      url: "//formspree.io/opendenton@gmail.com",
+      method: "POST",
+      data: {message: "hello!"},
+      dataType: "json"
+  });
 
   }
 });

@@ -11,8 +11,8 @@
   subtitle: "March 5th, 2016"
   category: Open Data
   description: "In the spirit of <a href='http://opendataday.org'>International Open Data Day</a>, UNT is gathering of Denton citizens to write applications, liberate data, create visualizations and publish analyses using Denton open public data to show support for and encourage the adoption of Denton open data policies."
-  img: /assets/images/banner/banner-03.jpg
-  img_retina: 1
+  img: /assets/images/banner/banner-04.jpg
+  img_retina: 0
   link: /open-data-day
 - title: Startup Weekend Denton
   subtitle: Maker Edition
