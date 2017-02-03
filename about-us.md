@@ -46,6 +46,10 @@ You can help by:
 
 - Contributing relevant material to our website
 
+- Joining us on [Open Data Day](https://www.opendenton.com/open-data-day)
+
+- Rescuing or formatting public data in machine-readable formats
+
 - Analyzing and visualizing the data
 
 If you're interested in working with the data yourself, you'll have access to our datasets.
