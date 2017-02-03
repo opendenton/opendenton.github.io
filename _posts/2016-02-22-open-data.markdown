@@ -1,10 +1,11 @@
 ---
 layout: post
 date: 2016-02-22T08:35:01-06:00
-title: "Open Data Day"
-permalink: /open-data-day
+title: "Open Data Day 2016"
+permalink: /open-data-day-2016
 image: open-data-day.png
 author: kyletaylored
+categories: [opendata, community, event]
 ---
 Denton Open Data Day on March 5th 2016 @ UNT Willis Library in collaboration with [International Open Data Day](http://opendataday.org/)
 
