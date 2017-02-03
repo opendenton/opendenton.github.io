@@ -24,25 +24,27 @@
       width: 100%;
       height: auto;
     }
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 0;
-      background-color: rgba(51, 51, 51, 0.8);
-    }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 0;
+    //   background-color: rgba(51, 51, 51, 0.8);
+    // }
   }
 }
 .poli_img_des {
   width: 100%;
+  height: 100%;
   text-align: center;
   position: absolute;
   top: 0;
-  margin: auto auto auto -40px;
+  // margin: auto auto auto -40px;
+  background-color: rgba(20,20,20,.4);
   z-index: 99999;
-  padding: 0 25px;
+  padding: 70px 25px;
   opacity: 0;
   h6 a {
     display: inline-block;
@@ -110,7 +112,7 @@
     height: 100%;
   }
   .poli_img_des {
-    top: 50%;
+    // top: 50%;
     opacity: 1;
   }
   figure {
