@@ -1,0 +1,37 @@
+---
+layout: post
+date: 2017-02-02T08:35:01-06:00
+title: "Open Data Day"
+permalink: /open-data-day-2017
+image: open-data-day.png
+author: jessehamner
+---
+Denton Open Data Day on March 4th 2017 @ Stoke in collaboration with [International Open Data Day](http://opendataday.org/), the [City of Denton](https://www.cityofdenton.com/), [TechMill](https://techmill.co/), and the [UNT Libraries](http://www.library.unt.edu)
+
+##### Schedule
+9 AM to 5 PM at Stoke, on March 4th.
+
+##### What?
+Denton Open Data Day is a gathering of Denton citizens to write applications, liberate data, create visualizations and publish analyses using Denton open public data to show support for and encourage the adoption of Denton open data policies. It is a good chance for UNT students and local developers to use Denton Open Data to produce something useful to the community. 
+
+##### Who is invited?
+If you have an idea for using open data or you want to find an interesting project to contribute towards, then definitely come participate! 
+
+- **Developers** 
+- We need developers in Python, GIS, Database, and Data Analytics. 
+- **Designers**
+- We need people like you to make everything look amazing, feel intuitive, and have a smooth user experience..
+- **Technical Writers**
+- We need writers who like to polish the final data and contribute to reports for Denton citizens and City council.
+
+
+<a class="btn btn-default btn-lg btn-block" href="https://www.meetup.com/TechmillDenton/events/237405554/">Register on Eventbrite</a>
+
+
+##### How it works?
+This is a hands on event. Bring your laptops, mobile phones, and power bricks so that you can participate in all the fun.
+
+#### Address
+Stoke! 608 E Hickory St #128, Denton, TX 76205
+
+
