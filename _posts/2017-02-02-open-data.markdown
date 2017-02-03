@@ -3,7 +3,7 @@ layout: post
 date: 2017-02-02T08:35:01-06:00
 title: "Open Data Day"
 permalink: /open-data-day-2017
-image: open-data-day.png
+image: welcome-open-denton.png
 author: jessehamner
 ---
 Denton Open Data Day on March 4th 2017 @ Stoke in collaboration with [International Open Data Day](http://opendataday.org/), the [City of Denton](https://www.cityofdenton.com/), [TechMill](https://techmill.co/), and the [UNT Libraries](http://www.library.unt.edu)
@@ -24,9 +24,9 @@ If you have an idea for using open data or you want to find an interesting proje
 - **Technical Writers**
 - We need writers who like to polish the final data and contribute to reports for Denton citizens and City council.
 
-
-<a class="btn btn-default btn-lg btn-block" href="https://www.meetup.com/TechmillDenton/events/237405554/">Register on Eventbrite</a>
-
+<p class="text-center p-a-1">
+	<a class="btn btn-primary btn-lg" href="https://www.meetup.com/TechmillDenton/events/237405554/">Register on Eventbrite</a>
+</p>
 
 #### How does Open Data Day work?
 This is a hands on event. Bring your laptops, mobile phones, and power bricks so that you can participate in all the fun.
