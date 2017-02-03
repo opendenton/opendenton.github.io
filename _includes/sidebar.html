@@ -34,9 +34,9 @@
 	<div class="aside_cat aside">
 		<h5>Categories</h5>
 		<ul>
-			{% for category in site.categories %}
-			<li><a href="/{{ category | first | slugize }}/">
-				{{ category | first }}
+			{% for tags in site.categories %}
+			<li><a href="/categories#{{ tags | first | slugize }}">
+				{{ tags | first }}
 			</a></li>
 			{% endfor %}
 		</ul>
