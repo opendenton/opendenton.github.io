@@ -4,7 +4,7 @@
   twitter: https://twitter.com/kyletaylored
   github: https://github.com/kyletaylored
   gravatar: d628c5522eb20626524c901fceb59592
-  title: Web Developer and Tech Evangelist
+  title: Web Developer
   bio: "Drupal developer, coffee enthusiast, UNT alumni, startup guy, Startup Weekend Facilitator, TechMill Denton president. I ♥ whiteboards, hence DrawAttention.co"
 - username: danminshew
   name: Dan Minshew
@@ -13,6 +13,13 @@
   github: https://github.com/newswim
   gravatar: 3111b0f5bfa18ba35f46b225b8da8a85
   title: JavaScript Developer
+- username: jessehamner
+  name: Jesse Hamner
+  email: jhamner@gmail.com
+  twitter: https://twitter.com/jhamner
+  github: https://github.com/jessehamner
+  title: Data Scientist
+  gravatar: c8c6b3bb30487091c048e8990897a6fa
 - username: texrat
   name: Randall Arnold
   twitter: https://twitter.com/texrat
@@ -26,10 +33,3 @@
   github: https://github.com/daniellegaither
   gravatar: 0e93b563e14004cfe4c484de90ed4ba5
   title: Freelance Web Developer/Copywriter
-- username: jessehamner
-  name: Jesse Hamner
-  email: jhamner@gmail.com
-  twitter: https://twitter.com/jhamner
-  github: https://github.com/jessehamner
-  title: Data Scientist
-  gravatar: c8c6b3bb30487091c048e8990897a6fa
