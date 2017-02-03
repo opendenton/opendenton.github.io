@@ -55,15 +55,15 @@ $(document).ready(function(){
     ==============================================================
        Instafeed.js
     ============================================================== */
-  var hash = btoa("ÙÝÛw_9ãÍ5á½uo¾_kÇ6ß®ùçV·");
-  var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'opendata',
-        // userId: 'opendenton',
-        clientId: hash,
-        template: '<li class="col-xs-4"><a href="{{link}}"><img src="{{image}}" /></a></li>',
-    });
-  feed.run();
+  // var hash = btoa("ÙÝÛw_9ãÍ5á½uo¾_kÇ6ß®ùçV·");
+  // var feed = new Instafeed({
+  //       get: 'tagged',
+  //       tagName: 'opendata',
+  //       // userId: 'opendenton',
+  //       clientId: hash,
+  //       template: '<li class="col-xs-4"><a href="{{link}}"><img src="{{image}}" /></a></li>',
+  //   });
+  // feed.run();
 
   /*
   ==============================================================
