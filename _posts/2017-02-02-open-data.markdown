@@ -47,6 +47,7 @@ Stoke! 608 E Hickory St #128, Denton, TX 76205
   "@type" : "Event",
   "name" : "Open Data Day 2017",
   "startDate" : "2017-03-04",
+  "endDate" : "2017-03-04",
   "location" : {
     "@type" : "Place",
     "name" : "Stoke",
