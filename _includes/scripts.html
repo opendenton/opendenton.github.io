@@ -90,3 +90,28 @@ var disqus_config = function () {
 <!-- Script pointing to jekyll-search.js -->
 <script src="{{ site.baseurl }}/bower_components/simple-jekyll-search/dest/jekyll-search.js" type="text/javascript"></script>
 {% endif %}
+
+<!-- Google Structured Data -->
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "Open Denton",
+  "url": "https://www.opendenton.com",
+  "logo": "https://www.opendenton.com/assets/images/footer-logo@2x.png",
+  "description": "We are an open data community initiative in the City of Denton, Texas supporting open government and transparency tools through open data.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "608 E. Hickory",
+    "addressLocality": "Denton",
+    "addressRegion": "Texas",
+    "postalCode": "76205",
+    "addressCountry": "USA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "33.214262",
+    "longitude": "-97.124949"
+  }
+}
+ </script>
