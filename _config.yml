@@ -25,6 +25,7 @@ markdown: kramdown
 # Gems
 gems:
 - jekyll-paginate
+- jekyll-sitemap
 
 # Analytics
 google_analytics: "UA-48749943-1"
