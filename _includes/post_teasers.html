@@ -11,7 +11,7 @@
         </figure>
         <div class="news_date">
           <ul>
-            <li> <a href="{{ post.url }}">{{ post.date | date_to_string }}</a></li>
+            <li> <a href="{{ post.url }}">{{ post.date | date: "%b %d, %Y" }}</a></li>
             {% if site.disqus_shortname %}
               <li><i class="fa fa-comment-o"></i> <a class="disqus-comment-count" href="{{ page.url}}#disqus_thread" data-disqus-identifier="{{ page.id | remove_first:"/" | replace: "/","_" | replace: "-","_" }}">0</a></li>
             {% endif %}
