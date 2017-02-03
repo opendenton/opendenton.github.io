@@ -8,13 +8,13 @@ author: jessehamner
 ---
 Denton Open Data Day on March 4th 2017 @ Stoke in collaboration with [International Open Data Day](http://opendataday.org/), the [City of Denton](https://www.cityofdenton.com/), [TechMill](https://techmill.co/), and the [UNT Libraries](http://www.library.unt.edu)
 
-##### Schedule
+#### Schedule
 9 AM to 5 PM at Stoke, on March 4th.
 
-##### What?
+#### What?
 Denton Open Data Day is a gathering of Denton citizens to write applications, liberate data, create visualizations and publish analyses using Denton open public data to show support for and encourage the adoption of Denton open data policies. It is a good chance for UNT students and local developers to use Denton Open Data to produce something useful to the community. 
 
-##### Who is invited?
+#### Who is invited?
 If you have an idea for using open data or you want to find an interesting project to contribute towards, then definitely come participate! 
 
 - **Developers** 
@@ -28,8 +28,12 @@ If you have an idea for using open data or you want to find an interesting proje
 <a class="btn btn-default btn-lg btn-block" href="https://www.meetup.com/TechmillDenton/events/237405554/">Register on Eventbrite</a>
 
 
-##### How it works?
+#### How does Open Data Day work?
 This is a hands on event. Bring your laptops, mobile phones, and power bricks so that you can participate in all the fun.
+
+#### What's expected of me?
+
+If you're a developer, start at the [issue tracker](https://github.com/OpenDenton/City-of-Denton-Datasets). 
 
 #### Address
 Stoke! 608 E Hickory St #128, Denton, TX 76205
