@@ -559,7 +559,6 @@ footer {
   text-align: center;
   p {
     color: #a9a9a9;
-    word-break: break-all;
   }
   span {
     color: #000000;
@@ -739,9 +738,6 @@ footer {
   float: left;
   width: 100%;
   padding: 30px;
-  p {
-    word-break: break-all;
-  }
 }
 
 .aside_contnt, .aside_org_scl {
