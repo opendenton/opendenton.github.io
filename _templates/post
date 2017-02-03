@@ -2,4 +2,8 @@
 layout: {{ layout }}
 title: "{{ title }}"
 date: {{ date }}
+permalink: {{ permalink }}
+image: {{ image }}
+author: {{ author }}
+categories: {{ categories }}
 ---
