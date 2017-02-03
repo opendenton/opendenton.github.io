@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2015-12-13 00:34:28 -0600
+date: 2015-12-13 00:34:28 -0600
 author: kyletaylored
 category: jekyll
 image: get-started-with-jekyll.png
