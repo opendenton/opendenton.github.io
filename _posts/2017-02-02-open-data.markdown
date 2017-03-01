@@ -26,7 +26,7 @@ If you have an idea for using open data or you want to find an interesting proje
 - We need writers who like to polish the final data and contribute to reports for Denton citizens and City council.
 
 <p class="text-center p-a-1">
-	<a class="btn btn-primary btn-lg" href="https://www.meetup.com/TechmillDenton/events/237405554/">Register on Eventbrite</a>
+	<a class="btn btn-primary btn-lg" href="https://www.eventbrite.com/e/denton-open-data-day-2017-tickets-31722457725">Register on Eventbrite</a>
 </p>
 
 #### How does Open Data Day work?
