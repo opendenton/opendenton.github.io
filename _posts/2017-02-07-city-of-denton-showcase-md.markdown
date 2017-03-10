@@ -5,6 +5,8 @@ date: 2017-02-07T00:00:01-01:00
 image: city-strategic-measures.jpg
 author: kyletaylored
 published: true
+categories: opendata community
+excerpt: "After starting Open Denton almost 3 years ago, our group has come a long way to boost civic engagement in solving local issues through open data collected by the city."
 ---
 
 After starting Open Denton almost 3 years ago, our group has come a long way to boost civic engagement in solving local issues through open data that's constantly being collected and released by the city.
