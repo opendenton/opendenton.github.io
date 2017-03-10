@@ -1,7 +1,7 @@
 ---
 layout: post
 title: City of Denton Showcase
-date: {}
+date: 2017-02-07T00:00:01-01:00
 permalink: null
 image: null
 author: null
