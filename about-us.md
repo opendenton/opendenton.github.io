@@ -4,7 +4,7 @@ title: "About Us"
 permalink: /about-us/
 ---
 
-## `A familiar story...`
+## A familiar story...
 
 
 Ever had a frustrating experience with local bureaucracy? It's no secret that cities are rarely first in line to adopt new technologies. This means that locating important information can be a frustrating process involving outdated systems and multiple departments that don't always communicate well with each other, much less with outsiders such as yourself.
@@ -38,7 +38,7 @@ Here are a few examples of open data projects from other cities:
 
 - [Interactive GIS map](http://www.arcgis.com/home/webmap/viewer.html?webmap=5befe2c86b2e4c8690eea4538e7aee6b&extent=-97.5022,33.005,-96.6828,33.372)
 
-### `Sounds great! How can I help?`
+### Sounds great! How can I help?
 
 ##### You can help any of the following ways:
 
@@ -54,5 +54,6 @@ Here are a few examples of open data projects from other cities:
 5. Rescuing or formatting public data in machine-readable formats
 
 6. Analyzing and visualizing the data
+
 
 ##### If you're interested in working with the data on your own, we'll provide full access to our datasets.
