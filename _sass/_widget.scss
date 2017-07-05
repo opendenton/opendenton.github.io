@@ -339,6 +339,7 @@ footer {
     float: left;
     width: 100%;
     text-align: center;
+    list-style: none;
     li {
       display: inline-block;
       a {
@@ -472,11 +473,17 @@ footer {
   ul {
     float: left;
     width: 100%;
-    padding: 10px 30px 13px;
+    padding: 0;
+    list-style: none;
+    margin: 0 !important;
     li {
+      padding: 0;
       float: left;
       width: 100%;
       position: relative;
+      a {
+        padding: 15px 20px !important;
+      }
     }
   }
 }

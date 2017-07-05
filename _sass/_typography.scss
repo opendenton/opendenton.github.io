@@ -72,6 +72,13 @@ ol {
   }
 }
 
+ul, ol {
+  li {
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+  }
+}
+
 figure {
   float: left;
   width: 100%;

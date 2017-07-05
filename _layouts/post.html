@@ -9,70 +9,71 @@ layout: default
 		</div>
 	</div>
 </div>
-<!--Bread Crumb Wrap Start-->
+<!--Bread Crumb Wrap End-->
 
-
-<!--Content Wrap Start-->
-<div class="content">
-	<section>
-		<div class="container">
-			<div class="row">
-				{% capture sidebar_class %}{% if page.sidebar != 0 %}col-md-8{% else %}col-md-12{% endif %}{% endcapture %}
-				<div class="{{ sidebar_class }}">
-					<article class="post news_detail" itemscope itemtype="http://schema.org/BlogPosting">
-						{% if page.image %}
+<div class="post">
+	<!--Content Wrap Start-->
+	<div class="content">
+		<section>
+			<div class="container">
+				<div class="row">
+					{% capture sidebar_class %}{% if page.sidebar != 0 %}col-md-8{% else %}col-md-12{% endif %}{% endcapture %}
+					<div class="{{ sidebar_class }}">
+						<article class="post news_detail" itemscope itemtype="http://schema.org/BlogPosting">
+							{% if page.image %}
 							<figure>
 								{% capture img_src %}/assets/images/posts/{{ page.image }} {% endcapture %}
 								{% include image.html src=img_src alt=page.title retina=0 %}
 							</figure>
-						{% endif %}
-						<h4>{{ page.title }}</h4>
-						<ul>
-							{% if page.author %}
-							{% assign authors = site.data.authors[page.author] %}
-							<li>by <a href="{{ authors.twitter }}"> {% if page.author %}<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} </a>- <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></li>
 							{% endif %}
-							{% comment %}<li> <a href="#"> <i class="fa fa-heart-o"></i>144 </a> </li>{% endcomment %}
-							{% if site.disqus_shortname %}
-							<li><i class="fa fa-comment-o"></i> <a class="disqus-comment-count" href="{{ page.url}}#disqus_thread" data-disqus-identifier="{{ page.id | remove_first:"/" | replace: "/","_" | replace: "-","_" }}">0</a></li>
-							{% endif %}
-							{% comment %}<li> <a href="#"> <i class="fa fa-eye"></i>12,998 </a> </li>{% endcomment %}
-						</ul>
-						<div class="content-inner">
-							{{ content }}
+							<h1>{{ page.title }}</h1>
+							<ul>
+								{% if page.author %}
+								{% assign authors = site.data.authors[page.author] %}
+								<li>by <a href="{{ authors.twitter }}"> {% if page.author %}<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} </a>- <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></li>
+								{% endif %}
+								{% comment %}<li> <a href="#"> <i class="fa fa-heart-o"></i>144 </a> </li>{% endcomment %}
+								{% if site.disqus_shortname %}
+								<li><i class="fa fa-comment-o"></i> <a class="disqus-comment-count" href="{{ page.url}}#disqus_thread" data-disqus-identifier="{{ page.id | remove_first:"/" | replace: "/","_" | replace: "-","_" }}">0</a></li>
+								{% endif %}
+								{% comment %}<li> <a href="#"> <i class="fa fa-eye"></i>12,998 </a> </li>{% endcomment %}
+							</ul>
+							<div class="content-inner">
+								{{ content }}
+							</div>
+						</article>
+
+						<!--Next and Previous Wrap Start-->
+						<div class="kf_pagination">
+							<ul class="pagination">
+								{% if page.previous.url %}
+								<li class="pull-left"> <a aria-label="Previous" href="{{ page.previous.url }}"><b>« Prev Post</b></a></li>
+								{% endif %}
+								{% if page.next.url %}
+								<li class="pull-right"> <a aria-label="Next" href="{{ page.next.url }}"><b> Next Post »</b></a></li>
+								{% endif %}
+							</ul>
 						</div>
-					</article>
+						<!--Next and Previous Wrap End-->
 
-					<!--Next and Previous Wrap Start-->
-					<div class="kf_pagination">
-						<ul class="pagination">
-							{% if page.previous.url %}
-							<li class="pull-left"> <a aria-label="Previous" href="{{ page.previous.url }}"><b>« Prev Post</b></a></li>
-							{% endif %}
-							{% if page.next.url %}
-							<li class="pull-right"> <a aria-label="Next" href="{{ page.next.url }}"><b> Next Post »</b></a></li>
-							{% endif %}
-						</ul>
-					</div>
-					<!--Next and Previous Wrap End-->
+						<!--Comment Wrap Start-->
+						<div class="related_comment">
+							<h6>Comments</h6>
+							{% include comments.html %}
+						</div>
+						<!--Comment Wrap End-->
 
-					<!--Comment Wrap Start-->
-					<div class="related_comment">
-						<h6>Comments</h6>
-						{% include comments.html %}
 					</div>
-					<!--Comment Wrap End-->
+					<!--News Deatail Wrap End-->
+
+					{% if page.sidebar != 0 %}
+					{% include sidebar.html %}
+					{% endif %}
 
 				</div>
-				<!--News Deatail Wrap End-->
-
-				{% if page.sidebar != 0 %}
-					{% include sidebar.html %}
-				{% endif %}
-
 			</div>
-		</div>
-	</section>
+		</section>
 
+	</div>
+	<!--Content Wrap End-->
 </div>
-<!--Content Wrap End-->
