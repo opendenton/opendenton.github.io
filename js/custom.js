@@ -30,8 +30,6 @@ $(document).ready(function(){
           url: item.event_url          
         };
 
-        console.log(data);
-
         var template = [
         '<li><figure>',
         '<a href="{{url}}" class="img">',

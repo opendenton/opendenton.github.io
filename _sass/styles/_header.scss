@@ -6,6 +6,13 @@
 header#header {
   top: 0;
   left: 0;
+
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 0;
+    }
+  }
 }
 .top_strip {
   width: 100%;
