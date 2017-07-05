@@ -194,6 +194,7 @@ footer {
 .widgt_tweets ul, .widgt_event ul, .foo_gallery ul {
   float: left;
   width: 100%;
+  padding: 0;
 }
 
 .widgt_touch ul li {
@@ -276,15 +277,27 @@ footer {
     &:after {
       content: "";
       position: absolute;
-      left: 0px;
-      bottom: 9px;
-      width: 110%;
-      height: 4px;
+      left: -5px;
+      bottom: 10px;
+      width: 115%;
+      height: 5px;
       transform: rotate(20deg);
     }
     img {
       width: 100%;
       height: auto;
+    }
+    i {
+      position: absolute;
+      top: 8%;
+      left: 12%;
+      font-size: 46px;
+      color: white;
+    }
+    &:hover {
+      i {
+        color: #64BC69;
+      }
     }
   }
 }

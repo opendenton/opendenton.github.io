@@ -2,6 +2,7 @@
 layout: page
 title: "Denton Innovation Lab"
 permalink: /denton-innovation-lab/
+image: smart-city.jpg
 ---
 
 The Denton Innovation Lab Is a partnership between public, private, and individuals to design and pilot smart city initiatives and applications to build a more prosperous City of Denton.

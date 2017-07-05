@@ -3,10 +3,15 @@ layout: default
 ---
 
 <!--Bread Crumb Wrap Start-->
-<div class="about_bg">
+{% if page.image %}
+  {% capture img_src %}/assets/images/{{ page.image }} {% endcapture %}
+  <div class="about_bg" style="background-size: cover; background-image: url({{ img_src }});padding: 60px 0">
+{% else %}
+  <div class="about_bg">
+{% endif %}
 	<div class="container">
     	<div class="aboutus_wrap">
-        	<h4>{{ page.title }}</h4>
+        	<h1>{{ page.title }}</h1>
             <!-- <div class="bread_crumb">
             	{% include breadcrumb.html %}
             </div> -->

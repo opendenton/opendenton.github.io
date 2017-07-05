@@ -3,9 +3,9 @@ var google = google || {};
 $(document).ready(function(){
   "use strict";
 
-  /* ---------------------------------------------------------------------- */
-  /*  Get Upcoming Meet-Ups
-  /* ---------------------------------------------------------------------- */
+  /* ----------------------------------------------------------------------
+   *  Get Upcoming Meet-Ups
+   * ---------------------------------------------------------------------- */
 
   // There are two obvious ways that this can be performed (naively)
   //    1. Append all content along w/ html in a long multi-line string
@@ -15,25 +15,49 @@ $(document).ready(function(){
 
   $.ajax({
     type:"GET",
-    url:"https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=techmilldenton&limited_events=true&page=2",
+    url:"https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=techmilldenton&page=3",
     success: function(data) {
-      $('#event-name-1').html(data.results[0].name);
-      $("#event-name-1").attr("href", data.results[0].event_url);
-      $('#event-date-1').text(data.results[0].venue.name);
 
-      $('#event-name-2').html(data.results[1].name);
-      $("#event-name-2").attr("href", data.results[1].event_url);
-      $('#event-date-2').text(data.results[1].venue.name);
+      var $eventList = $(".widgt_event ul");
+      $.each(data.results, function(index, item) {
+
+        var date = new Date(item.time);
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var data = {
+          title: item.name,
+          date:  monthNames[date.getMonth()]+" "+date.getUTCDate()+", "+date.getUTCFullYear(),
+          venue: item.venue.name,
+          url: item.event_url          
+        };
+
+        console.log(data);
+
+        var template = [
+        '<li><figure>',
+        '<a href="{{url}}" class="img">',
+        '<img src="/assets/images/footer-event-01.jpg" alt="{{title}}" data-no-retina />',
+        '<i class="fa fa-ticket"></i>',
+        '</a></figure>',
+        '<div class="foo_event_des">',
+        '<a href="#" class="title">{{title}}</a>',
+        '<div class="date">{{date}} @ {{venue}}</div>',
+        '</div></li>'
+        ].join("\n");
+
+        var html = Mustache.render(template, data);
+        $eventList.append(html);
+
+      });
     },
-    dataType: 'jsonp',
+    dataType: 'jsonp'
   });
 
 
 
-  /* ---------------------------------------------------------------------- */
-  /*  Search Script
-  /* ---------------------------------------------------------------------- */
-  $(".search-fld").on('click',function(){
+  /* ----------------------------------------------------------------------
+   *  Search Script
+   * ---------------------------------------------------------------------- */
+   $(".search-fld").on('click',function(){
     if($(this).hasClass('minus')){
       $(this).toggleClass("plus minus");
       $('.search-wrapper-area').fadeOut();
@@ -46,15 +70,15 @@ $(document).ready(function(){
   /*
     ==============================================================
        Banner Bx-Slider Script Start
-    ============================================================== */
-  if($('.bxslider').length){
-    $('.bxslider').bxSlider();
-  }
+       ============================================================== */
+       if($('.bxslider').length){
+        $('.bxslider').bxSlider();
+      }
 
   /*
     ==============================================================
        Instafeed.js
-    ============================================================== */
+       ============================================================== */
   // var hash = btoa("ÙÝÛw_9ãÍ5á½uo¾_kÇ6ß®ùçV·");
   // var feed = new Instafeed({
   //       get: 'tagged',
@@ -68,28 +92,28 @@ $(document).ready(function(){
   /*
   ==============================================================
      Widget Event Galley Bx-Slider Script
-  ============================================================== */
-  if($('.gallery_bxslider').length){
-    $('.gallery_bxslider').bxSlider();
-  }
+     ============================================================== */
+     if($('.gallery_bxslider').length){
+      $('.gallery_bxslider').bxSlider();
+    }
 
   /*
     ==============================================================
       Calendar Script
-    ============================================================== */
-  if($('#calendar').length){
-    $('#calendar').fullCalendar({
-        googleCalendarApiKey: 'AIzaSyD6mjf4uYoTsIhQNnZQav71lyR-23LwS2Q',
-        events: {
+      ============================================================== */
+      if($('#calendar').length){
+        $('#calendar').fullCalendar({
+          googleCalendarApiKey: 'AIzaSyD6mjf4uYoTsIhQNnZQav71lyR-23LwS2Q',
+          events: {
             googleCalendarId: 'ubhjn42a261hqttf5ps11m4dvvga1fqq@import.calendar.google.com'
-        }
-    });
-  }
+          }
+        });
+      }
 
-  /* ---------------------------------------------------------------------- */
-  /*  DL Responsive Menu
-  /* ---------------------------------------------------------------------- */
-  if(typeof($.fn.dlmenu) === 'function'){
+  /* ----------------------------------------------------------------------
+   *  DL Responsive Menu
+   * ---------------------------------------------------------------------- */
+   if(typeof($.fn.dlmenu) === 'function'){
     $('#responsive-navigation').each(function(){
       $(this).find('.dl-submenu').each(function(){
         if( $(this).siblings('a').attr('href') && $(this).siblings('a').attr('href') !== '#' ){
@@ -106,92 +130,92 @@ $(document).ready(function(){
   /*
     ==============================================================
       Calendar Script
-    ============================================================== */
-  if($('[data-toggle="tooltip"]').length){
-      $('[data-toggle="tooltip"]').tooltip();
-  }
+      ============================================================== */
+      if($('[data-toggle="tooltip"]').length){
+        $('[data-toggle="tooltip"]').tooltip();
+      }
 
   /*
     ==============================================================
       Fitvids
-    ============================================================== */
+      ============================================================== */
   // Target your .container, .wrapper, .post, etc.
-    $(".fitvid").fitVids();
+  $(".fitvid").fitVids();
 
   /*
     ==============================================================
        Tab View Script Start
-    ============================================================== */
-  if($('#tabs').length){
-    $('#tabs').tab();
-  }
+       ============================================================== */
+       if($('#tabs').length){
+        $('#tabs').tab();
+      }
 
   /*
     ==============================================================
        What We Do Bx-Slider Script Start
-    ============================================================== */
-  if($('#bxslider').length){
-    $('#bxslider').bxSlider({
-      mode: 'vertical',
-      minSlides: 2,
-      maxSlides: 2,
-      slideMargin: 10
-    });
-  }
+       ============================================================== */
+       if($('#bxslider').length){
+        $('#bxslider').bxSlider({
+          mode: 'vertical',
+          minSlides: 2,
+          maxSlides: 2,
+          slideMargin: 10
+        });
+      }
 
 
   /*
     =======================================================================
           Draw Chart Script
     =======================================================================
-  */
-  function drawChart() {
+    */
+    function drawChart() {
 
-    var data = google.visualization.arrayToDataTable([
-      ['Year', 'Sales'],
-      ['2004',  1000],
-      ['2005',  800],
-      ['2006',  1200],
-      ['2007',  1100],
-      ['2008',  1500],
-      ['2009',  1800],
-      ['2010',  1300],
-    ]);
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales'],
+        ['2004',  1000],
+        ['2005',  800],
+        ['2006',  1200],
+        ['2007',  1100],
+        ['2008',  1500],
+        ['2009',  1800],
+        ['2010',  1300]
+        ]);
 
-    var options = {
-      pointSize: 15,
-      title: 'Company Performance',
-      curveType: 'function',
-      legend: { position: 'bottom' },
-      pointShape: 'circle'
-    };
+      var options = {
+        pointSize: 15,
+        title: 'Company Performance',
+        curveType: 'function',
+        legend: { position: 'bottom' },
+        pointShape: 'circle'
+      };
 
-    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-    chart.draw(data, options);
-  }
+      chart.draw(data, options);
+    }
 
   /*
     ==============================================================
        Google Chart Script Start
-    ============================================================== */
-  if($('#curve_chart').length){
-    google.setOnLoadCallback(drawChart);
-  }
+       ============================================================== */
+       if($('#curve_chart').length){
+        google.setOnLoadCallback(drawChart);
+      }
 
   /*
     ==============================================================
        What We Do Bx-Slider Script Start
-    ============================================================== */
-    $(window).scroll(function(){
-      if ($(this).scrollTop() > 100) {
-        $('.back-top').css('opacity','1');
-        $('.back-top').attr('id','show_me');
-      } else {
-        $('.back-top').css('opacity','0');
-        $('.back-top').attr('id','hide_me');
-      }
-    });
+       ============================================================== */
+       $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+          $('.back-top').css('opacity','1');
+          $('.back-top').attr('id','show_me');
+        } else {
+          $('.back-top').css('opacity','0');
+          $('.back-top').attr('id','hide_me');
+        }
+      });
 
     //Click event to scroll to top
     $('.back-top').on('click',function(){
@@ -204,136 +228,136 @@ $(document).ready(function(){
   /*
     ==============================================================
        Our Political Campagin Bx-Slider Script Start
-    ============================================================== */
-  if($('.pol-campgn').length){
-    $('.pol-campgn').bxSlider({
-      mode: 'vertical',
-      minSlides: 2,
-      maxSlides: 2,
-      slideMargin: 10
-    });
-  }
+       ============================================================== */
+       if($('.pol-campgn').length){
+        $('.pol-campgn').bxSlider({
+          mode: 'vertical',
+          minSlides: 2,
+          maxSlides: 2,
+          slideMargin: 10
+        });
+      }
 
   /*
     ==============================================================
        Progress Bar Script Start
-    ============================================================== */
-  if($('.serving').length){
-    jQuery('.serving').each(function(){
-      jQuery(this).find('.progress-bar').animate({
-        width:jQuery(this).attr('data-percent')
-      },2000);
-    });
-  }
+       ============================================================== */
+       if($('.serving').length){
+        jQuery('.serving').each(function(){
+          jQuery(this).find('.progress-bar').animate({
+            width:jQuery(this).attr('data-percent')
+          },2000);
+        });
+      }
 
-  if($('.conviction').length){
-    jQuery('.conviction').each(function(){
-      jQuery(this).find('.progress-bar').animate({
-        width:jQuery(this).attr('data-percent')
-      },2000);
-    });
-  }
+      if($('.conviction').length){
+        jQuery('.conviction').each(function(){
+          jQuery(this).find('.progress-bar').animate({
+            width:jQuery(this).attr('data-percent')
+          },2000);
+        });
+      }
 
-  if($('.courage').length){
-    jQuery('.courage').each(function(){
-      jQuery(this).find('.progress-bar').animate({
-        width:jQuery(this).attr('data-percent')
-      },2000);
-    });
-  }
+      if($('.courage').length){
+        jQuery('.courage').each(function(){
+          jQuery(this).find('.progress-bar').animate({
+            width:jQuery(this).attr('data-percent')
+          },2000);
+        });
+      }
 
-  if($('.sincerity').length){
-    jQuery('.sincerity').each(function(){
-      jQuery(this).find('.progress-bar').animate({
-        width:jQuery(this).attr('data-percent')
-      },2000);
-    });
-  }
+      if($('.sincerity').length){
+        jQuery('.sincerity').each(function(){
+          jQuery(this).find('.progress-bar').animate({
+            width:jQuery(this).attr('data-percent')
+          },2000);
+        });
+      }
 
 
   /* ==================================================================
           Number Count Up(WayPoints) Script
-    ================================================================= */
-  if($('.counter').length){
-    $('.counter').counterUp({
-      delay: 10,
-      time: 1000
-    });
-  }
+          ================================================================= */
+          if($('.counter').length){
+            $('.counter').counterUp({
+              delay: 10,
+              time: 1000
+            });
+          }
 
-  if($(".DateCountdown").length){
-    $(".DateCountdown").TimeCircles();
-  }
+          if($(".DateCountdown").length){
+            $(".DateCountdown").TimeCircles();
+          }
 
-
-  /*
-    ==============================================================
-       Post Bx-Slider Script Start
-    ============================================================== */
-  if($('.post_bxslider').length){
-    $('.post_bxslider').bxSlider();
-  }
 
   /*
     ==============================================================
        Post Bx-Slider Script Start
-    ============================================================== */
-  if($('.countdown').length){
-    $('.countdown').downCount({ date: '08/08/2016 12:00:00', offset: +1 });
-  }
+       ============================================================== */
+       if($('.post_bxslider').length){
+        $('.post_bxslider').bxSlider();
+      }
+
+  /*
+    ==============================================================
+       Post Bx-Slider Script Start
+       ============================================================== */
+       if($('.countdown').length){
+        $('.countdown').downCount({ date: '08/08/2016 12:00:00', offset: +1 });
+      }
 
 
   /*
     ==============================================================
        Testimonial Owl Carousel Script Start
-    ============================================================== */
-  if($('#owl-demo').length){
-    var owl = $("#owl-demo");
-    owl.owlCarousel({
+       ============================================================== */
+       if($('#owl-demo').length){
+        var owl = $("#owl-demo");
+        owl.owlCarousel({
      autoPlay: 3000, //Set AutoPlay to 3 seconds
-      itemsCustom : [
-      [0, 1],
-      [450, 1],
-      [600, 1],
-      [700, 2],
-      [1000, 2],
-      [1200, 2],
-      [1400, 2],
-      [1600, 2]
-      ],
-      navigation : true
+     itemsCustom : [
+     [0, 1],
+     [450, 1],
+     [600, 1],
+     [700, 2],
+     [1000, 2],
+     [1200, 2],
+     [1400, 2],
+     [1600, 2]
+     ],
+     navigation : true
 
-    });
-  }
+   });
+      }
 
   /*
     ==============================================================
        Owl Carousel Script Start
-    ============================================================== */
-  if($('#owl-demo2').length){
-    var owl2 = $("#owl-demo2");
-    owl2.owlCarousel({
+       ============================================================== */
+       if($('#owl-demo2').length){
+        var owl2 = $("#owl-demo2");
+        owl2.owlCarousel({
       autoPlay: 3000, //Set AutoPlay to 3 seconds
       itemsCustom : [
-        [0, 1],
-        [450, 1],
-        [600, 2],
-        [700, 3],
-        [1000, 4],
-        [1200, 4],
-        [1400, 4],
-        [1600, 4]
+      [0, 1],
+      [450, 1],
+      [600, 2],
+      [700, 3],
+      [1000, 4],
+      [1200, 4],
+      [1400, 4],
+      [1600, 4]
       ],
       navigation : true
     });
-  }
+      }
 
   /*
     ==============================================================
        Accordian Script Start
-    ============================================================== */
+       ============================================================== */
 
-    if($('.accordion').length){
+       if($('.accordion').length){
     //custom animation for open/close
     $.fn.slideFadeToggle = function(speed, easing, callback) {
       return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
@@ -344,10 +368,10 @@ $(document).ready(function(){
       cookieName: 'nav',
       speed: 'slow',
       animateOpen: function (elem, opts) { //replace the standard slideUp with custom function
-      elem.next().stop(true, true).slideFadeToggle(opts.speed);
+        elem.next().stop(true, true).slideFadeToggle(opts.speed);
       },
       animateClose: function (elem, opts) { //replace the standard slideDown with custom function
-      elem.next().stop(true, true).slideFadeToggle(opts.speed);
+        elem.next().stop(true, true).slideFadeToggle(opts.speed);
       }
     });
   }
@@ -356,8 +380,8 @@ $(document).ready(function(){
   /*
     ==============================================================
        Choose US Script Start
-    ============================================================== */
-    if($('.accordion1').length){
+       ============================================================== */
+       if($('.accordion1').length){
       //custom animation for open/close
       $.fn.slideFadeToggle = function(speed, easing, callback) {
         return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
@@ -368,10 +392,10 @@ $(document).ready(function(){
         cookieName: 'nav',
         speed: 'slow',
         animateOpen: function (elem, opts) { //replace the standard slideUp with custom function
-        elem.next().stop(true, true).slideFadeToggle(opts.speed);
+          elem.next().stop(true, true).slideFadeToggle(opts.speed);
         },
         animateClose: function (elem, opts) { //replace the standard slideDown with custom function
-        elem.next().stop(true, true).slideFadeToggle(opts.speed);
+          elem.next().stop(true, true).slideFadeToggle(opts.speed);
         }
       });
     }
@@ -380,160 +404,160 @@ $(document).ready(function(){
   /*
     ==============================================================
        Latest Work Owl Carousel Script Start
-    ============================================================== */
+       ============================================================== */
 
-    var owl3 = $("#owl-demo3");
-      owl3.owlCarousel({
+       var owl3 = $("#owl-demo3");
+       owl3.owlCarousel({
        autoPlay: 3000, //Set AutoPlay to 3 seconds
-        itemsCustom : [
-        [0, 1],
-        [450, 1],
-        [600, 2],
-        [700, 3],
-        [1000, 3],
-        [1200, 3],
-        [1400, 3],
-        [1600, 3]
-        ],
-        navigation : true
+       itemsCustom : [
+       [0, 1],
+       [450, 1],
+       [600, 2],
+       [700, 3],
+       [1000, 3],
+       [1200, 3],
+       [1400, 3],
+       [1600, 3]
+       ],
+       navigation : true
 
-      });
+     });
 
 
   /*
     =======================================================================
             Pretty Photo Script
     =======================================================================
-  */
-  if($("a[data-rel^='prettyPhoto']").length){
-    $("a[data-rel^='prettyPhoto']").prettyPhoto();
-  }
+    */
+    if($("a[data-rel^='prettyPhoto']").length){
+      $("a[data-rel^='prettyPhoto']").prettyPhoto();
+    }
 
   /*
     =======================================================================
             Filterable Gallery Script
     =======================================================================
-  */
+    */
 
-  jQuery(window).load(function() {
-    var filter_container = jQuery('#filterable-item-holder-1');
+    jQuery(window).load(function() {
+      var filter_container = jQuery('#filterable-item-holder-1');
 
-    filter_container.children().css('position','relative');
-    filter_container.masonry({
-      singleMode: true,
-      itemSelector: '.filterable-item:not(.hide)',
-      animate: true,
-      animationOptions:{ duration: 800, queue: false }
-    });
-    jQuery(window).resize(function(){
-      var temp_width =  filter_container.children().filter(':first').width()+20;
+      filter_container.children().css('position','relative');
       filter_container.masonry({
-        columnWidth: temp_width,
         singleMode: true,
         itemSelector: '.filterable-item:not(.hide)',
         animate: true,
         animationOptions:{ duration: 800, queue: false }
       });
+      jQuery(window).resize(function(){
+        var temp_width =  filter_container.children().filter(':first').width()+20;
+        filter_container.masonry({
+          columnWidth: temp_width,
+          singleMode: true,
+          itemSelector: '.filterable-item:not(.hide)',
+          animate: true,
+          animationOptions:{ duration: 800, queue: false }
+        });
+      });
+      jQuery('ul#filterable-item-filter-1 a').on('click',function(e){
+
+        jQuery(this).addClass("active");
+        jQuery(this).parents("li").siblings().children("a").removeClass("active");
+        e.preventDefault();
+
+        var select_filter = jQuery(this).attr('data-value');
+
+        if( select_filter === "All" || jQuery(this).parent().index() === 0 ){
+          filter_container.children().each(function(){
+            if( jQuery(this).hasClass('hide') ){
+              jQuery(this).removeClass('hide');
+              jQuery(this).fadeIn();
+            }
+          });
+        }else{
+          filter_container.children().not('.' + select_filter).each(function(){
+            if( !jQuery(this).hasClass('hide') ){
+              jQuery(this).addClass('hide');
+              jQuery(this).fadeOut();
+            }
+          });
+          filter_container.children('.' + select_filter).each(function(){
+            if( jQuery(this).hasClass('hide') ){
+              jQuery(this).removeClass('hide');
+              jQuery(this).fadeIn();
+            }
+          });
+        }
+
+        filter_container.masonry();
+
+      });
     });
-    jQuery('ul#filterable-item-filter-1 a').on('click',function(e){
-
-      jQuery(this).addClass("active");
-      jQuery(this).parents("li").siblings().children("a").removeClass("active");
-      e.preventDefault();
-
-      var select_filter = jQuery(this).attr('data-value');
-
-      if( select_filter === "All" || jQuery(this).parent().index() === 0 ){
-        filter_container.children().each(function(){
-          if( jQuery(this).hasClass('hide') ){
-            jQuery(this).removeClass('hide');
-            jQuery(this).fadeIn();
-          }
-        });
-      }else{
-        filter_container.children().not('.' + select_filter).each(function(){
-          if( !jQuery(this).hasClass('hide') ){
-            jQuery(this).addClass('hide');
-            jQuery(this).fadeOut();
-          }
-        });
-        filter_container.children('.' + select_filter).each(function(){
-          if( jQuery(this).hasClass('hide') ){
-            jQuery(this).removeClass('hide');
-            jQuery(this).fadeIn();
-          }
-        });
-      }
-
-      filter_container.masonry();
-
-    });
-  });
 
   /*
     =======================================================================
           Map Script
     =======================================================================
-  */
-  function initialize() {
+    */
+    function initialize() {
 
-    var MY_MAPTYPE_ID = 'custom_style';
-    var map;
-    var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
-    var featureOpts = [
+      var MY_MAPTYPE_ID = 'custom_style';
+      var map;
+      var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+      var featureOpts = [
       {"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}
 
-    ];
-    var mapOptions = {
-      zoom: 12,
-      center: brooklyn,
-      mapTypeControlOptions: {
-        mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-      },
-      zoomControl: false,
-      scaleControl: false,
-      scrollwheel: false,
-      disableDoubleClickZoom: true,
-      mapTypeId: MY_MAPTYPE_ID
-    };
+      ];
+      var mapOptions = {
+        zoom: 12,
+        center: brooklyn,
+        mapTypeControlOptions: {
+          mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+        },
+        zoomControl: false,
+        scaleControl: false,
+        scrollwheel: false,
+        disableDoubleClickZoom: true,
+        mapTypeId: MY_MAPTYPE_ID
+      };
 
-    map = new google.maps.Map(
-      document.getElementById('map-canvas'),
-      mapOptions
-    );
+      map = new google.maps.Map(
+        document.getElementById('map-canvas'),
+        mapOptions
+        );
 
-    var styledMapOptions = {
-      name: 'Custom Style'
-    };
+      var styledMapOptions = {
+        name: 'Custom Style'
+      };
 
-    var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+      var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
 
-    map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-  }
+      map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+    }
 
   /*
     =======================================================================
             Map Script
     =======================================================================
-  */
-  if($('#map-canvas').length){
-    google.maps.event.addDomListener(window, 'load', initialize);
-  }
+    */
+    if($('#map-canvas').length){
+      google.maps.event.addDomListener(window, 'load', initialize);
+    }
 
 
   /*
     =======================================================================
             Contact Form Validation Script
     =======================================================================
-  */
-  if($('#contactform').length) {
+    */
+    if($('#contactform').length) {
 
-    $('#contactform').ajax({
-      url: "//formspree.io/opendenton@gmail.com",
-      method: "POST",
-      data: {message: "hello!"},
-      dataType: "json"
+      $('#contactform').ajax({
+        url: "//formspree.io/opendenton@gmail.com",
+        method: "POST",
+        data: {message: "hello!"},
+        dataType: "json"
+      });
+
+    }
   });
-
-  }
-});
