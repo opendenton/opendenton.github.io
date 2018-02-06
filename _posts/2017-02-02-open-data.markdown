@@ -19,14 +19,14 @@ Denton Open Data Day is a gathering of Denton citizens to write applications, li
 If you have an idea for using open data or you want to find an interesting project to contribute towards, then definitely come participate! 
 
 - **Developers** 
-- We need developers in Python, GIS, Database, and Data Analytics / Statistics. 
+- We need developers in Python, GIS, Databases (especially cloud-based services), and Data Analytics / Statistics. 
 - **Designers**
 - We need people like you to make everything look amazing, feel intuitive, and have a smooth user experience.
 - **Technical Writers**
 - We need writers who like to polish the final data and contribute to reports for Denton citizens and City council.
 
 <p class="text-center p-a-1">
-	<a class="btn btn-primary btn-lg" href="https://www.eventbrite.com/e/denton-open-data-day-2017-tickets-31722457725">Register on Eventbrite</a>
+	<a class="btn btn-primary btn-lg" href="https://www.eventbrite.com/e/denton-open-data-day-2018-tickets-42316376421">Register on Eventbrite</a>
 </p>
 
 #### How does Open Data Day work?
