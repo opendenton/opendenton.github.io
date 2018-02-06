@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2018-06-02T08:35:01-06:00
-title: "Open Data Day 2017"
+date: 2018-02-06T08:35:01-06:00
+title: "Open Data Day 2018"
 permalink: /open-data-day
 image: welcome-open-denton.png
 author: jessehamner
