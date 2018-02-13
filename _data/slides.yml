@@ -8,11 +8,12 @@
 # link: /relative/or/absolute/link/to/target
 # ---
 - title: Open Data Day
-  subtitle: "March 4th, 2017"
+  subtitle: "March 3rd, 2018"
   category: Open Data
   description: "In the spirit of <a href='http://opendataday.org'>International Open Data Day</a>, Open Denton is inviting community citizens to write applications, liberate data, create visualizations and publish analyses using Denton open public data to show support for and encourage the adoption of Denton open data policies."
   img: /assets/images/banner/banner-06.png
   img_retina: 0
+  link: https://www.meetup.com/TechmillDenton/events/246868444/
   link: /open-data-day
 - title: Denton Bedouins
   subtitle: Hacking City Data
