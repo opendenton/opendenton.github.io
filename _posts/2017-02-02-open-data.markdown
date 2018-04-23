@@ -1,16 +1,16 @@
 ---
 layout: post
-date: 2017-02-02T08:35:01-06:00
-title: "Open Data Day 2017"
+date: 2018-02-06T08:35:01-06:00
+title: "Open Data Day 2018"
 permalink: /open-data-day
 image: welcome-open-denton.png
 author: jessehamner
 categories: [opendata, community, event]
 ---
-Denton Open Data Day on March 4th 2017 @ Stoke in collaboration with [International Open Data Day](http://opendataday.org/), the [City of Denton](https://www.cityofdenton.com/), [TechMill](https://techmill.co/), and the [UNT Libraries](http://www.library.unt.edu)
+Denton Open Data Day on March 3rd 2018 @ Stoke in collaboration with [International Open Data Day](http://opendataday.org/), the [City of Denton](https://www.cityofdenton.com/), [TechMill](https://techmill.co/), and the [UNT Libraries](http://www.library.unt.edu)
 
 #### Schedule
-9 AM to 5 PM at Stoke, on March 4th.
+8:30 AM to 5 PM at Stoke, on March 3rd.
 
 #### What?
 Denton Open Data Day is a gathering of Denton citizens to write applications, liberate data, create visualizations and publish analyses using Denton open public data to show support for and encourage the adoption of Denton open data policies. It is a good chance for UNT students and local developers to use Denton Open Data to produce something useful to the community. 
@@ -19,14 +19,14 @@ Denton Open Data Day is a gathering of Denton citizens to write applications, li
 If you have an idea for using open data or you want to find an interesting project to contribute towards, then definitely come participate! 
 
 - **Developers** 
-- We need developers in Python, GIS, Database, and Data Analytics. 
+- We need developers in Python, GIS, Databases (especially cloud-based services), and Data Analytics / Statistics. 
 - **Designers**
-- We need people like you to make everything look amazing, feel intuitive, and have a smooth user experience..
+- We need people like you to make everything look amazing, feel intuitive, and have a smooth user experience.
 - **Technical Writers**
 - We need writers who like to polish the final data and contribute to reports for Denton citizens and City council.
 
 <p class="text-center p-a-1">
-	<a class="btn btn-primary btn-lg" href="https://www.eventbrite.com/e/denton-open-data-day-2017-tickets-31722457725">Register on Eventbrite</a>
+	<a class="btn btn-primary btn-lg" href="https://www.eventbrite.com/e/denton-open-data-day-2018-tickets-42316376421">Register on Eventbrite</a>
 </p>
 
 #### How does Open Data Day work?
@@ -45,9 +45,9 @@ Stoke! 608 E Hickory St #128, Denton, TX 76205
 {
   "@context" : "http://schema.org",
   "@type" : "Event",
-  "name" : "Open Data Day 2017",
-  "startDate" : "2017-03-04",
-  "endDate" : "2017-03-04",
+  "name" : "Open Data Day 2018",
+  "startDate" : "2018-03-03",
+  "endDate" : "2018-03-03",
   "location" : {
     "@type" : "Place",
     "name" : "Stoke",
