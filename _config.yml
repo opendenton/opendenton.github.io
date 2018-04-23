@@ -23,7 +23,7 @@ facebook_username: opendenton
 markdown: kramdown
 
 # Gems
-gems:
+plugins:
 - jekyll-paginate
 - jekyll-sitemap
 
