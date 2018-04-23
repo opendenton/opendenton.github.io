@@ -26,6 +26,7 @@ markdown: kramdown
 plugins:
 - jekyll-paginate
 - jekyll-sitemap
+- jekyll-cloudinary
 
 # Analytics
 google_analytics: "UA-48749943-1"
@@ -33,6 +34,16 @@ add_this: "ra-531d26532ab0a8ba"
 
 # Commenting
 disqus_shortname: "opendenton"
+
+# Images
+cloudinary:
+  cloud_name: opendenton
+  presets:
+    teaser:
+      min_width: 240
+      max_width: 600
+      fallback_max_width: 600
+      steps: 3
 
 # Enable site search
 search: false
