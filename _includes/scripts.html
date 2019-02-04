@@ -28,7 +28,7 @@
 <script src="{{ "/js/dl-menu/jquery.dlmenu.js" | prepend: site.baseurl }}"></script>
 
 <!-- Google Maps -->
-<script src="//maps.google.com/maps/api/js"></script>
+<!-- <script src="//maps.google.com/maps/api/js"></script> -->
 
 <!-- Custom -->
 <script src="{{ "/js/custom.js" | prepend: site.baseurl }}"></script>
@@ -53,7 +53,7 @@
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.add_this}}" async="async"></script>
 {% endif %}
 
-{% if site.disqus_shortname %}
+{% if site.disqus_shortname and page.collection == "posts" %}
 <script type="text/javascript">
 /**
 * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -93,7 +93,7 @@ var disqus_config = function () {
 {% endif %}
 
 <!-- Google Structured Data -->
-<script type='application/ld+json'> 
+<script type='application/ld+json'>
 {
   "@context": "http://www.schema.org",
   "@type": "Organization",

@@ -1,7 +1,9 @@
 /*
   Styling overrides for libraries.
 */
-
+.banner > .bx-wrapper > .bx-viewport {
+  padding-bottom: 40px;
+}
 .bx-wrapper {
   .bx-next, .bx-prev {
     background: none;
@@ -31,7 +33,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
-  
+
   img {
     display: block;
     min-width: 100%;
@@ -42,5 +44,31 @@
     right: -100%;
     bottom: -100%;
     left: -100%;
+  }
+}
+
+.breaking_news_container {
+  bottom: 15px !important;
+}
+
+.news_date {
+  ul {
+    padding-left: 10px;
+    li {
+      list-style: none;
+      border-right: 1px solid #474747;
+      padding: 0 0.25em 0 0.5em;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}
+
+.news_des {
+  h6 {
+    > a {
+      line-height: 20px;
+    }
   }
 }

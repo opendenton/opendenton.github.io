@@ -26,7 +26,6 @@ markdown: kramdown
 plugins:
 - jekyll-paginate
 - jekyll-sitemap
-- jekyll-cloudinary
 
 # Analytics
 google_analytics: "UA-48749943-1"
