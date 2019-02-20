@@ -3,7 +3,7 @@ layout: post
 date: 2019-02-19T20:00:01-06:00
 title: "Open Data Day 2019"
 permalink: /open-data-day
-image: open.jpg
+image: dfwodd2019.jpg
 author: jessehamner
 categories: [opendata, community, event]
 ---
@@ -13,13 +13,13 @@ DFW Open Data Day on March 2nd 2019 at the Dallas Main Public Library, in collab
 8:30 AM to 5 PM at [The J. Erik Jonsson Central Library](http://dallaslibrary2.org/central/index.php), on March 2nd.
 
 #### What?
-Open Data Day is a gathering of tech volunteers in DFW to write applications, liberate data, create visualizations and publish analyses using public municipal data to show support for and encourage the adoption of open data policies across the region. It is a good chance for students and local developers to use public data to produce something useful for their community. 
+Open Data Day is a gathering of tech volunteers in DFW to write applications, liberate data, create visualizations and publish analyses using public municipal data to show support for and encourage the adoption of open data policies across the region. It is a good chance for students and local developers to use public data to produce something useful for their community.
 
 #### Who is invited?
-If you have an idea for using open data or you want to find an interesting project to contribute towards, then definitely come participate! 
+If you have an idea for using open data or you want to find an interesting project to contribute towards, then definitely come participate!
 
-- **Developers** 
-- We need developers in Python, GIS, Databases (especially cloud-based services), and Data Analytics / Statistics. 
+- **Developers**
+- We need developers in Python, GIS, Databases (especially cloud-based services), and Data Analytics / Statistics.
 - **Designers**
 - We need people like you to make everything look amazing, feel intuitive, and have a smooth user experience.
 - **Technical Writers**
@@ -34,7 +34,7 @@ This is a hands on event. Bring your laptops, mobile phones, and power bricks so
 
 #### What's expected of me?
 
-If you're a developer, start at the [issue tracker](https://github.com/OpenDenton/City-of-Denton-Datasets). 
+If you're a developer, start at the [issue tracker](https://github.com/OpenDenton/City-of-Denton-Datasets).
 
 #### Address
 1515 Young Street, Dallas, TX 75201
